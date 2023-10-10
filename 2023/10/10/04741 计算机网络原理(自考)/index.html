@@ -1,0 +1,988 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>计算机网络原理(自考) | 老生杂谈的IT人</title><meta name="keywords" content="自考"><meta name="author" content="H Miking"><meta name="copyright" content="H Miking"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="计算机网络原理(自考)"><meta name="application-name" content="计算机网络原理(自考)"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="计算机网络原理(自考)"><meta property="og:url" content="http://hmiking.top/2023/10/10/04741 计算机网络原理(自考)/index.html"><meta property="og:site_name" content="老生杂谈的IT人"><meta property="og:description" content="第一章 计算机网络概述1.1 计算机网络的概念1、计算机网络的定义计算机网络是互连的、自治的计算机的集合。 2、协议的定义协议是网络通信实体之间在数据交换过程中需要遵循的规则或约定，是计算机网络有序运行的重要保证。 3、协议的3个要素  (1)语法：定义实体之间交换信息的格式与结构，或者定义实体（比"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="http://image.oldit.cn/article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86_cover.webp"><meta property="article:author" content="H Miking"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="http://image.oldit.cn/article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86_cover.webp"><meta name="description" content="第一章 计算机网络概述1.1 计算机网络的概念1、计算机网络的定义计算机网络是互连的、自治的计算机的集合。 2、协议的定义协议是网络通信实体之间在数据交换过程中需要遵循的规则或约定，是计算机网络有序运行的重要保证。 3、协议的3个要素  (1)语法：定义实体之间交换信息的格式与结构，或者定义实体（比"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://hmiking.top/2023/10/10/04741%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86(%E8%87%AA%E8%80%83)/"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//npm.onmicrosoft.cn"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="http://tools.oldit.cn:19999/css/swiper.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3c9e1508adad7951661bc42270ae4c81";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"与数百名博主无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"},
+  peoplecanvas: undefined,
+  postHeadAiDescription: undefined,
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: {"enable":true,"ck":"3FuB8l8ixxHK1vJh","LingQueMonitorID":"3FuBNB3nht1KBgZo"},
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: 'https://twikoo.hmiking.top/',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":["☁️ 探索云计算的菜鸟","🔧 还在努力提升系统运维的菜鸟","🔒 网络安全方面的学者"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    simplehomepage: false,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":true,"limitCount":50,"languages":{"author":"作者: H Miking","link":"链接: ","source":"来源: 老生杂谈的IT人","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '老生杂谈的IT人',
+  title: '计算机网络原理(自考)',
+  postAI: '',
+  pageFillDescription: '第一章 计算机网络概述, 1.1 计算机网络的概念, 1.2 计算机网络结构, 1.3 数据交换技术, 1.4 计算机网络性能, 1.5 计算机网络体系结构, 1.6 计算机网络与因特网发展简史, 第二章 网络应用, 2.1 网络应用体系结构, 2.2 网络应用通信基本原理, 2.3 域名系统（DNS）, 2.4 万维网应用, 2.5 Internet电子邮件, 2.6 FTP, 2.7 P2P应用, 2.8 Socket编程技术, 第三章 传输层, 3.1 传输层基本服务, 3.2 传输层的复用与分解, 3.3 停-等协议与滑动窗口协议, 3.4 用户数据报协议（UDP）, 3.5 传输控制协议（TCP）, 第四章 网络层, 4.1 网络层服务, 4.2 数据报网络与虚电路网络, 4.3 网络互连与网络互连设备, 4.4 网络层拥塞控制, 4.5 Internet网络层, 4.6 路由算法与路由协议, 第五章 数据链路层与局域网, 5.1 数据链路层服务, 5.2 差错控制, 5.3 多路访问控制协议, 5.4 局域网, 5.5 点对点链路协议, 第六章 物理层, 6.1 数据通信基础, 6.2 物理介质, 6.3 信道与信道容量, 6.4 基带传输, 6.5 频带传输, 6.6 物理层接口规程, 第七章 无线与移动网络, 7.1 无线网络, 7.2 移动网络, 7.3 无线局域网IEEE802.11（WIFI）, 7.4 蜂窝网络, 7.5 移动IP网络, 7.6 其他典型无线网络简介, 第八章 网络安全基础, 8.1 网络安全概述, 8.2 数据加密, 8.3 消息完整性与数字签名, 8.4 身份认证, 8.5 密钥分发中心与证书认证机构, 8.6 防火墙与入侵检测系统, 8.7 网络安全协议, 结尾第一章计算机网络概述计算机网络的概念计算机网络的定义计算机网络是互连的自治的计算机的集合协议的定义协议是网络通信实体之间在数据交换过程中需要遵循的规则或约定是计算机网络有序运行的重要保证协议的个要素语法定义实体之间交换信息的格式与结构或者定义实体比如硬件设备之间传输信号的电平等语义定义实体之间交换的信息中需要发送或包含哪些控制信息这些信息的具体含义以及针对不同含义的控制信息接收信息端应如何响应时序定义实体之间交换信息的顺序以及如何匹配或适应彼此的速度计算机网络的功能硬件资源共享软件资源共享信息资源共享计算机网络的分类按覆盖范围分类个域网局域网城域网广域网按拓扑结构分类类星形拓扑结构总线型拓扑结构环形拓扑结构网状拓扑结构树形拓扑结构混合拓扑结构按交换方式分类电路交换网络报文交换网络分组交换网络按网络用户属性分类公用网专用网计算机网络结构网络边缘连接到网络上的所有端系统构成了网络边缘接入网络常见的接入网络技术包括电话拨号接入非对称数字用户线路混合光纤同轴电缆接入网络局域网移动接入网络网络核心网络核心是由通信链路互连的分组交换设备构成的网络作用是实现网络边缘中主机之间的数据中继与转发数据交换技术一数据交换的概念数据交换是实现在大规模网络核心上进行数据传输的技术基础常见的数据交换技术包括电路交换报文交换分组交换二电路交换利用电路交换进行通信需要个阶段建立电路传输数据拆除电路三报文交换报文交换也称为消息交换其工作过程为发送方把要发送的信息附加上发送接收主机的地址及其他控制信息构成一个完整的报文然后以报文为单位在交换网络的各结点之间以存储转发的方式传送直至送达目的主机四分组交换分组交换基本原理分组交换是目前计算机网络广泛采用的技术分组交换需要将待传输数据即报文分割成较小的数据块每个数据块附加上地址序号等控制信息构成数据分组每个分组独立传输到目的地目的地将收到的分组重新组装还原为报文分组传输过程通常也采用存储转发交换方式分组交换的优点交换设备存储容量要求低交换速度快可靠传输效率高更加公平计算机网络性能一速率与带宽速率是指网络单位时间内传送的数据量用以描述网络传输数据的快慢也称为数据传输速率或数据速率速率的基本单位是位每秒一条链路或信道能够不失真地传播电磁信号的最高频率与最低频率之差称为信道的带宽单位是二时延时延是指数据从网络中的一个结点主机或交换设备等到达另一结点所需要的时间分组的每跳传输过程主要产生类时间延迟结点处理时延排队时延传输时延和传播时延三时延带宽积一段物理链路的传播时延与链路带宽的乘积称为时延带宽积四丢包率丢包率常被用于评价和衡量网络性能的指标在很大程度上可以反映网络的拥塞程度因为引发网络丢包的主要因素是网络拥塞五吞吐量吞吐量表示在单位时间内源主机通过网络向目的主机实际送达的数据量单位为或字节每秒记为计算机网络体系结构一计算机网络分层体系结构计算机网络体系结构计算机网络所划分的层次以及各层协议的集合二参考模型参考模型物理层物理层的主要功能是在传输介质上实现无结构比特流传输物理层的另一项主要任务是规定数据终端设备与数据通信设备之间接口的相关特性主要包括机械电子功能和规程个方面的特性数据链路层数据链路层的主要功能是实现在相邻结点之间数据可靠而有效的传输数据链路层还可以实现相邻结点间通信的流量控制网络层网络层解决的核心问题是如何将分组通过交换网络传送至目的主机因此网络层的主要功能是数据转发与路由传输层传输层的功能主要包括复用分解区分发送和接收主机上的进程端到端的可靠数据传输连接控制流量控制和拥塞控制机制等会话层会话层的主要功能是在建立会话时核实双方身份是否有权参加会话确定双方支付通信费用双方在各种选择功能方面取得一致在会话建立以后需要对进程间的对话进行管理与控制表示层表示层主要用于处理应用实体间交换数据的语法其目的是解决格式和数据表示的差别从而为应用层提供一个一致的数据格式使字符格式等有差异的设备之间相互通信除此之外表示层还可以实现文本压缩解压缩数据加密解密字符编码的转换等功能应用层应用层为用户提供了一个使用网络应用的接口参考模型有关术语在层的实体之间传送的比特组称为数据单元相邻层间的服务是通过其接口面上的服务访问点进行的层就是层可以访问层的地方第层向层提供服务或第层请求层提供服务都是用一组原语描述的参考模型的原语有类请求指示响应证实在分层的体系结构中下层向上层提供服务通常有两种形式面向连接的服务和无连接的服务三参考模型参考模型分为四个层次从上到下为应用层传输层网络互联层网络接口层其中应用层与应用层相对应传输层与传输层相对应网络互联层与网络层相对应网络接口层与数据链路层及物理层相对应在参考模型中对表示层会话层没有对应的协议计算机网络与因特网发展简史是第一个分组交换计算机网络也是当今因特网的祖先年开发了第一个主机到主机的协议网络控制协议为编写了第一个电子邮件程序世纪年代早期与中期除了之外还陆续诞生了许多其他分组交换网络例如等在研制分组无线电网络时设计了第一个多路访问控制协议与研制了基于有线共享广播链路的以太网奠定了当今局域网技术的基础到世纪年代末期已连接大约台主机公共因特网已现雏形到世纪年代公共因特网上连接的主机数量达到台年创建了在此期间协议簇逐渐成熟并于年月日正式部署替代了世纪年代万维网应用诞生从年开始因特网进入爆发式发展时期第二章网络应用网络应用体系结构网络应用体系结构与分类计算机网络应用是运行在计算机网络环境下的分布式软件系统计算机网络应用从体系结构角度可以分为客户服务器结构纯结构和混合结构种类型网络应用网络应用以反混合网络应用的特点区别与联系网络应用通信基本原理网络应用的基本通信方式是通信套接字是典型的网络应用编程接口域名系统一层次化域名空间国家顶级域名如表示中国表示美国表示英国等通用顶级域名最早的顶级域名是公司和企业网络服务机构非盈利性组织专用的教育机构专用的政府部门专用的军事部门国际组织基础结构域名这种顶级域名只有一个即用于反向域名解析因此又称为反向域名二域名服务器域名服务器根据其主要保存的域名信息以及在域名解析过程中的作用等可以分为根域名服务器顶级域名服务器权威域名服务器中间域名服务器类三域名解析过程域名解析分为递归解析和迭代解析提供递归查询服务的域名服务器可以代替查询主机或其他域名服务器进行进一步的域名查询并将最终解析结果发送给查询主机或服务器提供迭代查询的服务器不会代替查询主机或其他域名服务器进行进一步的查询只是将下一步要查询的服务器告知查询主机或服务器万维网应用一万维网应用结构应用应用是典型的客户服务器网络应用客户与服务器之间的交互基于应用层协议应用主要包括服务器浏览器与超文本传输协议等部分浏览器就是应用的客户端软件即应用的客户代理运行在用户计算机上服务器是应用的服务器软件存储并管理供用户请求浏览的页面或称为文档浏览器向服务器发送请求报文服务器向浏览器送回响应报文其中包含客户所要的页浏览器对其中的页进行解析并显示每个地址主要由两部分组成存放对象的服务器主机域名和对象的路径名二是应用的应用层协议定义浏览器如何向服务器发送请求以及服务器如何向浏览器进行响应报文由部分组成起始行首部行空白行和实体主体三中文名称为小型文本文件指某些网站为了辨别用户身份进行会话跟踪而存储在用户本地终端上的数据文件可以保存在客户端计算机的硬盘中也可以保存在客户端计算机的内存中保存在硬盘中的通常被称为永久的有效周期可以进行设置关闭浏览器不影响的有效周期保存在内存中的被称为会话表示这个的有效周期是浏览器的会话期间只要关闭浏览器窗口就消失网站利用技术进行用户跟踪最常见的用途包括以下几点网站可以利用的来准确统计网站的实际访问人数新访问者和重复访问者的人数对比访问者的访问频率等数据网站可以利用限制某些特定用户的访问网站可以存储用户访问过程中的操作习惯和偏好对不同的用户呈现不同的显示内容颜色布局等界面元素有针对性地为用户提供服务提升用户体验感记录用户登录网站使用的用户名密码等信息当用户多次登录时无须每次都从键盘输入这些烦琐的字符和数字电子商务网站利用可以实现购物车功能对于同一个的用户网站可以跟踪其向购物车中添加的不同商品每个商品都会和一起存储在网站数据库中当用户选择结账时网站通过对数据库中该的检索找到用户购买的所有商品一起实现结账功能电子邮件一电子邮件系统结构电子邮件系统主要包括邮件服务器简单邮件传输协议用户代理和邮件读取协议等二端口是电子邮件中核心应用层协议实现邮件服务器之间或用户代理到邮件服务器之间的邮件传输三电子邮件格式与一份邮件包括首部空白行和主体部分主要包括以下内容个邮件首部字段可包含在邮件首部中定义了多种邮件内容的格式对多媒体电子邮件的表示方法进行了标准化定义了邮件传送编码可对任何内容格式进行转换从而适合通过进行传送四邮件读取协议邮件读取协议端口协议与服务器进行交互实现对邮箱的操作协议交互过程可以分为个阶段授权事务处理和更新在授权阶段用户代理需要向服务器发送用户名和口令以明文形式即非加密服务器鉴别用户身份授权用户访问邮箱在事务处理阶段用户代理向服务器发送命令实现邮件读取为邮件做删除标记取消邮件删除标记以及获取邮件的统计信息等操作在更新阶段客户发出了命令结束会话服务器删除那些被标记为删除的邮件端口通过收件人可以在服务器上创建新的文件夹并可以对邮件进行移动查询阅读删除等操作端口当使用基于的邮件时便被用于邮件的读取此时也作为邮件读取协议使用端口控制端口号和数据传输端口号文件传送协议是在互联网的两个主机间实现文件互传的网络应用其应用层协议也称为可以减少或消除在不同操作系统下处理文件的不兼容性屏蔽各计算机系统的细节适合在网络中任意异构计算机之间传送文件应用体系结构的网络应用对服务器依赖很小甚至对于纯来说整个应用几乎不依赖某个集中服务器应用都是动态地在对等方之间进行编程技术网络应用进程可以创建种类型的数据报类型套接字流式套接字和原始套接字其中面向传输层接口面向传输层接口面向网络层协议接口第三章传输层传输层基本服务传输层的功能传输层的核心任务是为应用进程之间提供端到端的逻辑通信服务传输层主要实现如下功能传输层寻址对应用层报文进行分段和重组对报文进行差错检测实现进程间的端到端可靠数据传输控制面向应用层实现复用与分解实现端到端的流量控制拥塞控制传输层寻址与端口的端口号为熟知端口号的端口号为登记端口号为没有熟知端口号的应用程序服务器使用必须在互联网数字分配结构登记以防止重复为客户端口号或短暂端口号留给客户进程或用户开发的非标准服务器暂时使用另外端口号只本地有效只是标识了本计算机应用层中的各应用进程在与传输层交互时的层间接口无连接服务与面向连接服务传输层提供的服务可以分为无连接服务和面向连接服务两大类传输层的复用与分解传输层协议的重要基本功能复用与分解依据二元组目的地址目的端口号来唯一标识一个套接字依据四元组源地址源端口号目的地址目的端口号来唯一标识一个套接字即标识一条连接停等协议与滑动窗口协议停等协议的基本工作过程是发送方发送经过差错编码和编号的报文段等待接收方的确认接收方如果正确接收报文段即差错检测无误且序号正确则接收报文段并向发送方发送否则丢弃报文段并向发送方发送发送方如果收到则继续发送后续报文段否则重发刚刚发送的报文段协议的发送端缓存能力较高可以在未得到确认前连续发送多个分组因此协议的发送窗口接收端缓存能力很低只能接收个按序到达的分组不能缓存未按序到达的分组通常称协议的接收端无缓存能力因此协议的接收窗口协议是通过让发送方仅重传那些未被接收方确认出错或丢失的分组而避免了不必要的重传为此协议的接收方是对每个正确接收的分组进行逐个确认用户数据报协议用户数据报协议是传输层协议提供无连接不可靠数据报尽力传输服务参与校验和计算的内容包括部分伪首部首部和应用层数据传输控制协议传输控制协议是一个重要的传输层协议提供面向连接可靠有序字节流传输服务报文段由首部字段和一个数据字段组成连接管理包括连接建立与连接拆除连接建立通过三次握手过程的可靠数据传输实现机制包括差错编码确认序号重传计时器等的可靠数据传输是基于滑动窗口协议第四章网络层网络层服务网络层需要实现两项重要功能转发当通过一条输入链路接收到一个分组后路由器需要决策通过哪条输出链路讲分组发送出去并讲分组从输入接口转移到输出接口路由选择当一个分组到达路由器时路由器会以该分组的网络层首部地址字段的值比如目的地址作为键去转发表中查询相应的表项从而获知该分组应转发到哪条链路上数据报网络与虚电路网络虚电路网络特点虚电路网络在网络层提供面向连接的分组交换服务建立一条网络层逻辑连接不需要为每条虚电路分配独享资源区别与电路交换根据虚电路号沿虚电路路径按序发送分组数据报网络特点无连接每个分组作为一个独立的数据报进行传送路径也可能不同分组可能出现乱序和丢失网络互连与网络互连设备异构网络两个网络的通信技术和运行的协议不同异构网络互联的基本策略协议转换构建虚拟互联网络路由器路由器交换结构路由处理器执行路由器的各种指令包括路由协议的运行路由计算以及路由表的更新维护等网络层拥塞控制拥塞一种持续过载的网络状态此时用户对网络资源包括链路带宽存储空间和处理器处理能力等的总需求超过了网络固有的容量原因缓冲区容量有限传输线路的带宽有限网络结点的处理能力有限网络中某些部分发生了故障流量感知路由根据网络负载动态调整将网络流量引导到不同的链路上均衡网络负载从而延缓或避免拥塞发生解决网络负载的震荡现象多路径路由缓慢转移流量至另一链路准入控制是一种广泛应用于虚电路网络的拥塞预防技术基本思想对新建虚电路进行审核如果新建立的虚电路会导致网络变得拥塞那么网络拒绝建立该新虚电路拥塞状况的量化基于平均流量和瞬时流量流量调节感知拥塞处理拥塞将拥塞信息通知到其他上游节点处理方法抑制分组给拥塞数据报的源主机返回一个抑制分组背压让抑制分组在从拥塞结点到源结点的路径上的每一跳都发挥抑制作用负载脱落路由器主动丢弃某些数据报如何选择要丢弃的数据报丢弃新分组如丢弃老分组如实时视频流网络层协议数据报格式数据报分片标识判断这些分片是否属于同一个数据报标志判断是否为最后一个分片片偏移判断各分片的先后顺序编址地址长度位二进制分类地址子网划分将一个较大的子网划分为多个较小子网的过程较大子网具有较短的网络前缀较小子网具有稍长的前缀个人的计算方法使用的是块计算仅凭自己理解超网将具有较长前缀的相对较小的子网合并为一个具有稍短前缀的相对较大的子网子网掩码用来定义一个子网的网络前缀长度分组转发查找路由转发表最长前缀匹配路由聚合将相同路由的连续子网合并动态主机配置协议为网络内的主机提供动态地址分配服务网络地址转换网络地址转换使用私有地址访问互联网从内网进入互联网的数据报将其源地址替换为服务器拥有的合法公共地址同时替换端口号并将替换关系记录到转换表中从互联网返回的数据报依据其目的地址与目的端口号检索转换表得到内部私有地址与端口号替换目的地址和目的端口号然后将数据报转发到内部网络互联网控制报文协议在主机或路由器间实现差错信息报告差错报告报文共有种终点不可达源点抑制时间超时参数问题和路由重定向等询问报文回声请求应答时间戳请求应答解决地址耗尽的问题报文首部长度固定字节地址长度位到的迁移双栈协议隧道路由算法与路由协议链路状态路由选择算法距离向量路由选择算法每个结点基于其与邻居结点间的直接链路距离以及邻居交换过来的距离向量计算并更新其到达每个目的结点的最短距离然后将新的距离向量再通告给其所有邻居直到距离向量不再改变层次化路由选择实现大规模网络路由选择最有效可行的解决方案划分自治系统网络路由器自治系统间路由协议路由选择协议内部网关协议基于距离向量路由选择算法跳数作为距离度量最大距离不超过跳每秒交换一个距离向量基于链路状态路由选择算法外部网关协议用于大型网络第五章数据链路层与局域网数据链路层服务链路通信链路连接的相邻结点的通信信道链路层数据单元帧主要功能包括组帧链路接入点对点链路广播链路可靠交付可靠传输方法多用于高出错率链路差错控制差错控制差错控制的基本方式检错重发前向纠错接收端进行差错纠正反馈校验接收端将收到的数据原封不动发回发送端检错丢弃差错编码的基本原理香农信道编码定理理论上可以通过编码使得数据传输过程不发生错误或者将错误概率控制在很小的数值之下差错编码的检错与纠错能力直接上图典型的差错编码奇偶校验码奇校验编码后的码字中的个数为奇数偶校验编码后的码字中的个数为偶数汉明码可以实现单个比特差错纠正循环冗余码重点难点检错能力强编码效率高实现简单多路访问控制协议识记数据链路的分类协议的作用协议的分类领会多路复用技术信道划分协议随机访问协议协议时隙协议受控接入协议应用基本原理特点以及最小帧长与结点间距离的约束关系信道划分协议多路访问控制广播信道上用于协调各个结点的数据发送信道划分协议频分多路复用在频域内将信道带宽划分为多个子信道时分多路复用将通信信道的传输信号在时域内划分为多个等长的时隙波分多路复用在一根光中传输多路不同波长的光信号码分多路复用从编码域进行划分使得编码后的信号在同一信道中混合传输随机访问的协议协议纯直接发送信道侦听冲突重发时隙时隙开始时发送信道侦听冲突则下一时隙以概率重发载波监听多路访问协议发送前监听信道是否空闲非坚持忙则等待随机时间后再侦听坚持忙则持续侦听坚持闲则概率在最近时隙发送带冲突检测的载波监听多路访问协议监听空闲后发送发送时检测碰撞碰撞后等待重发受控接入协议集中式控制由一个主机负责调度其他通信站接入信道从而避免冲突主要方法轮询技术又分为轮叫轮询和传递轮询分散式控制典型方法令牌技术如令牌环网局域网局域网特点覆盖面积较小网络传输速率高传输误码率低数据链路层寻址与地址每个接口对应一个地址且全球唯一长度位其中前位为厂商标识剩下位由厂商分配地址解析协议根据本网内目的主机或默认网关的地址获取其地址查询响应以太网标准采用访问控制方法交换机转发与过滤可以依据接收到的链路层帧的目的地址选择性地转发到相应的端口以目的地址为主键查找交换表自学习交换机通过自学习构建交换表优点消除冲突提高性能支持异质链路易于进行网络管理虚拟局域网一种基于交换机支持功能的逻辑分割广播域的局域网应用形式不受物理位置的限制以软件的方式划分和管理局域网中的工作组能够抑制广播风暴划分方法基于交换机端口基于地址基于上层协议类型或地址点对点链路协议点对点协议能够处理差错检测支持多种上层协议允许连接时协商地址允许身份认证典型应用拨号上网功能成帧链路控制协议网络控制协议协议高级数据链路控制协议可应用点对点链路和点对多点链路帧定界帧的定界符是位填充发送端只要发现数据字段各连续就立即插入一个保证数据字段不会出现连续的个接收端发现数据流中个连续的就删除其后的还原成原来的信息第六章物理层数据通信基础数据通信基础消息人类能够感知的描述称为消息信息信息是对事物状态或存在方式的不确定性表述信息是可以度量的通信本质就是在一点精确或近似地再生另一点的信息通信系统能够实现通信功能的各种技术设备和方法的总体信号通信系统中在传输通道中传播的信息的载体数据对客观事物的性质状态以及相互关系等进行记载的符号及其组合信道信道是以传输介质为基础的信号通道数据通信系统模型通信系统的构成信源发送设备信道接收设备信宿和噪声源等部模拟通信模拟信号信号的因变量是连续的数字通信数字信号因变量是离散的数据通信方式单向通信双向交替通信和双向同时通信即单工半双工全双工并行通信和串行通信异步通信和同步通信数据通信系统的功能信道利用接口及信号产生同步差错检测与纠正寻址与路由网络管理安全保证物理介质导引型传输介质架空明线架空明线是指平行且相互分离或绝缘的架空裸线线路通常采用铜线或铝线等金属导线双绞线两根相互绝缘的铜线并排绞合在一起减少对相邻导线的电磁干扰同轴电缆抗电磁干扰性能好现在主要用于频带传输如有线电视光纤基本原理是利用光的全反射通信容量大距离远抗电磁干扰性能好保密性好多模光纤和单模光纤非导引型传输介质地波传播低频信号沿地球表面传播天波传播较高频信号利用电离层的反射传播视线传播高频信号点对点直线传播中继传输信道与信道容量信道分类与模型狭义信道信号传输介质广义信道信号传输介质和通信系统的一些变换装置调制信道信号从调制器的输出端传输到解调器的输入端经过的部分编码信道数字信号由编码器输出端传输到译码器输入端经过的部分信道传输特性恒参信道各种有线信道和部分无线信道传输特性变化小缓慢如微波视线传播链路和卫星链路等对信号幅值产生固定的衰减对信号输出产生固定的时延随参信道传输特性随时间随机快速变化信号的传输衰减随时间随机变化信号的传输时延随时间随机变化存在多径传播现象信道容量基带传输基带传输基本概念模拟基带信号模拟信源发出的原始电信号数字基带信号数字信源发出的基带信号模拟基带信号可以通过信源编码转换为数字基带信号带传输直接在信道中传送基带信号数字基带传输系统数字基带传输编码例题频带传输频带传输基本概念数字调制利用数字基带信号控制载波信号的某些特征参量使载波信号的这些参量的变化反映数字基带信号的信息进而将数字基带信号变换为数字通带信号的过程键控法利用两种不同的幅值频率或相位来分别表示或频带传输中的三种调制方式二进制数字调制二进制幅移键控二进制频移键控二进制相移键控二进制差分相移键控多进制数字调制正交幅值调制物理层接口规程物理层接口概述物理层接口的四大特性分别为机械特性电气特性功能特性以及规程特性物理层接口规范定义和之间的接口特性数据终端设备数据电路端接设备物理层接口特性机械特性通信实体间硬件连接接口的机械特点电气特性在物理连接上导线的电气连接及有关电路的特性功能特性物理接口各条信号线的用途规程特性通信协议指明利用接口传输比特流的全过程以及各项用于传输的事件发生的合法顺序第七章无线与移动网络无线网络无线网络基本结构无线主机无线链路基站网络基础设施自组织网络网络无线链路与无线网络特性无线链路与有线链路的主要区别信号强度的衰减多径传播干扰隐藏终端移动网络移动网络基本原理不同的移动性需求网络层地址保持不变的重要性有线基础设施的支持寻址永久地址和转交地址移动结点的路由选择间接路由选择由归属代理转发数据给外部代理直接路由选择由通信代理通过归属代理获得转交地址直接发送到外部代理无线局域网蜂窝网络网络信令和语音信道都是数字式的网络无线通信与互联网等多媒体通信结合网络高速率数据业务不同频段不同业务环境间的无缝漫游网络超高容量超可靠性随时随地可接入性移动网络其他典型无线网络简介城域网技术传输距离更远接入带宽更高蓝牙小范围低功率低成本自组织低功率低数据速率低工作周期第八章网络安全基础网络安全概述基本概念网络安全通信所需要的基本属性机密性消息完整性可访问与可用性身份认证网络安全威胁窃听插入假冒劫持拒绝服务和分布式拒绝服务映射嗅探欺骗数据加密明文未加密的消息密文被加密的消息加密伪装消息以隐藏消息的过程即明文转变为密文的过程解密密文转变为明文的过程传统加密方式替代密码用密文字母替代明文字母换位密码根据一定的规则重新排列明文对称密钥加密现代密码分类对称密钥密码加密密钥和解密密相同密钥保密非对称密钥密码加密密钥和解密密钥不同对称密钥密码分类分组密码等流密码位密钥位分组三重使用两个密钥共位执行三次算法分组位密钥位分组位密钥位非对称公开密钥加密密钥成对使用其中一个用于加密另一个用于解密且加密密钥可以公开也称公开密钥加密典型的公钥算法算法算法消息完整性与数字签名消息完整性检测方法密码散列函数特性定长输出单向性无法根据散列值逆推报文抗碰撞性无法找到具有相同散列值的两个报文典型散列函数位散列值位散列值报文认证报文认证是使消息的接收者能够检验收到的消息是否是真实的认证方法来源真实未被篡改报文摘要数字指纹报文认证方法简单报文验证仅使用报文摘要无法验证来源真实性报文认证码使用共享认证密钥但无法防止接收方算改数字签名身份认证数据完整性不可否认性简单数字签名直接对报文签名签名报文摘要身份认证口令会被窃听加密口令可能遭受回放重放攻击加密一次性随机数可能遭受中间人攻击密钥分发中心与证书认证机构防火墙与入侵检测系统防火墙基本概念防火墙能够隔离组织内部网络与公共互联网允许某些分组通过而阻止其他分组进入或离开内部网络的软件硬件或者软件硬件结合的一种设施前提从外部到内部和从内部到外部的所有流量都经过防火墙防火墙分类无状态分组过滤器基于特定的规则对分组是通过还是丢弃进行决策使用访问控制列表实现防火墙规则有状态分组过滤器跟踪每个连接建立拆除根据状态确定是否允许分组通过应用网关鉴别用户身份或针对授权用户开放特定服务入侵检测系统入侵检测系统是当观察到潜在的恶意流量时能够产生警告的设备或系统网络安全协议安全电子邮件电子邮件安全需求机密性完整性身份认证性抗抵赖性安全电子邮件标准安全套接字层是个于应用层和传输层之间的安全协议协议栈握手过程协商密码组生成密钥服务器客户认证与鉴别虚拟专用网和安全协议建立在公共网络上的安全通道实现远程用户分支机构业务伙伴等与机构总部网络的安全连接从而构建针对特定组织机构的专用网络关键技术隧道技术如典型的网络层安全协议提供机密性身份鉴别数据完整性验证和防重放攻击服务体系结构认证头协议封装安全载荷协议运行模式传输模式传输模式传输模式隧道模式隧道模式隧道模式结尾祝大家都上岸',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-10-10 15:54:48',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="http://image.oldit.cn/image/author.webp"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51369125?spm=1010.2135.3001.5343" title="CSDN"><img class="back-menu-item-icon" src="http://image.oldit.cn/image/csdn_logo.webp" alt="CSDN"/><span class="back-menu-item-text">CSDN</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="http://toolsbox.oldit.cn:17777/" title="工具站"><img class="back-menu-item-icon" src="http://image.oldit.cn/image/%E7%9B%AF%E7%9D%80.webp" alt="工具站"/><span class="back-menu-item-text">工具站</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">老生杂谈的IT人</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-box-archive"></use></svg><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shapes"></use></svg><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags"></use></svg><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-link"></use></svg><span> 友链</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-envelope"></use></svg><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=6858639461&amp;server=netease"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-music"></use></svg><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-images"></use></svg><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-dice-d20"></use></svg><span> 我的装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shoe-prints"></use></svg><span> 随便逛逛</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-lightbulb"></use></svg><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-paper-plane"></use></svg><span> 关于本人</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="http://image.oldit.cn/image/wechat.webp" target="_blank"><img class="post-qr-code-img" alt="wechat" src="http://image.oldit.cn/image/wechat.webp"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="http://image.oldit.cn/image/alipay.webp" target="_blank"><img class="post-qr-code-img" alt="alipay" src="http://image.oldit.cn/image/alipay.webp"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Centos/" style="font-size: 1.05rem; font-weight: 500; color: var(--anzhiyu-lighttext)">Centos<sup>16</sup></a><a href="/tags/Debian/" style="font-size: 1.05rem;">Debian<sup>1</sup></a><a href="/tags/%E4%BD%9C%E4%B8%BA%E6%97%A5%E8%AE%B0%E5%8A%A0%E5%AF%86/" style="font-size: 1.05rem;">作为日记加密<sup>1</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" style="font-size: 1.05rem;">计算机网络原理<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">5</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">七月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">7</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/03/"><span class="card-archive-list-date">三月 2016</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%87%AA%E8%80%83/" itemprop="url">自考</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>计算机网络原理</span></a></span></div></div><h1 class="post-title" itemprop="name headline">计算机网络原理(自考)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-10-10T07:47:58.000Z" title="发表于 2023-10-10 15:47:58">2023-10-10</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2023-10-10T07:54:48.104Z" title="更新于 2023-10-10 15:54:48">2023-10-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">11.1k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>34分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="计算机网络原理(自考)"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为惠州"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>惠州</span><span class="post-meta-separator"></span><span class="post-meta-commentcount"><i class="anzhiyufont anzhiyu-icon-comments post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2023/10/10/04741%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86(%E8%87%AA%E8%80%83)/#post-comment" tabindex="-1"><span id="twikoo-count"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></a></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="http://image.oldit.cn/article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86_cover.webp"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://hmiking.top/2023/10/10/04741%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86(%E8%87%AA%E8%80%83)/"><header><a class="post-meta-categories" href="/categories/%E8%87%AA%E8%80%83/" itemprop="url">自考</a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" tabindex="-1" itemprop="url">计算机网络原理</a><h1 id="CrawlerTitle" itemprop="name headline">计算机网络原理(自考)</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">H Miking</span><time itemprop="dateCreated datePublished" datetime="2023-10-10T07:47:58.000Z" title="发表于 2023-10-10 15:47:58">2023-10-10</time><time itemprop="dateCreated datePublished" datetime="2023-10-10T07:54:48.104Z" title="更新于 2023-10-10 15:54:48">2023-10-10</time></header><h2 id="第一章-计算机网络概述"><a href="#第一章-计算机网络概述" class="headerlink" title="第一章 计算机网络概述"></a>第一章 计算机网络概述</h2><h3 id="1-1-计算机网络的概念"><a href="#1-1-计算机网络的概念" class="headerlink" title="1.1 计算机网络的概念"></a>1.1 计算机网络的概念</h3><p>1、计算机网络的定义<br>计算机网络是互连的、自治的计算机的集合。</p>
+<p>2、协议的定义<br>协议是网络通信实体之间在数据交换过程中需要遵循的规则或约定，是计算机网络有序运行的重要保证。</p>
+<p>3、协议的3个要素</p>
+<blockquote>
+<p>(1)语法：定义实体之间交换信息的格式与结构，或者定义实体（比如硬件设备）之间传输信号的电平等。<br>(2)语义：定义实体之间交换的信息中需要发送（或包含）哪些控制信息，这些信息的具体含义，以及针对不同含义的控制信息，接收信息端应如何响应。<br>(3)时序：定义实体之间交换信息的顺序以及如何匹配或适应彼此的速度。</p>
+</blockquote>
+<p>4、计算机网络的功能</p>
+<blockquote>
+<p>(1)硬件资源共享。<br>(2)软件资源共享。<br>(3)信息资源共享。</p>
+</blockquote>
+<p>5、计算机网络的分类</p>
+<blockquote>
+<p>(1)按覆盖范围分类：个域网、局域网、城域网、广域网。<br>(2)按拓扑结构分类(6类)：星形拓扑结构、总线型拓扑结构、环形拓扑结构、网状拓扑结构、树形拓扑结构、混合拓扑结构。<br>(3)按交换方式分类：电路交换网络、报文交换网络、分组交换网络。<br>(4)按网络用户属性分类：公用网、专用网。</p>
+</blockquote>
+<h3 id="1-2-计算机网络结构"><a href="#1-2-计算机网络结构" class="headerlink" title="1.2 计算机网络结构"></a>1.2 计算机网络结构</h3><p>1、网络边缘<br>连接到网络上的所有端系统构成了网络边缘。</p>
+<p>2、接入网络<br>常见的接入网络技术包括：电话拨号接入、非对称数字用户线路ADSL、混合光纤同轴电缆HFC接入网络、局域网、移动接入网络。</p>
+<p>3、网络核心<br>网络核心是由通信链路互连的分组交换设备构成的网络，作用是实现网络边缘中主机之间的数据中继与转发。</p>
+<h3 id="1-3-数据交换技术"><a href="#1-3-数据交换技术" class="headerlink" title="1.3 数据交换技术"></a>1.3 数据交换技术</h3><p>一、数据交换的概念<br>(1)数据交换是实现在大规模网络核心上进行数据传输的技术基础。<br>(2)常见的数据交换技术包括：电路交换、报文交换、分组交换。</p>
+<p>二、电路交换<br>利用电路交换进行通信需要3个阶段：建立电路、传输数据、拆除电路。</p>
+<p>三、报文交换<br>报文交换也称为消息交换，其工作过程为：发送方把要发送的信息附加上发送&#x2F;接收主机的地址及其他控制信息，构成一个完整的报文。然后以报文为单位在交换网络的各结点之间以存储-转发的方式传送，直至送达目的主机。</p>
+<p>四、分组交换</p>
+<ol>
+<li>分组交换基本原理<br>分组交换是目前计算机网络广泛采用的技术。分组交换需要将待传输数据（即报文）分割成较小的数据块，每个数据块附加上地址、序号等控制信息构成数据分组（packet)，每个分组独立传输到目的地，目的地将收到的分组重新组装，还原为报文。分组传输过程通常也采用存储-转发交换方式。</li>
+<li>分组交换的优点<br>(1)交换设备存储容量要求低。<br>(2)交换速度快。<br>(3)可靠传输效率高。<br>(4)更加公平。</li>
+</ol>
+<h3 id="1-4-计算机网络性能"><a href="#1-4-计算机网络性能" class="headerlink" title="1.4 计算机网络性能"></a>1.4 计算机网络性能</h3><p>一、速率与带宽<br>(1)速率是指网络单位时间内传送的数据量，用以描述网络传输数据的快慢，也称为数据传输速率或数据速率。速率的基本单位是bit&#x2F;s(位每秒）。<br>(2)一条链路或信道能够不失真地传播电磁信号的最高频率与最低频率之差，称为信道的带宽，单位是Hz。</p>
+<p>二、时延<br>(1)时延是指数据从网络中的一个结点（主机或交换设备等）到达另一结点所需要的时间。<br>(2)分组的每跳传输过程主要产生4类时间延迟：结点处理时延、排队时延、传输时延和传播时延。</p>
+<p>三、时延带宽积<br>一段物理链路的传播时延与链路带宽的乘积，称为时延带宽积。</p>
+<p>四、丢包率<br>丢包率常被用于评价和衡量网络性能的指标，在很大程度上可以反映网络的拥塞程度，因为引发网络丢包的主要因素是网络拥塞。</p>
+<p>五、吞吐量<br>吞吐量表示在单位时间内源主机通过网络向目的主机实际送达的数据量，单位为bit&#x2F;s或B&#x2F;s(字节每秒）,记为Thr。</p>
+<h3 id="1-5-计算机网络体系结构"><a href="#1-5-计算机网络体系结构" class="headerlink" title="1.5 计算机网络体系结构"></a>1.5 计算机网络体系结构</h3><p>一、计算机网络分层体系结构<br>计算机网络体系结构：计算机网络所划分的层次以及各层协议的集合。</p>
+<p>二、OSI参考模型</p>
+<ol>
+<li><p>OSI参考模型</p>
+<blockquote>
+<p>①物理层。物理层的主要功能是在传输介质上实现无结构比特流传输。物理层的另一项主要任务是规定数据终端设备（DTE)与数据通信设备(DCE)之间接口的相关特性，主要包括机械、电子、功能和规程4个方面的特性。<br>②数据链路层。数据链路层的主要功能是实现在相邻结点之间数据可靠而有效的传输。数据链路层还可以实现相邻结点间通信的流量控制。<br>③网络层。网络层解决的核心问题是如何将分组通过交换网络传送至目的主机，因此，网络层的主要功能是数据转发与路由。<br>④传输层。传输层的功能主要包括复用&#x2F;分解（区分发送和接收主机上的进程）、端到端的可靠数据传输、连接控制、流量控制和拥塞控制机制等。<br>⑤会话层。会话层的主要功能是在建立会话时核实双方身份是否有权参加会话；确定双方支付通信费用；双方在各种选择功能方面取得一致；在会话建立以后，需要对进程间的对话进行管理与控制。<br>⑥表示层。表示层主要用于处理应用实体间交换数据的语法，其目的是解决格式和数据表示的差别，从而为应用层提供一个一致的数据格式，使字符、格式等有差异的设备之间相互通信。除此之外，表示层还可以实现文本压缩&#x2F;解压缩、数据加密&#x2F;解密、字符编码的转换等功能。<br>⑦应用层。应用层为用户提供了一个使用网络应用的“接口”。</p>
+</blockquote>
+</li>
+<li><p>OSI参考模型有关术语<br>  ①在层的实体之间传送的比特组称为数据单元。<br>  ②相邻层间的服务是通过其接口面上的服务访问点（SAP)进行的，N层SAP就是（N+1)层可以访问N层的地方。<br>  ③第N层向（N+1)层提供服务，或第（N+1)层请求N层提供服务，都是用一组原语描述的。<br>  OSI参考模型的原语有4类：请求，指示，响应，证实。<br>  ④在分层的体系结构中，下层向上层提供服务通常有两种形式：面向连接的服务和无连接的服务。</p>
+</li>
+</ol>
+<p>   三、TCP&#x2F;IP参考模型<br>   TCP&#x2F;IP参考模型分为四个层次，从上到下为：应用层、传输层、网络互联层、网络接口层。其中应用层与OSI应用层相对应，传输层与OSI传输层相对应，网络互联层与OSI网络层相对应，网络接口层与OSI数据链路层及物理层相对应。在TCP&#x2F;IP参考模型中，对OSI表示层、会话层没有对应的协议。</p>
+<h3 id="1-6-计算机网络与因特网发展简史"><a href="#1-6-计算机网络与因特网发展简史" class="headerlink" title="1.6 计算机网络与因特网发展简史"></a>1.6 计算机网络与因特网发展简史</h3><p>(1)ARPAnet是第一个分组交换计算机网络，也是当今因特网的祖先。<br>(2)1972年，ARPAnet开发了第一个主机到主机的协议，网络控制协议(NCP)。RayTomlinson为ARPAnet编写了第一个电子邮件程序。<br>(3)20世纪70年代早期与中期，除了ARPAnet之外，还陆续诞生了许多其他分组交换网络，例如ALOHAnet、Telenet等。NormanAbramson在研制分组无线电网络ALOHAnet时，设计了第一个多路访问控制协议ALOHA。Met-calfe与Boggs研制了基于有线共享广播链路的以太网，奠定了当今局域网技术的基础。到20世纪70年代末期，ARPAnet已连接大约200台主机，公共因特网已现雏形。<br>(4)到20世纪80年代，公共因特网上连接的主机数量达到100000台。1986年，创建了NSFNET。在此期间，TCP&#x2F;IP协议簇逐渐成熟，并于1983年1月1日正式部署，替代了NCP。<br>(5)20世纪90年代，万维网应用诞生。<br>(6)从2000年开始，因特网进入爆发式发展时期。</p>
+<h2 id="第二章-网络应用"><a href="#第二章-网络应用" class="headerlink" title="第二章 网络应用"></a>第二章 网络应用</h2><h3 id="2-1-网络应用体系结构"><a href="#2-1-网络应用体系结构" class="headerlink" title="2.1 网络应用体系结构"></a>2.1 网络应用体系结构</h3><p>1、网络应用体系结构与分类。</p>
+<p>计算机网络应用是运行在计算机网络环境下的分布式软件系统，计算机网络应用从体系结构角度可以分为客户&#x2F;服务器（C&#x2F;S)结构、纯P2P(PeertoPeer)结构和混合结构3种类型。</p>
+<p>2、C&#x2F;S网络应用、P2P网络应用以反混合网络应用的特点、区别与联系。</p>
+<h3 id="2-2-网络应用通信基本原理"><a href="#2-2-网络应用通信基本原理" class="headerlink" title="2.2 网络应用通信基本原理"></a>2.2 网络应用通信基本原理</h3><p>(1)网络应用的基本通信方式是C&#x2F;S通信。<br>(2)套接字（Socket)是典型的网络应用编程接口。</p>
+<h3 id="2-3-域名系统（DNS）"><a href="#2-3-域名系统（DNS）" class="headerlink" title="2.3 域名系统（DNS）"></a>2.3 域名系统（DNS）</h3><p>一、层次化域名空间<br>(1)国家顶级域名nTLD：如cn表示中国，us表示美国，uk表示英国等。<br>(2)通用顶级域名gTLD：最早的顶级域名是com(公司和企业）、net(网络服务机构）、org(非盈利性组织）、edu(专用的教育机构）、gov(专用的政府部门）、mil(专用的军事部门）、int(国际组织）。<br>(3)基础结构域名：这种顶级域名只有一个，即arpa，用于反向域名解析，因此又称为反向域名。<br>二、域名服务器<br>域名服务器根据其主要保存的域名信息以及在域名解析过程中的作用等，可以分为根域名服务器、顶级域名服务器、权威域名服务器，中间域名服务器4类。<br>三、域名解析过程<br>域名解析分为递归解析和迭代解析。提供递归查询服务的域名服务器，可以代替查询主机或其他域名服务器，进行进一步的域名查询，并将最终解析结果发送给查询主机或服务器；提供迭代查询的服务器，不会代替查询主机或其他域名服务器，进行进一步的查询，只是将下一步要查询的服务器告知查询主机或服务器。</p>
+<h3 id="2-4-万维网应用"><a href="#2-4-万维网应用" class="headerlink" title="2.4 万维网应用"></a>2.4 万维网应用</h3><p>一、万维网应用结构<br>1.Web应用<br>Web应用是典型的客户&#x2F;服务器网络应用，客户与服务器之间的交互基于应用层协议HTTP。Web应用主要包括Web服务器、浏览器与超文本传输协议（HTTP)等部分。<br>(1)浏览器就是Web应用的客户端软件，即Web应用的客户代理，运行在用户计算机上。<br>(2)Web服务器是Web应用的服务器软件，存储并管理供用户请求浏览的Web页面或称为Web文档。浏览器向Web服务器发送HTTP请求报文，服务器向浏览器送回HTTP响应报文，其中包含客户所要的Web页，浏览器对其中的Web页进行解析并显示。<br>2.URL<br>每个URL地址主要由两部分组成：存放对象的服务器主机域名和对象的路径名。</p>
+<p>二、HTTP<br>(1)HTTP是Web应用的应用层协议，定义浏览器如何向Web服务器发送请求以及Web服务器如何向浏览器进行响应。<br>(2)HTTP报文由4部分组成：起始行、首部行、空白行和实体主体。</p>
+<p>三、Cookie</p>
+<blockquote>
+<p>(1)Cookie中文名称为小型文本文件，指某些网站为了辨别用户身份、进行会话跟踪而存储在用户本地终端上的数据。<br>(2)Cookie文件可以保存在客户端计算机的硬盘中，也可以保存在客户端计算机的内存中。保存在硬盘中的Cookie通常被称为永久Cookie，Cookie的有效周期可以进行设置，关闭浏览器不影响Cookie的有效周期。保存在内存中的Cookie被称为会话Cookie，表示这个Cookie的有效周期是浏览器的会话期间，只要关闭浏览器窗口，Cookie就消失。<br>(3)Web网站利用Cookie技术进行用户跟踪，最常见的用途包括以下几点：<br>①网站可以利用Cookie的ID来准确统计网站的实际访问人数、新访问者和重复访问者的人数对比、访问者的访问频率等数据。<br>②网站可以利用Cookie限制某些特定用户的访问。<br>③网站可以存储用户访问过程中的操作习惯和偏好，对不同的用户呈现不同的显示内容、颜色、布局等界面元素，有针对性地为用户提供服务，提升用户体验感。<br>④记录用户登录网站使用的用户名、密码等信息，当用户多次登录时，无须每次都从键盘输入这些烦琐的字符和数字。<br>⑤电子商务网站利用Cookie可以实现“购物车”功能。对于同一个ID的用户，网站可以跟踪其向“购物车”中添加的不同商品，每个商品都会和ID一起存储在网站数据库中。当用户选择结账时，网站通过对数据库中该ID的检索，找到用户购买的所有商品，一起实现结账功能。</p>
+</blockquote>
+<h3 id="2-5-Internet电子邮件"><a href="#2-5-Internet电子邮件" class="headerlink" title="2.5 Internet电子邮件"></a>2.5 Internet电子邮件</h3><p>一、电子邮件系统结构<br>电子邮件系统主要包括邮件服务器、简单邮件传输协议（SMTP)、用户代理和邮件读取协议等。</p>
+<p>二、SMTP<br><code>端口：TCP 25</code><br>SMTP是Internet电子邮件中核心应用层协议，实现邮件服务器之间或用户代理到邮件服务器之间的邮件传输。</p>
+<p>三、电子邮件格式与MIME<br>(1)一份邮件包括首部、空白行和主体3部分。<br>(2)MIME主要包括以下内容。<br>①5个MIME邮件首部字段，可包含在邮件首部中。<br>②定义了多种邮件内容的格式，对多媒体电子邮件的表示方法进行了标准化。<br>③定义了邮件传送编码，可对任何内容格式进行转换，从而适合通过SMTP进行传送。</p>
+<p>四、邮件读取协议<br>1.POP3(邮件读取协议)<br><code>端口：TCP 110</code><br>POP3协议与POP3服务器进行交互，实现对邮箱的操作。POP3协议交互过程可以分为3个阶段：授权（Authorization)、事务处理和更新。在授权阶段，用户代理需要向服务器发送用户名和口令（以明文形式，即非加密），服务器鉴别用户身份，授权用户访问邮箱。在事务处理阶段，用户代理向服务器发送POP3命令，实现邮件读取、为邮件做删除标记、取消邮件删除标记以及获取邮件的统计信息等操作。在更新阶段，客户发出了quit命令，结束POP3会话，服务器删除那些被标记为删除的邮件。</p>
+<p>2.IMAP<br><code>端口：TCP 143</code><br>通过IMAP，收件人可以在服务器上创建新的文件夹，并可以对邮件进行移动、查询、阅读、删除等操作。</p>
+<p>3.HTTP<br><code>端口：80</code><br>当使用基于Web的邮件时，HTTP便被用于邮件的读取，此时HTTP也作为邮件读取协议使用。</p>
+<h3 id="2-6-FTP"><a href="#2-6-FTP" class="headerlink" title="2.6 FTP"></a>2.6 FTP</h3><p><code>端口：TCP 21(控制端口号) 和 TCP 20(数据传输端口号)</code><br>文件传送协议（FTP)是在互联网的两个主机间实现文件互传的网络应用，其应用层协议也称为FTP。FTP可以减少或消除在不同操作系统下处理文件的不兼容性，屏蔽各计算机系统的细节，适合在网络中任意异构计算机之间传送文件。</p>
+<h3 id="2-7-P2P应用"><a href="#2-7-P2P应用" class="headerlink" title="2.7 P2P应用"></a>2.7 P2P应用</h3><p>P2P体系结构的网络应用对服务器依赖很小，甚至对于纯P2P来说，整个应用几乎不依赖某个集中服务器，应用都是动态地在对等方之间进行。</p>
+<h3 id="2-8-Socket编程技术"><a href="#2-8-Socket编程技术" class="headerlink" title="2.8 Socket编程技术"></a>2.8 Socket编程技术</h3><p>网络应用进程可以创建3种类型的Socket：数据报类型套接字SOCK_DGRAM、流式套接字SOCK_STREAM和原始套接字SOCK_RAW。其中，SOCK_DGRAM面向传输层UDP接口，SOCK_STREAM面向传输层TCP接口，SOCK_RAW面向网络层协议接口。</p>
+<h2 id="第三章-传输层"><a href="#第三章-传输层" class="headerlink" title="第三章 传输层"></a>第三章 传输层</h2><h3 id="3-1-传输层基本服务"><a href="#3-1-传输层基本服务" class="headerlink" title="3.1 传输层基本服务"></a>3.1 传输层基本服务</h3><p>1、传输层的功能<br>(1)传输层的核心任务是为应用进程之间提供端到端的逻辑通信服务。<br>(2)传输层主要实现如下功能：<br>①传输层寻址；<br>②对应用层报文进行分段和重组；<br>③对报文进行差错检测；<br>④实现进程间的端到端可靠数据传输控制；<br>⑤面向应用层实现复用与分解；<br>⑥实现端到端的流量控制；<br>⑦拥塞控制。</p>
+<p>2、传输层寻址与端口<br>(1) <code>0~1023的端口号为熟知端口号。</code><br>(2)<code>1024~49151的端口号为登记端口号</code>，为没有熟知端口号的应用程序(服务器）使用，必须在互联网数字分配结构（IANA)登记，以防止重复。<br>(3)<code>49152~65535为客户端口号或短暂端口号</code>，留给客户进程或用户开发的非标准服务器暂时使用。另外，端口号只本地有效，只是标识了本计算机应用层中的各应用进程在与传输层交互时的层间接口。</p>
+<p>3、无连接服务与面向连接服务<br>传输层提供的服务可以分为无连接服务和面向连接服务两大类。</p>
+<h3 id="3-2-传输层的复用与分解"><a href="#3-2-传输层的复用与分解" class="headerlink" title="3.2 传输层的复用与分解"></a>3.2 传输层的复用与分解</h3><p>(1)传输层协议的重要基本功能：复用与分解。<br>(2)UDP依据二元组&lt;目的IP地址，目的端口号&gt;来唯一标识一个UDP套接字；TCP依据四元组&lt;源IP地址，源端口号，目的IP地址，目的端口号&gt;来唯一标识一个TCP套接字，即标识一条TCP连接。</p>
+<h3 id="3-3-停-等协议与滑动窗口协议"><a href="#3-3-停-等协议与滑动窗口协议" class="headerlink" title="3.3 停-等协议与滑动窗口协议"></a>3.3 停-等协议与滑动窗口协议</h3><p>(1)停-等协议的基本工作过程是：发送方发送经过差错编码和编号的报文段，等待接收方的确认；接收方如果正确接收报文段，即差错检测无误且序号正确，则接收报文段，并向发送方发送ACK,否则丢弃报文段，并向发送方发送NAK；发送方如果收到ACK，则继续发送后续报文段，否则重发刚刚发送的报文段。<br>(2)GBN协议的发送端缓存能力较高，可以在未得到确认前连续发送多个分组，因此，GBN协议的发送窗口Ws≥1。GBN接收端缓存能力很低，只能接收1个按序到达的分组，不能缓存未按序到达的分组，通常称GBN协议的接收端无缓存能力。因此，GBN协议的接收窗口Wr&#x3D;1。<br>(3)SR协议是通过让发送方仅重传那些未被接收方确认（出错或丢失）的分组，而避免了不必要的重传。为此，SR协议的接收方是对每个正确接收的分组进行逐个确认。</p>
+<h3 id="3-4-用户数据报协议（UDP）"><a href="#3-4-用户数据报协议（UDP）" class="headerlink" title="3.4 用户数据报协议（UDP）"></a>3.4 用户数据报协议（UDP）</h3><p>(1)用户数据报协议UDP是Internet传输层协议，提供无连接、不可靠、数据报尽力传输服务。<br>(2)参与UDP校验和计算的内容包括3部分：UDP伪首部、UDP首部和应用层数据。</p>
+<h3 id="3-5-传输控制协议（TCP）"><a href="#3-5-传输控制协议（TCP）" class="headerlink" title="3.5 传输控制协议（TCP）"></a>3.5 传输控制协议（TCP）</h3><p>(1)传输控制协议（TCP)是Internet一个重要的传输层协议。TCP提供面向连接、可靠、有序、字节流传输服务。<br>(2)TCP报文段由首部字段和一个数据字段组成。<br>(3)TCP连接管理包括连接建立与连接拆除。TCP连接建立通过“三次握手”过程。<br>(4)TCP的可靠数据传输实现机制包括差错编码、确认、序号、重传、计时器等。TCP的可靠数据传输是基于滑动窗口协议。</p>
+<h2 id="第四章-网络层"><a href="#第四章-网络层" class="headerlink" title="第四章 网络层"></a>第四章 网络层</h2><h3 id="4-1-网络层服务"><a href="#4-1-网络层服务" class="headerlink" title="4.1 网络层服务"></a>4.1 网络层服务</h3><p>1、网络层需要实现两项重要功能：</p>
+<p>① 转发（forwarding）：当通过一条输入链路接收到一个分组后， 路由器需要决策通过哪条输出链路讲分组发送出去，并讲分组从输入接口转移到输出接口。</p>
+<p>② 路由选择（routing）：当一个分组到达路由器时，路由器会以该分组的网络层首部地址字段的值（比如目的IP地址）作为键，去转发表中查询相应的表项，从而获知该分组应转发到哪条链路上。</p>
+<h3 id="4-2-数据报网络与虚电路网络"><a href="#4-2-数据报网络与虚电路网络" class="headerlink" title="4.2 数据报网络与虚电路网络"></a>4.2 数据报网络与虚电路网络</h3><p>1、虚电路网络特点;</p>
+<p>虚电路网络在网络层提供面向连接的分组交换服务</p>
+<p>① 建立一条网络层逻辑连接</p>
+<p>② 不需要为每条虚电路分配独享资源（区别与电路交换）</p>
+<p>③ 根据虚电路号沿虚电路路径按序发送分组</p>
+<p>2、数据报网络特点：</p>
+<p>① 无连接</p>
+<p>② 每个分组作为一个独立的数据报进行传送，路径也可能不同</p>
+<p>③ 分组可能出现乱序和丢失</p>
+<h3 id="4-3-网络互连与网络互连设备"><a href="#4-3-网络互连与网络互连设备" class="headerlink" title="4.3 网络互连与网络互连设备"></a>4.3 网络互连与网络互连设备</h3><p>1、异构网络：</p>
+<p>两个网络的通信技术和运行的协议不同</p>
+<p>异构网络互联的基本策略：</p>
+<p>① 协议转换</p>
+<p>② 构建虚拟互联网络<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/5dfdc113ccc7469c836b811e0251d468.webp" alt="在这里插入图片描述"></p>
+<p>2、路由器：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/f1ea909650a948ad812ca9ea5cbf1216.webp"><br>3、路由器交换结构：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/383165223482456a973566410b0c5176.webp"></p>
+<p>4、路由处理器：</p>
+<p>执行路由器的各种指令，包括路由协议的运行、路由计算以及路由表的更新维护等。</p>
+<h3 id="4-4-网络层拥塞控制"><a href="#4-4-网络层拥塞控制" class="headerlink" title="4.4 网络层拥塞控制"></a>4.4 网络层拥塞控制</h3><p>1、拥塞：</p>
+<p>一种持续过载的网络状态，此时用户对网络资源（包括链路带宽、存储空间和处理器处理能力等）的总需求超过了网络固有的容量。</p>
+<p>原因：</p>
+<blockquote>
+<ol>
+<li>缓冲区容量有限</li>
+<li>传输线路的带宽有限</li>
+<li>网络结点的处理能力有限</li>
+<li>网络中某些部分发生了故障</li>
+</ol>
+</blockquote>
+<p>2、流量感知路由：</p>
+<p>根据网络负载动态调整，将网络流量引导到不同的链路上，均衡网络负载，从而延缓或避免拥塞发生。</p>
+<p>解决网络负载的震荡现象：</p>
+<blockquote>
+<ol>
+<li>多路径路由</li>
+<li>缓慢转移流量至另一链路</li>
+</ol>
+</blockquote>
+<p>3、准入控制：</p>
+<p>是一种广泛应用于虚电路网络的拥塞预防技术。</p>
+<p>基本思想：</p>
+<blockquote>
+<p>对新建虚电路进行审核，如果新建立的虚电路会导致网络变得拥塞，那么网络拒绝建立该新虚电路。</p>
+<p>拥塞状况的量化：基于平均流量和瞬时流量。</p>
+</blockquote>
+<p>4、流量调节：</p>
+<p>① 感知拥塞</p>
+<p>② 处理拥塞：将拥塞信息通知到其他上游节点。</p>
+<blockquote>
+<p>处理方法：</p>
+<ol>
+<li>抑制分组：给拥塞数据报的源主机返回一个抑制分组</li>
+<li>背压：让抑制分组在从拥塞结点到源结点的路径上的每一跳，都发挥抑制作用</li>
+</ol>
+</blockquote>
+<p>5、负载脱落</p>
+<p>路由器主动丢弃某些数据报</p>
+<blockquote>
+<p>如何选择要丢弃的数据报：</p>
+<ol>
+<li>丢弃新分组：如GBN</li>
+<li>丢弃老分组：如实时视频流</li>
+</ol>
+</blockquote>
+<h3 id="4-5-Internet网络层"><a href="#4-5-Internet网络层" class="headerlink" title="4.5 Internet网络层"></a>4.5 Internet网络层</h3><p>1、IPv4协议：</p>
+<p>IP数据报格式：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/a30988741ac142a09a5cd5572a5f96d3.webp"></p>
+<p>IP数据报分片：</p>
+<blockquote>
+<p>标识：判断这些分片是否属于同一个IP数据报</p>
+<p>标志：判断是否为最后一个分片</p>
+<p>片偏移：判断各分片的先后顺序 </p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/1278d6c9d42d4112a80d441866a778bd.webp" alt="在这里插入图片描述"></p>
+<p>2、IPv4编址：</p>
+<p>IPv4地址长度：32位二进制</p>
+<p>分类地址：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/2b8863ea92214c2e975255afb8688f51.webp"></p>
+<p>子网划分：</p>
+<blockquote>
+<p>将一个较大的子网划分为多个较小子网的过程。</p>
+<p>较大子网具有较短的网络前缀，较小子网具有稍长的前缀。</p>
+</blockquote>
+<p><code>个人的计算方法，使用的是块计算，仅凭自己理解。</code><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/f12652bee07d48738d5c3b8242bf7a39.webp" alt="在这里插入图片描述"></p>
+<p>超网：</p>
+<blockquote>
+<p>将具有较长前缀的相对较小的子网合并为一个具有稍短前缀的相对较大的子网。</p>
+</blockquote>
+<p>子网掩码：</p>
+<blockquote>
+<p>用来定义一个子网的网络前缀长度</p>
+</blockquote>
+<p>分组转发：</p>
+<blockquote>
+<p>查找路由转发表</p>
+<p>最长前缀匹配</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/c30d5c318420475c8b65e58b2331d5b2.webp"></p>
+<p>路由聚合：将相同路由的连续子网合并</p>
+<p>3、动态主机配置协议</p>
+<p>DHCP：为网络内的主机提供动态IP地址分配服务。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/4ac24bdee783483c875ebcf57f471bd5.webp"></p>
+<p>4、网络地址转换：</p>
+<p>网络地址转换NAT——使用私有地址访问互联网</p>
+<blockquote>
+<ol>
+<li>从内网进入互联网的IP数据报：将其源IP地址替换为NAT服务器拥有的合法公共IP地址，同时替换端口号，并将替换关系记录到NAT转换表中；</li>
+<li>从互联网返回的IP数据报：依据其目的IP地址与目的端口号检索NAT转换表，得到内部私有IP地址与端口号，替换目的IP地址和目的端口号，然后将IP数据报转发到内部网络。</li>
+</ol>
+</blockquote>
+<p>5、ICMP</p>
+<p>互联网控制报文协议（ICMP）：</p>
+<p>在主机或路由器间，实现差错信息报告。</p>
+<p>ICMP差错报告报文共有5种：终点不可达、源点抑制、时间超时、参数问题和路由重定向等。</p>
+<p>ICMP询问报文：回声（echo）请求&#x2F;应答、时间戳（timestamp）请求&#x2F;应答</p>
+<p>6、IPv6</p>
+<p>① 解决IPv4地址耗尽的问题</p>
+<p>② IPv6报文首部长度固定40字节</p>
+<p>③ IPv6地址长度128位</p>
+<p>④ IPv4到IPv6的迁移：双栈协议、隧道</p>
+<h3 id="4-6-路由算法与路由协议"><a href="#4-6-路由算法与路由协议" class="headerlink" title="4.6 路由算法与路由协议"></a>4.6 路由算法与路由协议</h3><p>1、链路状态路由选择算法</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/ed4fc9c2dbee4f4b80ac8ae5c2414eee.webp"></p>
+<p>2、距离向量路由选择算法</p>
+<p>每个结点基于其与邻居结点间的直接链路距离，以及邻居交换过来的距离向量，计算并更新其到达每个目的结点的最短距离，然后将新的距离向量再通告给其所有邻居，直到距离向量不再改变。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/32de9a4c74fa438c80ca55c40db6bf51.webp"></p>
+<p>3、层次化路由选择</p>
+<p>实现大规模网络路由选择最有效、可行的解决方案。</p>
+<p>划分自治系统：</p>
+<p>网络路由器</p>
+<p>自治系统间路由协议</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/a7fe8548eafe40eaaddbc8e6ce2e2a8c.webp"></p>
+<p>4、Internet路由选择协议</p>
+<p>① 内部网关协议（IGP）：</p>
+<blockquote>
+<ol>
+<li>RIP：基于距离向量路由选择算法，跳数作为距离度量，最大距离不超过15跳，每30秒交换一个距离向量。</li>
+<li>OSPF：基于链路状态路由选择算法</li>
+</ol>
+</blockquote>
+<p>② 外部网关协议EGP：</p>
+<p>BGP——用于大型网络</p>
+<h2 id="第五章-数据链路层与局域网"><a href="#第五章-数据链路层与局域网" class="headerlink" title="第五章 数据链路层与局域网"></a>第五章 数据链路层与局域网</h2><h3 id="5-1-数据链路层服务"><a href="#5-1-数据链路层服务" class="headerlink" title="5.1 数据链路层服务"></a>5.1 数据链路层服务</h3><p>链路：通信链路连接的相邻结点的通信信道。</p>
+<p>链路层数据单元：帧</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/9dd99c224ff74ace843718ed45c56c6c.webp"><br>主要功能包括：</p>
+<p>① 组帧</p>
+<p>② 链路接入：点对点链路、广播链路</p>
+<p>③ 可靠交付（可靠传输方法多用于高出错率链路）</p>
+<p>④ 差错控制</p>
+<h3 id="5-2-差错控制"><a href="#5-2-差错控制" class="headerlink" title="5.2 差错控制"></a>5.2 差错控制</h3><p>1、差错控制的基本方式：</p>
+<p>① 检错重发</p>
+<p>② 前向纠错：接收端进行差错纠正</p>
+<p>③ 反馈校验：接收端将收到的数据原封不动发回发送端</p>
+<p>④ 检错丢弃</p>
+<p>2、差错编码的基本原理：</p>
+<p>香农信道编码定理：理论上可以通过编码使得数据传输过程不发生错误，或者将错误概率控制在很小的数值之下。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/9f97085432cb402790f24c00837493e4.webp"></p>
+<p>3、差错编码的检错与纠错能力：</p>
+<p>直接上图：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/bd7b772ca83b43a287926221f08cf3d9.webp"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/10869fcc0aab4a669f7346062273ed68.webp"></p>
+<p>4、典型的差错编码：</p>
+<p>① 奇偶校验码：</p>
+<blockquote>
+<p>奇校验：编码后的码字中 “1” 的个数为奇数</p>
+<p>偶校验：编码后的码字中 “1” 的个数为偶数</p>
+</blockquote>
+<p>② 汉明码：可以实现单个比特差错纠正</p>
+<p>③ 循环冗余码CRC-（重点难点）：检错能力强，编码效率高，实现简单。</p>
+<h3 id="5-3-多路访问控制协议"><a href="#5-3-多路访问控制协议" class="headerlink" title="5.3 多路访问控制协议"></a>5.3 多路访问控制协议</h3><p>识记:<br>数据链路的分类;<br>MAC协议的作用;<br>MAC协议的分类。<br>领会:<br>多路复用技术;<br>信道划分协议TDMA、FDMA、WDMA;<br>随机访问协议ALOHA协议、时隙ALOHA协议、CSMA;受控接入MAC协议。<br>应用:<br>CDMA基本原理;<br>CSMA&#x2F;CD特点以及最小帧长与结点间距离的约束关系。</p>
+<p>1、信道划分MAC协议：</p>
+<p>多路访问控制MAC：广播信道上用于协调各个结点的数据发送</p>
+<p>信道划分MAC协议 :</p>
+<blockquote>
+<ol>
+<li>频分多路复用: 在频域内将信道带宽划分为多个子信道</li>
+<li>时分多路复用: 将通信信道的传输信号在时域内划分为多个等长的时隙。</li>
+<li>波分多路复用：在一根光中，传输多路不同波长的光信号</li>
+<li>码分多路复用：从编码域进行划分，使得编码后的信号在同一信道中混合传输。</li>
+</ol>
+</blockquote>
+<p>2、随机访问的MAC协议：</p>
+<blockquote>
+<ol>
+<li>ALOHA协议</li>
+</ol>
+<p>纯ALOHA : 直接发送 –&gt; 信道侦听 –&gt; 冲突重发</p>
+<p>时隙ALOHA : 时隙开始时发送–&gt;信道侦听–&gt;冲突则下一时隙以概率P重发</p>
+<ol start="2">
+<li><p>载波监听多路访问协议CSMA</p>
+<p> 发送前监听信道是否空闲</p>
+</li>
+</ol>
+<p>(1) 非坚持CSMA : 忙则等待随机时间后再侦听<br>(2) 1-坚持CSMA : 忙则持续侦听<br>(3) P-坚持CSMA : 闲则概率P在最近时隙发送</p>
+<ol start="3">
+<li>带冲突检测的载波监听多路访问协议CSMA&#x2F;CD监听空闲后发送，发送时检测碰撞碰撞后等待重发</li>
+</ol>
+</blockquote>
+<p>3、受控接入MAC协议：</p>
+<blockquote>
+<ol>
+<li>集中式控制由一个主机负责调度其他通信站接入信道，从而避免冲突</li>
+</ol>
+<p>主要方法: 轮询技术，又分为轮叫轮询和传递轮询</p>
+<ol start="2">
+<li>分散式控制典型方法: 令牌技术，如令牌环网</li>
+</ol>
+</blockquote>
+<h3 id="5-4-局域网"><a href="#5-4-局域网" class="headerlink" title="5.4 局域网"></a>5.4 局域网</h3><p>局域网特点：覆盖面积较小，网络传输速率高，传输误码率低</p>
+<p>1、数据链路层寻址与ARP<br>① MAC地址：每个接口对应一个MAC地址，且全球唯一；长度48位（其中前24位为厂商标识，剩下24位由厂商分配）</p>
+<p>② 地址解析协议：根据本网内目的主机或默认网关的IP地址获取其MAC地址；查询&#x2F;响应</p>
+<p>2、以太网——IEEE 802.3标准 ——采用CSMA&#x2F;CD访问控制方法</p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/b3e2f3d2ad6d4e5aafd2ab03c5fcc391.webp" alt="在这里插入图片描述"></p>
+<p>3、交换机：</p>
+<p>① 转发与过滤：可以依据接收到的链路层帧的目的MAC地址，选择性地转发到相应的端口。</p>
+<p>以目的MAC地址为主键，查找交换表</p>
+<p>② 自学习：交换机通过自学习构建交换表</p>
+<p>③ 优点：消除冲突，提高性能；支持异质链路；易于进行网络管理。</p>
+<p>4、虚拟局域网：VLAN</p>
+<p>① 一种基于交换机（支持VLAN功能）的逻辑分割广播域的局域网应用形式。</p>
+<p>② 不受物理位置的限制，以软件的方式划分和管理局域网中的工作组。</p>
+<p>③ 能够抑制广播风暴。</p>
+<p>④ 划分方法：基于交换机端口；基于MAC地址；基于上层协议类型或地址</p>
+<h3 id="5-5-点对点链路协议"><a href="#5-5-点对点链路协议" class="headerlink" title="5.5 点对点链路协议"></a>5.5 点对点链路协议</h3><p>1、PPP</p>
+<p>点对点协议——PPP</p>
+<p>能够处理差错检测、支持多种上层协议、允许连接时协商IP地址、允许身份认证</p>
+<p>典型应用：拨号上网</p>
+<p>功能：成帧；链路控制协议LCP；网络控制协议NCP</p>
+<p>2、HDLC协议</p>
+<p>高级数据链路控制——HDLC协议</p>
+<p>可应用点对点链路和点对多点链路</p>
+<p>帧定界：<code>帧的定界符是 01111110</code></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/b5604fbfc3ab42a2a3a3b7641f373028.webp"></p>
+<p>位填充：</p>
+<blockquote>
+<p>发送端：只要发现数据字段5各连续1，就立即插入一个0，保证数据字段不会出现连续的6个1；</p>
+<p>接收端：发现数据流中5个连续的1，就删除其后的0，还原成原来的信息</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/0ddc77d52a8e4bc9804f5a1b736e6ab7.webp"></p>
+<h2 id="第六章-物理层"><a href="#第六章-物理层" class="headerlink" title="第六章 物理层"></a>第六章 物理层</h2><h3 id="6-1-数据通信基础"><a href="#6-1-数据通信基础" class="headerlink" title="6.1 数据通信基础"></a>6.1 数据通信基础</h3><p>1、数据通信基础</p>
+<blockquote>
+<p>1.消息:人类能够感知的描述称为消息<br>2.信息:信息是对事物状态或存在方式的不确定性表述信息是可以度量的<br>3.通信:本质就是在一点精确或近似地再生另一点的信息</p>
+<p>4.通信系统:能够实现通信功能的各种技术、设备和方法的总体。<br>5.信号: 通信系统中，在传输通道中传播的信息的载体</p>
+<p>6.数据 : 对客观事物的性质状态以及相互关系等进行记6载的符号及其组合<br>7.信道: 信道是以传输介质为基础的信号通道</p>
+</blockquote>
+<p>2、数据通信系统模型</p>
+<p>① 通信系统的构成：信源、发送设备、信道、接收设备、信宿和噪声源等部</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/84844eab3f25432bba11b685d461be5d.webp"></p>
+<p>② 模拟通信<br>模拟信号:信号的因变量是连续的</p>
+<p>③ 数字通信<br>数字信号: 因变量是离散的。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/e60625af94724b5ebb1a55ca49b1c722.webp"></p>
+<p>④ 数据通信方式</p>
+<blockquote>
+<p>(1)单向通信、双向交替通信和双向同时通信 ;（即：单工、半双工、全双工）</p>
+<p>(2)并行通信和串行通信 ;<br>(3)异步通信和同步通信。</p>
+</blockquote>
+<p>‍</p>
+<p>⑤数据通信系统的功能</p>
+<blockquote>
+<p>(1)信道利用 ;<br>(2)接口及信号产生</p>
+<p>(3)同步</p>
+<p>(4)差错检测与纠正;</p>
+<p>(5)寻址与路由;</p>
+<p>(6)网络管理 ;</p>
+<p>(7) 安全保证</p>
+</blockquote>
+<h3 id="6-2-物理介质"><a href="#6-2-物理介质" class="headerlink" title="6.2 物理介质"></a>6.2 物理介质</h3><p>1、导引型传输介质</p>
+<p>① 架空明线：架空明线是指平行且相互分离或绝缘的架空裸线线路通常采用铜线或铝线等金属导线</p>
+<p>② 双绞线：两根相互绝缘的铜线并排绞合在一起，减少对相邻导线的电磁干扰</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/2457c30ee89241c693cd078f0f6ae731.webp"></p>
+<p>③ 同轴电缆：抗电磁干扰性能好；现在主要用于频带传输，如有线电视</p>
+<p>④ 光纤：基本原理是利用光的全反射通信容量大、距离远、抗电磁干扰性能好，保密性好；多模光纤和单模光纤</p>
+<p>2、非导引型传输介质</p>
+<p>① 地波传播：低频信号，沿地球表面传播<br>② 天波传播：较高频信号，利用电离层的反射传播<br>③ 视线传播：高频信号，点对点直线传播，中继传输</p>
+<h3 id="6-3-信道与信道容量"><a href="#6-3-信道与信道容量" class="headerlink" title="6.3 信道与信道容量"></a>6.3 信道与信道容量</h3><p>1、信道分类与模型</p>
+<p>狭义信道: 信号传输介质</p>
+<p>广义信道: 信号传输介质和通信系统的一些变换装置</p>
+<p>① 调制信道:信号从调制器的输出端传输到解调器的输入端经过的部分。<br>② 编码信道:数字信号由编码器输出端传输到译码器输入端经过的部分。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/d31b069b48d2412fa288dd75ab5577ee.webp"></p>
+<p>2、信道传输特性</p>
+<p>① 恒参信道: 各种有线信道和部分无线信道，传输特性变化小、缓慢，如微波视线传播链路和卫星链路等。</p>
+<blockquote>
+<p>(1)对信号幅值产生固定的衰减;<br>(2)对信号输出产生固定的时延</p>
+</blockquote>
+<p>② 随参信道:传输特性随时间随机快速变化</p>
+<blockquote>
+<p>(1)信号的传输衰减随时间随机变化</p>
+<p>(2)信号的传输时延随时间随机变化<br>(3)存在多径传播现象</p>
+</blockquote>
+<p>3、信道容量</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/cd5f367c123742349d96c4fbd2927d0c.webp"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img-blog.csdnimg.cn/22ad03e073ed4af9ad6762efe9ca0f0a.png" alt="在这里插入图片描述"></p>
+<h3 id="6-4-基带传输"><a href="#6-4-基带传输" class="headerlink" title="6.4 基带传输"></a>6.4 基带传输</h3><p>1、基带传输基本概念</p>
+<p>模拟基带信号:模拟信源发出的原始电信号</p>
+<p>数字基带信号: 数字信源发出的基带信号。</p>
+<pre><code>模拟基带信号可以通过信源编码转换为数字基带信号
+</code></pre>
+<p>带传输: 直接在信道中传送基带信号数字基带传输系统</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/a7e9d9cb68e24697b6c183703de87bc3.webp"></p>
+<p>2、数字基带传输编码</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/2ffc90bf485042729c4a61bd219caaa7.webp"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/27c3315567754a03ad84c2fbcf889d0d.webp" alt="在这里插入图片描述"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/8c320872585849aeabbbd4a1b4668074.webp" alt="在这里插入图片描述"><br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/ab955e26ee004647a02985c68ec9c643.webp" alt="在这里插入图片描述"></p>
+<p>例题：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/36382f269ac34490ba93dea4b85e7d0c.webp"></p>
+<h3 id="6-5-频带传输"><a href="#6-5-频带传输" class="headerlink" title="6.5 频带传输"></a>6.5 频带传输</h3><p>1、频带传输基本概念</p>
+<blockquote>
+<ol>
+<li>数字调制<br> 利用数字基带信号控制载波信号的某些特征参量，使载波信号的这些参量的变化反映数字基带信号的信息，进而将数字基带信号变换为数字通带信号的过程</li>
+<li>键控法<br> 利用两种不同的幅值、频率或相位来分别表示0或1.</li>
+</ol>
+</blockquote>
+<p>2、频带传输中的三种调制方式</p>
+<blockquote>
+<ol>
+<li>二进制数字调制<br> (1)二进制幅移键控<br> (2)二进制频移键控<br> (3)二进制相移键控<br> (4)二进制差分相移键控</li>
+<li>多进制数字调制</li>
+<li>正交幅值调制QAM</li>
+</ol>
+</blockquote>
+<h3 id="6-6-物理层接口规程"><a href="#6-6-物理层接口规程" class="headerlink" title="6.6 物理层接口规程"></a>6.6 物理层接口规程</h3><p>1、物理层接口概述</p>
+<p>物理层接口的四大特性，分别为机械特性、电气特性、功能特性以及规程特性。<br>物理层接口规范定义DTE和DCE之间的接口特性。<br>DTE : 数据终端设备<br>DCE : 数据电路端接设备</p>
+<p>2、物理层接口特性</p>
+<blockquote>
+<ol>
+<li>机械特性<br> 通信实体间硬件连接接口的机械特点.</li>
+<li>电气特性<br> 在物理连接上，导线的电气连接及有关电路的特性</li>
+<li>功能特性<br> 物理接口各条信号线的用途</li>
+<li>规程特性<br> 通信协议，指明利用接口传输比特流的全过程，以及各项用于传输的事件发生的合法顺序</li>
+</ol>
+</blockquote>
+<h2 id="第七章-无线与移动网络"><a href="#第七章-无线与移动网络" class="headerlink" title="第七章 无线与移动网络"></a>第七章 无线与移动网络</h2><h3 id="7-1-无线网络"><a href="#7-1-无线网络" class="headerlink" title="7.1 无线网络"></a>7.1 无线网络</h3><p>1、无线网络基本结构</p>
+<blockquote>
+<p>1.无线主机<br>2.无线链路<br>3.基站<br>4.网络基础设施5.自组织网络( Ad Hoc网络）</p>
+</blockquote>
+<p>2、无线链路与无线网络特性</p>
+<blockquote>
+<p>无线链路与有线链路的主要区别：<br>1.信号强度的衰减<br>3.多径传播<br>2.干扰<br>4.隐藏终端</p>
+</blockquote>
+<h3 id="7-2-移动网络"><a href="#7-2-移动网络" class="headerlink" title="7.2 移动网络"></a>7.2 移动网络</h3><p>1、移动网络基本原理</p>
+<blockquote>
+<p>1.不同的移动性需求</p>
+<p>2.网络层地址保持不变的重要性</p>
+<p>3.有线基础设施的支持</p>
+</blockquote>
+<p>2、寻址</p>
+<p>永久地址和转交地址</p>
+<p>3、移动结点的路由选择</p>
+<p>① 间接路由选择：由归属代理转发数据给外部代理</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/f84839115967480ca32b65749632b77d.webp"></p>
+<p>② 直接路由选择: 由通信代理通过归属代理获得转交地址，直接发送到外部代理</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/1c79cb3960b44e56ad8ad7ccd0e3fe39.webp"></p>
+<h3 id="7-3-无线局域网IEEE802-11（WIFI）"><a href="#7-3-无线局域网IEEE802-11（WIFI）" class="headerlink" title="7.3 无线局域网IEEE802.11（WIFI）"></a>7.3 无线局域网IEEE802.11（WIFI）</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/5c8c42f9cdf8426da00efb82763d9695.webp"></p>
+<h3 id="7-4-蜂窝网络"><a href="#7-4-蜂窝网络" class="headerlink" title="7.4 蜂窝网络"></a>7.4 蜂窝网络</h3><ol>
+<li>2G网络<br> 信令和语音信道都是数字式的。</li>
+<li>3G网络<br> 无线通信与互联网等多媒体通信结合</li>
+<li>4G网络<br> 高速率数据业务，不同频段、不同业务环境间的无缝漫游</li>
+<li>5G网络<br> 超高容量、超可靠性、随时随地可接入性</li>
+</ol>
+<h3 id="7-5-移动IP网络"><a href="#7-5-移动IP网络" class="headerlink" title="7.5 移动IP网络"></a>7.5 移动IP网络</h3><h3 id="7-6-其他典型无线网络简介"><a href="#7-6-其他典型无线网络简介" class="headerlink" title="7.6 其他典型无线网络简介"></a>7.6 其他典型无线网络简介</h3><ol>
+<li>WiMax<br> IEEE 802.16，城域网技术，传输距离更远，接入带宽更高。</li>
+<li>蓝牙<br> IEEE 802.15.1，小范围，低功率，低成本，自组织。</li>
+<li>ZigBee<br> IEEE 802.15.4，低功率，低数据速率，低工作周期</li>
+</ol>
+<h2 id="第八章-网络安全基础"><a href="#第八章-网络安全基础" class="headerlink" title="第八章 网络安全基础"></a>第八章 网络安全基础</h2><h3 id="8-1-网络安全概述"><a href="#8-1-网络安全概述" class="headerlink" title="8.1 网络安全概述"></a>8.1 网络安全概述</h3><p>1、基本概念</p>
+<p>网络安全通信所需要的基本属性 :</p>
+<blockquote>
+<p>1.机密性;<br>2.消息完整性;</p>
+<p>3.可访问与可用性;</p>
+<p>4.身份认证</p>
+</blockquote>
+<p>2、网络安全威胁</p>
+<blockquote>
+<p>1.窃听;<br>2.插入;<br>3.假冒;<br>4.劫持;<br>5.拒绝服务DoS和分布式拒绝服务DDoS<br>6.映射;<br>7.嗅探;<br>8.IP欺骗</p>
+</blockquote>
+<h3 id="8-2-数据加密"><a href="#8-2-数据加密" class="headerlink" title="8.2 数据加密"></a>8.2 数据加密</h3><p>明文:未加密的消息<br>密文:被加密的消息<br>加密:伪装消息以隐藏消息的过程，即明文转变为密文的过程。<br>解密:密文转变为明文的过程</p>
+<p>1、传统加密方式</p>
+<p>① 替代密码：用密文字母替代明文字母</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/060aadc326b14ee0a5ef33468ee0fb4a.webp" alt=" "></p>
+<p>②换位密码：根据一定的规则重新排列明文</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/741095b66e28465a8261529d37eccb59.webp" alt=" "></p>
+<p>2、对称密钥加密</p>
+<p>现代密码分类对称密钥密码:加密密钥和解密密相同（密钥保密）</p>
+<p>非对称密钥密码 : 加密密钥和解密密钥不同</p>
+<p>对称密钥密码分类:分组密码 : DES，AES、IDEA等</p>
+<p>流密码</p>
+<blockquote>
+<ol>
+<li>DES : 56位密钥，64位分组</li>
+<li>三重DES : 使用两个密钥( 共112位)，执行三次DES算法。</li>
+<li>AES :分组128位，密钥128&#x2F;192&#x2F;256位</li>
+<li>IDEA: 分组64位，密钥128位</li>
+</ol>
+</blockquote>
+<p>3、非对称&#x2F;公开密钥加密</p>
+<p>密钥成对使用，其中一个用于加密，另一个用于解密，且加密密钥可以公开，也称公开密钥加密。</p>
+<p>典型的公钥算法：Diffie-Hellman算法、RSA算法</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/3de9a5bc3bf34e40accb03058ef2ad75.webp" alt=" "></p>
+<h3 id="8-3-消息完整性与数字签名"><a href="#8-3-消息完整性与数字签名" class="headerlink" title="8.3 消息完整性与数字签名"></a>8.3 消息完整性与数字签名</h3><p>1、消息完整性检测方法</p>
+<blockquote>
+<p>密码散列函数</p>
+<ol>
+<li><p>特性:<br> 定长输出；</p>
+<p> 单向性( 无法根据散列值逆推报文 ) ；</p>
+<p> 抗碰撞性( 无法找到具有相同散列值的两个报文 )</p>
+</li>
+<li><p>典型散列函数<br> MD5:128位散列值<br> SHA-1:160位散列值</p>
+</li>
+</ol>
+</blockquote>
+<p>2、报文认证</p>
+<blockquote>
+<p>报文认证是使消息的接收者能够检验收到的消息是否是真实的认证方法。来源真实、未被篡改。</p>
+<p>1.报文摘要(数字指纹)</p>
+<p>2.报文认证方法<br>简单报文验证:仅使用报文摘要，无法验证来源真实性</p>
+<p>报文认证码:使用共享认证密钥，但无法防止接收方算改。</p>
+</blockquote>
+<p>3、数字签名</p>
+<blockquote>
+<p>身份认证、数据完整性、不可否认性</p>
+<p>1.简单数字签名: 直接对报文签名<br>2.签名报文摘要</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/49dfbbc5bc97469181bf6c67ade84a11.webp" alt="在这里插入图片描述"></p>
+<h3 id="8-4-身份认证"><a href="#8-4-身份认证" class="headerlink" title="8.4 身份认证"></a>8.4 身份认证</h3><p>口令 : 会被窃听</p>
+<p>加密口令 : 可能遭受回放(重放)攻击</p>
+<p>加密一次性随机数:可能遭受中间人攻击</p>
+<p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/84427ec9055b43c9b1f05a940b9388e1.webp" alt="在这里插入图片描述"></p>
+<h3 id="8-5-密钥分发中心与证书认证机构"><a href="#8-5-密钥分发中心与证书认证机构" class="headerlink" title="8.5 密钥分发中心与证书认证机构"></a>8.5 密钥分发中心与证书认证机构</h3><h3 id="8-6-防火墙与入侵检测系统"><a href="#8-6-防火墙与入侵检测系统" class="headerlink" title="8.6 防火墙与入侵检测系统"></a>8.6 防火墙与入侵检测系统</h3><p>1、防火墙基本概念</p>
+<p>防火墙：能够隔离组织内部网络与公共互联网，允许某些分组通过，而阻止其他分组进入或离开内部网络的软件、硬件或者软件硬件结合的一种设施。</p>
+<p>前提:从外部到内部和从内部到外部的所有流量都经过防火墙。</p>
+<p>2、防火墙分类</p>
+<blockquote>
+<ol>
+<li><p>无状态分组过滤器<br> 基于特定的规则对分组是通过还是丢弃进行决策使用访问控制列表(ACL)实现防火墙规则</p>
+</li>
+<li><p>有状态分组过滤器</p>
+<p> 跟踪每个TCP连接建立、拆除，根据状态确定是否允许分组通过</p>
+</li>
+<li><p>应用网关<br> 鉴别用户身份或针对授权用户开放特定服务</p>
+</li>
+</ol>
+</blockquote>
+<p>3、入侵检测系统IDS</p>
+<p>入侵检测系统( IDS)是当观察到潜在的恶意流量时能够产生警告的设备或系统</p>
+<h3 id="8-7-网络安全协议"><a href="#8-7-网络安全协议" class="headerlink" title="8.7 网络安全协议"></a>8.7 网络安全协议</h3><p>1、安全电子邮件</p>
+<blockquote>
+<ol>
+<li><p>电子邮件安全需求<br> (1)机密性</p>
+<p> (2)完整性</p>
+<p> (3)身份认证性</p>
+<p> (4)抗抵赖性</p>
+</li>
+<li><p>安全电子邮件标准</p>
+<p> PGP</p>
+</li>
+</ol>
+</blockquote>
+<p>2、安全套接字层SSL</p>
+<p>① SSL是个于应用层和传输层之间的安全协议</p>
+<p>② SSL协议栈</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/44bd85e7069847b89cdd0b24246c6a2c.webp"></p>
+<p>③ SSL握手过程协商密码组，生成密钥，服务器&#x2F;客户认证与鉴别</p>
+<p>3、虚拟专用网VPN和IP安全协议IPsec</p>
+<p>① VPN：建立在公共网络上的安全通道，实现远程用户、分支机构、业务伙伴等与机构总部网络的安全连接，从而构建针对特定组织机构的专用网络</p>
+<p>关键技术: 隧道技术，如IPSec</p>
+<p>② 典型的网络层安全协议-IPSec：提供机密性、身份鉴别、数据完整性验证和防重放攻击服务。<br>体系结构 :认证头AH协议、封装安全载荷ESP协议。</p>
+<p>运行模式:传输模式(AH传输模式、ESP传输模式)、隧道模式(AH隧道模式、ESP隧道模式)</p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>祝大家都上岸！🎉🎉🎉</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/image/author.webp" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/image/author.webp" title="头像" alt="头像"></a><div class="post-copyright__author_name">H Miking</div><div class="post-copyright__author_desc">技术与人性的交响曲</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://hmiking.top/2023/10/10/04741%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86(%E8%87%AA%E8%80%83)/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://hmiking.top/2023/10/10/04741 计算机网络原理(自考)/')">计算机网络原理(自考)</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="http://image.oldit.cn/image/wechat.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/image/wechat.webp" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="http://image.oldit.cn/image/alipay.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/image/alipay.webp" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div><div class="reward-link mode"><a class="reward-link-button" href="/wechat/"><i class="anzhiyufont anzhiyu-icon-plant-fill"></i>运营模式与责任</a></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://hmiking.top/2023/10/10/04741%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86(%E8%87%AA%E8%80%83)/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=计算机网络原理(自考)&amp;url=http://hmiking.top/2023/10/10/04741%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86(%E8%87%AA%E8%80%83)/&amp;pic=http://image.oldit.cn/article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86_cover.webp" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://hmiking.top" target="_blank">老生杂谈的IT人</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>计算机网络原理<span class="tagsPageCount">1</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="http://image.oldit.cn/article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86_cover.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2023/10/10/Docker%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/Docker_cover.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Docker安装部署</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/image/author.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/image/emotion.webp" ait="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">云计算、运维、网安</b>相关的一些文章，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><h1 class="author-info__name">H Miking</h1><div class="author-info__desc">技术与人性的交响曲</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/H-MiKing" target="_blank" title="Github"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-github"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/346448962" target="_blank" title="BiliBili"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-bilibili"></use></svg></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>公告</span></div><div class="announcement_content">让我们一起走进这个充满挑战和机遇的IT世界，共同成长，共同前行！</div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(http://image.oldit.cn/image/gzh.webp) center center / 100% no-repeat"></div><div class="back face" style="background: url(http://image.oldit.cn/image/gzh-ewm.webp) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">第一章 计算机网络概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">1.1 计算机网络的概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.</span> <span class="toc-text">1.2 计算机网络结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E6%95%B0%E6%8D%AE%E4%BA%A4%E6%8D%A2%E6%8A%80%E6%9C%AF"><span class="toc-number">1.3.</span> <span class="toc-text">1.3 数据交换技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%80%A7%E8%83%BD"><span class="toc-number">1.4.</span> <span class="toc-text">1.4 计算机网络性能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="toc-number">1.5.</span> <span class="toc-text">1.5 计算机网络体系结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-6-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E4%B8%8E%E5%9B%A0%E7%89%B9%E7%BD%91%E5%8F%91%E5%B1%95%E7%AE%80%E5%8F%B2"><span class="toc-number">1.6.</span> <span class="toc-text">1.6 计算机网络与因特网发展简史</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8"><span class="toc-number">2.</span> <span class="toc-text">第二章 网络应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 网络应用体系结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E7%BD%91%E7%BB%9C%E5%BA%94%E7%94%A8%E9%80%9A%E4%BF%A1%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 网络应用通信基本原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F%EF%BC%88DNS%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 域名系统（DNS）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-%E4%B8%87%E7%BB%B4%E7%BD%91%E5%BA%94%E7%94%A8"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 万维网应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-Internet%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6"><span class="toc-number">2.5.</span> <span class="toc-text">2.5 Internet电子邮件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-FTP"><span class="toc-number">2.6.</span> <span class="toc-text">2.6 FTP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-P2P%E5%BA%94%E7%94%A8"><span class="toc-number">2.7.</span> <span class="toc-text">2.7 P2P应用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-Socket%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF"><span class="toc-number">2.8.</span> <span class="toc-text">2.8 Socket编程技术</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E4%BC%A0%E8%BE%93%E5%B1%82"><span class="toc-number">3.</span> <span class="toc-text">第三章 传输层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E4%BC%A0%E8%BE%93%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%9C%8D%E5%8A%A1"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 传输层基本服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E4%BC%A0%E8%BE%93%E5%B1%82%E7%9A%84%E5%A4%8D%E7%94%A8%E4%B8%8E%E5%88%86%E8%A7%A3"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 传输层的复用与分解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E5%81%9C-%E7%AD%89%E5%8D%8F%E8%AE%AE%E4%B8%8E%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E5%8D%8F%E8%AE%AE"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 停-等协议与滑动窗口协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE%EF%BC%88UDP%EF%BC%89"><span class="toc-number">3.4.</span> <span class="toc-text">3.4 用户数据报协议（UDP）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE%EF%BC%88TCP%EF%BC%89"><span class="toc-number">3.5.</span> <span class="toc-text">3.5 传输控制协议（TCP）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-number">4.</span> <span class="toc-text">第四章 网络层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E7%BD%91%E7%BB%9C%E5%B1%82%E6%9C%8D%E5%8A%A1"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 网络层服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E6%95%B0%E6%8D%AE%E6%8A%A5%E7%BD%91%E7%BB%9C%E4%B8%8E%E8%99%9A%E7%94%B5%E8%B7%AF%E7%BD%91%E7%BB%9C"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 数据报网络与虚电路网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E8%AE%BE%E5%A4%87"><span class="toc-number">4.3.</span> <span class="toc-text">4.3 网络互连与网络互连设备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4-%E7%BD%91%E7%BB%9C%E5%B1%82%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6"><span class="toc-number">4.4.</span> <span class="toc-text">4.4 网络层拥塞控制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5-Internet%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-number">4.5.</span> <span class="toc-text">4.5 Internet网络层</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-%E8%B7%AF%E7%94%B1%E7%AE%97%E6%B3%95%E4%B8%8E%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE"><span class="toc-number">4.6.</span> <span class="toc-text">4.6 路由算法与路由协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E4%B8%8E%E5%B1%80%E5%9F%9F%E7%BD%91"><span class="toc-number">5.</span> <span class="toc-text">第五章 数据链路层与局域网</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E6%9C%8D%E5%8A%A1"><span class="toc-number">5.1.</span> <span class="toc-text">5.1 数据链路层服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E5%B7%AE%E9%94%99%E6%8E%A7%E5%88%B6"><span class="toc-number">5.2.</span> <span class="toc-text">5.2 差错控制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E5%A4%9A%E8%B7%AF%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE"><span class="toc-number">5.3.</span> <span class="toc-text">5.3 多路访问控制协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-%E5%B1%80%E5%9F%9F%E7%BD%91"><span class="toc-number">5.4.</span> <span class="toc-text">5.4 局域网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-%E7%82%B9%E5%AF%B9%E7%82%B9%E9%93%BE%E8%B7%AF%E5%8D%8F%E8%AE%AE"><span class="toc-number">5.5.</span> <span class="toc-text">5.5 点对点链路协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-number">6.</span> <span class="toc-text">第六章 物理层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80"><span class="toc-number">6.1.</span> <span class="toc-text">6.1 数据通信基础</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E7%89%A9%E7%90%86%E4%BB%8B%E8%B4%A8"><span class="toc-number">6.2.</span> <span class="toc-text">6.2 物理介质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E4%BF%A1%E9%81%93%E4%B8%8E%E4%BF%A1%E9%81%93%E5%AE%B9%E9%87%8F"><span class="toc-number">6.3.</span> <span class="toc-text">6.3 信道与信道容量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4-%E5%9F%BA%E5%B8%A6%E4%BC%A0%E8%BE%93"><span class="toc-number">6.4.</span> <span class="toc-text">6.4 基带传输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-5-%E9%A2%91%E5%B8%A6%E4%BC%A0%E8%BE%93"><span class="toc-number">6.5.</span> <span class="toc-text">6.5 频带传输</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-6-%E7%89%A9%E7%90%86%E5%B1%82%E6%8E%A5%E5%8F%A3%E8%A7%84%E7%A8%8B"><span class="toc-number">6.6.</span> <span class="toc-text">6.6 物理层接口规程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E6%97%A0%E7%BA%BF%E4%B8%8E%E7%A7%BB%E5%8A%A8%E7%BD%91%E7%BB%9C"><span class="toc-number">7.</span> <span class="toc-text">第七章 无线与移动网络</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C"><span class="toc-number">7.1.</span> <span class="toc-text">7.1 无线网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-%E7%A7%BB%E5%8A%A8%E7%BD%91%E7%BB%9C"><span class="toc-number">7.2.</span> <span class="toc-text">7.2 移动网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91IEEE802-11%EF%BC%88WIFI%EF%BC%89"><span class="toc-number">7.3.</span> <span class="toc-text">7.3 无线局域网IEEE802.11（WIFI）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4-%E8%9C%82%E7%AA%9D%E7%BD%91%E7%BB%9C"><span class="toc-number">7.4.</span> <span class="toc-text">7.4 蜂窝网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-5-%E7%A7%BB%E5%8A%A8IP%E7%BD%91%E7%BB%9C"><span class="toc-number">7.5.</span> <span class="toc-text">7.5 移动IP网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-6-%E5%85%B6%E4%BB%96%E5%85%B8%E5%9E%8B%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C%E7%AE%80%E4%BB%8B"><span class="toc-number">7.6.</span> <span class="toc-text">7.6 其他典型无线网络简介</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%9F%BA%E7%A1%80"><span class="toc-number">8.</span> <span class="toc-text">第八章 网络安全基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%A6%82%E8%BF%B0"><span class="toc-number">8.1.</span> <span class="toc-text">8.1 网络安全概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2-%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%AF%86"><span class="toc-number">8.2.</span> <span class="toc-text">8.2 数据加密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-3-%E6%B6%88%E6%81%AF%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D"><span class="toc-number">8.3.</span> <span class="toc-text">8.3 消息完整性与数字签名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-4-%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81"><span class="toc-number">8.4.</span> <span class="toc-text">8.4 身份认证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-5-%E5%AF%86%E9%92%A5%E5%88%86%E5%8F%91%E4%B8%AD%E5%BF%83%E4%B8%8E%E8%AF%81%E4%B9%A6%E8%AE%A4%E8%AF%81%E6%9C%BA%E6%9E%84"><span class="toc-number">8.5.</span> <span class="toc-text">8.5 密钥分发中心与证书认证机构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-6-%E9%98%B2%E7%81%AB%E5%A2%99%E4%B8%8E%E5%85%A5%E4%BE%B5%E6%A3%80%E6%B5%8B%E7%B3%BB%E7%BB%9F"><span class="toc-number">8.6.</span> <span class="toc-text">8.6 防火墙与入侵检测系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-7-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE"><span class="toc-number">8.7.</span> <span class="toc-text">8.7 网络安全协议</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E5%B0%BE"><span class="toc-number">9.</span> <span class="toc-text">结尾</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/10/10/04741%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86(%E8%87%AA%E8%80%83)/" title="计算机网络原理(自考)"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86_cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="计算机网络原理(自考)"/></a><div class="content"><a class="title" href="/2023/10/10/04741%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86(%E8%87%AA%E8%80%83)/" title="计算机网络原理(自考)">计算机网络原理(自考)</a><time datetime="2023-10-10T07:47:58.000Z" title="发表于 2023-10-10 15:47:58">2023-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/10/Docker%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/" title="Docker安装部署"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/Docker_cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Docker安装部署"/></a><div class="content"><a class="title" href="/2023/10/10/Docker%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2/" title="Docker安装部署">Docker安装部署</a><time datetime="2023-10-10T07:46:58.000Z" title="发表于 2023-10-10 15:46:58">2023-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/10/Centos7%20%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Nginx/" title="Centos7 编译安装Nginx"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/nginx_cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Centos7 编译安装Nginx"/></a><div class="content"><a class="title" href="/2023/10/10/Centos7%20%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Nginx/" title="Centos7 编译安装Nginx">Centos7 编译安装Nginx</a><time datetime="2023-10-10T06:46:58.000Z" title="发表于 2023-10-10 14:46:58">2023-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/10/Keepalived+Nginx%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87%E5%AE%9E%E9%AA%8C/" title="Keepalived+Nginx双机热备实验"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/keepalived_cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Keepalived+Nginx双机热备实验"/></a><div class="content"><a class="title" href="/2023/10/10/Keepalived+Nginx%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87%E5%AE%9E%E9%AA%8C/" title="Keepalived+Nginx双机热备实验">Keepalived+Nginx双机热备实验</a><time datetime="2023-10-10T06:46:58.000Z" title="发表于 2023-10-10 14:46:58">2023-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/10/Nginx%E4%B8%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E6%96%87%E6%B3%A8%E9%87%8A/" title="Nginx主配置文件中文注释"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/article/nginx_cover.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Nginx主配置文件中文注释"/></a><div class="content"><a class="title" href="/2023/10/10/Nginx%E4%B8%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E6%96%87%E6%B3%A8%E9%87%8A/" title="Nginx主配置文件中文注释">Nginx主配置文件中文注释</a><time datetime="2023-10-10T06:46:58.000Z" title="发表于 2023-10-10 14:46:58">2023-10-10</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/svg/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://blog.anheyu.com/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/svg/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://console.cloud.tencent.com/cdn" style="margin-inline:5px" data-title="本站使用腾讯云为静态资源提供CDN加速" title="本站使用腾讯云为静态资源提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/svg/cdn%E8%85%BE%E8%AE%AF%E4%BA%91.svg" alt="本站使用腾讯云为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/svg/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/svg/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 By H Miking </div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/" title="粤ICP备2023109857号">粤ICP备2023109857号</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">4</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51369125?spm=1010.2135.3001.5343" title="CSDN"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/image/csdn_logo.webp" alt="CSDN"/><span class="back-menu-item-text">CSDN</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="http://toolsbox.oldit.cn:17777/" title="工具站"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="http://image.oldit.cn/image/%E7%9B%AF%E7%9D%80.webp" alt="工具站"/><span class="back-menu-item-text">工具站</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-box-archive"></use></svg><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shapes"></use></svg><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags"></use></svg><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-link"></use></svg><span> 友链</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-envelope"></use></svg><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=6858639461&amp;server=netease"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-music"></use></svg><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-images"></use></svg><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-dice-d20"></use></svg><span> 我的装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shoe-prints"></use></svg><span> 随便逛逛</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-lightbulb"></use></svg><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-paper-plane"></use></svg><span> 关于本人</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Centos/" style="font-size: 0.88rem; font-weight: 500; color: var(--anzhiyu-lighttext)">Centos<sup>16</sup></a><a href="/tags/Debian/" style="font-size: 0.88rem;">Debian<sup>1</sup></a><a href="/tags/%E4%BD%9C%E4%B8%BA%E6%97%A5%E8%AE%B0%E5%8A%A0%E5%AF%86/" style="font-size: 0.88rem;">作为日记加密<sup>1</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" style="font-size: 0.88rem;">计算机网络原理<sup>1</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="462484390" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://music.163.com/playlist?id=462484390&amp;userid=331297580&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.4/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script async src="/anzhiyu/random.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.hmiking.top/',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.18/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.hmiking.top/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.hmiking.top/',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.18/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "hmiking@163.com";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script async src="http://tools.oldit.cn:19999/js/ali.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
