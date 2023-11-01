@@ -6,7 +6,7 @@
   <link href="http://hmiking.top/atom.xml" rel="self"/>
   
   <link href="http://hmiking.top/"/>
-  <updated>2023-11-01T02:30:39.445Z</updated>
+  <updated>2023-11-01T03:42:26.414Z</updated>
   <id>http://hmiking.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jumpserver设置sftp默认路径</title>
+    <link href="http://hmiking.top/2023/11/01/jumpserver%E8%AE%BE%E7%BD%AEsftp%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84/"/>
+    <id>http://hmiking.top/2023/11/01/jumpserver%E8%AE%BE%E7%BD%AEsftp%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84/</id>
+    <published>2023-11-01T03:30:00.000Z</published>
+    <updated>2023-11-01T03:42:26.414Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="jumpserver"><a href="#jumpserver" class="headerlink" title="jumpserver"></a>jumpserver</h3><p><a href="https://www.jumpserver.org/">官网</a></p><p>JumpServer 是广受欢迎的开源堡垒机，是符合 4A 规范的专业运维安全审计系统。JumpServer 帮助企业以更安全的方式管控和登录所有类型的资产，实现事前授权、事中监察、事后审计，满足等保合规要求。</p><p><img src="https://djy.oldit.cn/article/jumpserver.webp"></p><blockquote><p> 当我们通过jumpserver对服务器进行管理时，需要上传或下载服务器上的资源时，连接sftp默认的路径是&#x2F;tmp，会相对麻烦一些，需要把资源复制到&#x2F;tmp目录下，所以我们可以更换其它的默认路径。</p></blockquote><h3 id="修改过程"><a href="#修改过程" class="headerlink" title="修改过程"></a>修改过程</h3><h5 id="1、登录web端的jumpserver，找到平台列表，并选择Linux克隆"><a href="#1、登录web端的jumpserver，找到平台列表，并选择Linux克隆" class="headerlink" title="1、登录web端的jumpserver，找到平台列表，并选择Linux克隆"></a>1、登录web端的jumpserver，找到平台列表，并选择Linux克隆</h5><p><img src="https://djy.oldit.cn/article/jumpserver-1.webp"></p><h5 id="2、修改ssh的配置"><a href="#2、修改ssh的配置" class="headerlink" title="2、修改ssh的配置"></a>2、修改ssh的配置</h5><p><img src="https://djy.oldit.cn/article/jumpserver-2.webp"></p><h5 id="3、把sftp的默认路径改为-root"><a href="#3、把sftp的默认路径改为-root" class="headerlink" title="3、把sftp的默认路径改为&#x2F;root"></a>3、把sftp的默认路径改为&#x2F;root</h5><p><img src="https://djy.oldit.cn/article/jumpserver-3.webp"></p><h5 id="4-把原有的资产添加到新克隆的平台上"><a href="#4-把原有的资产添加到新克隆的平台上" class="headerlink" title="4.把原有的资产添加到新克隆的平台上"></a>4.把原有的资产添加到新克隆的平台上</h5><p><img src="https://djy.oldit.cn/article/jumpserver-4.webp"></p><h5 id="5、测试"><a href="#5、测试" class="headerlink" title="5、测试"></a>5、测试</h5><p><img src="https://djy.oldit.cn/article/jumpserver-5.webp"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;jumpserver&quot;&gt;&lt;a href=&quot;#jumpserver&quot; class=&quot;headerlink&quot; title=&quot;jumpserver&quot;&gt;&lt;/a&gt;jumpserver&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.jumpserver.org/&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="网安" scheme="http://hmiking.top/categories/%E7%BD%91%E5%AE%89/"/>
+    
+    
+    <category term="Security" scheme="http://hmiking.top/tags/Security/"/>
+    
+    <category term="jumpserver" scheme="http://hmiking.top/tags/jumpserver/"/>
+    
+  </entry>
   
   <entry>
     <title>Prometheus配置basic_auth</title>
@@ -481,30 +507,6 @@
     
     
     <category term="Centos" scheme="http://hmiking.top/tags/Centos/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Debian10的网络配置</title>
-    <link href="http://hmiking.top/2022/07/21/Debian10%E7%9A%84%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/"/>
-    <id>http://hmiking.top/2022/07/21/Debian10%E7%9A%84%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</id>
-    <published>2022-07-21T04:58:59.000Z</published>
-    <updated>2023-10-11T06:22:11.174Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="网络配置"><a href="#网络配置" class="headerlink" title="网络配置"></a>网络配置</h3><h4 id="一、配置文件方式"><a href="#一、配置文件方式" class="headerlink" title="一、配置文件方式"></a>一、配置文件方式</h4><p>1、编辑网卡配置文件interfaces</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/network/interfaces</span><br><span class="line">... </span><br><span class="line">auto ens33</span><br><span class="line">iface ens33 inet static address</span><br><span class="line">address 172.16.100.201/25</span><br><span class="line">gateway 172.16.100.254</span><br><span class="line"></span><br><span class="line"><span class="comment">#auto ens33 启动服务的时候激活网卡，ens33为网卡名称</span></span><br><span class="line"><span class="comment">#iface ens33 inet static 接口属性配置，支持static（静态）、dhcp（动态)、none（默认）模式 </span></span><br><span class="line"><span class="comment">#address，IP地址配置，支持IP/PREFIX方式 </span></span><br><span class="line"><span class="comment">#netmask，掩码 </span></span><br><span class="line"><span class="comment">#gateway，网关地址</span></span><br></pre></td></tr></table></figure><p>2、重启网络服务</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart networking</span><br><span class="line">systemctl restart network-manager</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;网络配置&quot;&gt;&lt;a href=&quot;#网络配置&quot; class=&quot;headerlink&quot; title=&quot;网络配置&quot;&gt;&lt;/a&gt;网络配置&lt;/h3&gt;&lt;h4 id=&quot;一、配置文件方式&quot;&gt;&lt;a href=&quot;#一、配置文件方式&quot; class=&quot;headerlink&quot; title=&quot;一</summary>
-      
-    
-    
-    
-    <category term="网络系统管理" scheme="http://hmiking.top/categories/%E7%BD%91%E7%BB%9C%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"/>
-    
-    
-    <category term="Debian" scheme="http://hmiking.top/tags/Debian/"/>
     
   </entry>
   
