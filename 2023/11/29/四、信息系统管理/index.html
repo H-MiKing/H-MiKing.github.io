@@ -1,0 +1,753 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>四、信息系统管理 | 老生杂谈的IT人</title><meta name="keywords" content="信息系统项目管理师,软考,高项"><meta name="author" content="H Miking"><meta name="copyright" content="H Miking"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="四、信息系统管理"><meta name="application-name" content="四、信息系统管理"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="四、信息系统管理"><meta property="og:url" content="http://hmiking.top/2023/11/29/四、信息系统管理/index.html"><meta property="og:site_name" content="老生杂谈的IT人"><meta property="og:description" content="内容来源：信息系统项目管理师教程 (第4版）文章内容主要为第4版教程的核心重点内容。  4.1 管理方法4.1.1 管理基础 层次结构  系统管理   信息系统管理覆盖四大领域：  规划和组织：针对信息系统的整体组织、战略和支持活动。 设计和实施：针对信息系统解决方案的定义、采购和实施，以及他们与"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://djy.oldit.cn/article/ruankao_logo.webp"><meta property="article:author" content="H Miking"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://djy.oldit.cn/article/ruankao_logo.webp"><meta name="description" content="内容来源：信息系统项目管理师教程 (第4版）文章内容主要为第4版教程的核心重点内容。  4.1 管理方法4.1.1 管理基础 层次结构  系统管理   信息系统管理覆盖四大领域：  规划和组织：针对信息系统的整体组织、战略和支持活动。 设计和实施：针对信息系统解决方案的定义、采购和实施，以及他们与"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://hmiking.top/2023/11/29/%E5%9B%9B%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//npm.onmicrosoft.cn"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-PfqJTGz6F7"/><meta name="msvalidate.01" content="7D99E8E915E5B1950806B033FC18068D"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://tools.oldit.cn/css/swiper.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bebfc15c02974ee0541fd24784126e39";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"与数百名博主无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片）：\n描述：\n站点截图（可选）：\n"},
+  peoplecanvas: undefined,
+  postHeadAiDescription: undefined,
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: {"enable":true,"ck":"3GC30UXeC1LQL2Yz","LingQueMonitorID":"3GC388x4FUeaMqb3"},
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: 'https://twikoo.hmiking.top/',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: {"apiurl":"https://friends.oldit.cn/"},
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":["☁️ 探索云计算的菜鸟","🔧 还在努力提升系统运维的菜鸟","🔒 网络安全方面的学者"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    simplehomepage: false,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":true,"limitCount":50,"languages":{"author":"作者: H Miking","link":"链接: ","source":"来源: 老生杂谈的IT人","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '老生杂谈的IT人',
+  title: '四、信息系统管理',
+  postAI: '',
+  pageFillDescription: '4.1 管理方法, 4.1.1 管理基础, 4.1.2 规划和组织, 4.1.3 设计和实施, 4.1.4 运维和服务, 4.1.5 优化和持续改进, 4.2 管理要点, 4.2.1 数据管理, 4.2.2 运维管理, 4.2.3 信息安全管理, ‍‍欢迎关注我的、、内容来源信息系统项目管理师教程第版文章内容主要为第版教程的核心重点内容管理方法管理基础层次结构系统管理信息系统管理覆盖四大领域规划和组织针对信息系统的整体组织战略和支持活动设计和实施针对信息系统解决方案的定义采购和实施以及他们与业务流程的整合运维和服务针对信息系统服务的运行交付和支持包括安全优化和持续改进针对信息系统的性能监控及其于内部性能目标内部控制目标和外部要求的一致性管理规划和组织规划模型信息系统战略三角突出了业务战略信息系统和组织机制之间的必要一致性如图所示它用于描述信息系统与业务系统必要的协同关系以及理解信息系统与组织机制间的相互影响成功的组织有一个压倒一切的业务战略可以推动组织机制和信息系统的有机融合组织模型业务战略当组织的目标是成为市场上成本最低的生产者时总成本领先战略就会产生采用该战略的组织通过最大限度地降低成本从而获得高于平均水平的绩效所提供的产品或服务必须在质量上与业内其他人提供的产品或服务相当以便客户对象感知其相对高性价比通常一个行业中只存在一个成本引领者采用差异性战略时组织通过差异化以一种在市场上显得独特的方式定义其产品或服务组织确定哪些定性维度对其客户对象最重要然后找到在其中一个或多个维度增加产品和服务价值的方法为了使此策略起作用差异化因素向客户对象收取的价格必须相对于竞争对手收取的价格是公平的采用专注化战略时专注化允许组织将其范围限制在更狭窄的细分市场并为该组客户对象量身定制其产品该策略有两种变体专注成本在其细分市场内寻求成本优势专注差异化寻求细分市场内的产品或服务的差异化这种策略使组织能够实现区域竞争优势即使它没有在整个经济与社会中实现竞争优势也可以通过专注于某些细分市场的方式获得局部的竞争优势组织机制战略设计和实施设计方法从战略到系统架构组织必须从业务战略开始使用该战略制定更具体的目标然后从每个目标派生出详细的业务需求组织需要与架构设计人员合作将这些业务需求转换为构成信息系统架构的系统要求标准和流程的更详细视图这个更详细的视图即信息系统架构要求包括考虑数据和流程需求以及安全目标等事项组织还可以向架构设计人员清楚地了解信息系统必须完成的工作以及确保其顺利开发实施和使用所需的治理安排治理安排指定组织中哪个人保留对信息系统的控制权和责任从系统架构到系统设计将信息系统架构转换为系统设计时需要继承信息系统架构并添加更多细节包括实际的硬件数据网络和软件进而扩展到数据的位置和访问过程防火墙的位置链路规范互联设计等信息系统架构被转换为功能规格功能规格可以分为硬件规格软件规格存储规格接口规格网络规格等然后决定如何实现这些规范并在信息系统基础架构中使用什么硬件软件存储接口网络等架构模式信息系统体系架构有三种常见模式见表集中式架构集中式架构下所有内容采用集中建设支持和管理的模式其主体系统通常部署于数据中心以消除管理物理分离的基础设施带来的困难分布式架构硬件软件网络和数据的部署方式是在多台小型计算机服务器和设备之间分配处理能力和应用功能这些设施严重依赖于网络将它们连接在一起面向服务的系统架构架构中使用的软件通常被引向软件即服务的相关架构同时这些应用程序在通过互联网交付时也被称为服务运维和服务运行管理和控制服务管理服务台服务台是组织体现服务的重要环节也是服务干系人体验的重要感知窗口事件管理事件是服务管理遭遇计划外中断或服务质量出现下降以及尚未影响服务的配置项故障事件可能是服务中断服务速度变慢软件缺陷以及其他任何组件发生故障问题管理当发生了几个看起来具有相同或相似根本原因的事件时就会启动问题管理活动变更管理变更是使一个或更多信息系统配置项的状态发生改变的行动配置管理配置管理是通过技术或者行政的手段对信息系统的信息进行管理的一系列活动这些信息不仅包括信息系统具体配置项信息还包括这些配置项之间的相互关系发布管理发布管理负责计划和实施信息系统的变更并且记录该变更的各方面信息服务级别管理服务级别管理就是对服务的级别进行定义记录和管理并在可接受的成本之下与干系人达成一致的管理过程通过服务水平协议服务绩效监控和报告的不断循环持续维护和改进服务质量以及触发采取行动消除较差服务从而满足干系人的服务需求财务管理容量管理容量管理用于确认信息系统中有足够的容量满足服务需求如果信息系统的性能在可接受的范围内则其具有足够的容量服务连续性管理服务连续性管理是一组与组织持续提供服务的能力相关的活动可用性管理可用性管理是有关设计实施监控评价和报告服务的可用性以确保持续地满足服务干系人的可用性需求的服务管理流程可用性是指一个组件或一种服务在设定的某个时刻或某段时间内发挥其应有功能的能力即在约定的服务时段内服务实际能够使用的服务的时间比例运行与监控运行监控团队应对信息系统应用程序和基础设施进行监控以确保它们继续按要求运行安全监控组织需要执行不同类型的安全监控并把安全监控作为其整体策略的一部分以预防和响应安全事件终端侧管理团队职能的一个关键环节是它向组织人员提供的服务以改善他们对访问和使用的情况组织通常使用管理工具来促进对用户终端计算机的高效和一致的管理一般来说最终用户计算机是锁定的这限制了最终用户可能在其设备上执行的配置更改的数量和类型包括操作系统配置补丁安装软件程序安装使用外部数据存储设备等最终用户可能会将此类限制视为不便但是这些限制不仅有助于确保最终用户的设备和整个组织的环境具有更高的安全性而且还促进了更高的一致性从而降低了支持成本程序库管理程序库是组织用来存储和管理应用程序源代码和目标代码的工具在大多数组织中应用程序源代码非常敏感它可能被视为知识产权并且可能包含算法加密密钥和其他敏感信息这些信息应由尽可能少的人员访问应用程序源代码应被视为信息并通过组织的安全策略和数据分类策略进行管理程序库的控制使组织能够对其应用程序的完整性质量和安全性进行高度控制程序库通常作为具有用户界面和多种功能的信息系统存在其中主要功能包括访问控制程序签出程序签入版本控制和代码分析等安全管理介质控制组织需要采取一系列活动以确保数字介质得到适当管理包括对其保护以及销毁不再需要的数据这些过程通常与数据保留和数据清除过程相关联以便通过物理和逻辑的安全控制充分保护所需的数据同时有效丢弃和擦除不再需要的数据处置不再需要的介质相关的程序包括擦除该介质上的数据或使该介质上的数据无法以其他方式恢复的所有相关步骤组织应考虑包含在介质管理销毁策略和程序范围内的介质主要包括备份介质虚拟磁带库光学介质硬盘驱动器固态驱动器闪存硬拷贝等介质清理的策略和程序需要包含在服务提供商的相关要求中以及记录保存活动以跟踪介质随时间推移的销毁情况数据管理优化和持续改进优化和持续改进是信息系统管理活动中的一个环节良好的优化和持续改进管理活动能够有效保障信息系统的性能和可用性等延长整体系统的有效使用周期传统上优化和持续改进常用的方法为戴明环即循环循环是将持续改进分为四个阶段即计划执行检查和处理优化和持续改进基于有效的变更管理使用六西格玛倡导的五阶段方法是对戴明环四阶段周期的延伸包括定义度量分析改进设计控制验证当第四阶段的改进替换为设计控制替换为验证时五阶段法就从转变为定义阶段定义阶段的目标包括待优化信息系统定义核心流程定义和团队组建质量阶段度量阶段目标包括流程定义指标定义流程基线和度量系统分析分析阶段分析阶段的三个目标包括价值流分析信息系统异常的源头分析和确定优化改进的驱动因素改进设计阶段改进设计阶段的目标包括向发起人提出一个或多个解决方案量化每种方法的收益就解决方案达成共识并实施定义新的操作设计条件为新工艺设计提供定义和缓解故障模式控制验证阶段控制验证阶段的目标包括标准化新程序新系统功能的操作控制要素持续验证优化的信息系统的可交付成果记录经验教训管理要点数据管理数据管理是指通过规划控制与提供数据和信息资产的职能包括开发执行和监督有关数据的计划策略方案项目流程方法和程序以获取控制保护交付和提高数据和信息资产价值定义了数据战略数据治理数据架构数据应用数据安全数据质量数据标准和数据生存周期个核心能力域数据战略组织的数据战略能力域通常包括数据战略规划数据战略实施和数据战略评估三个能力项数据战略规划数据战略实施数据战略评估数据治理组织的数据治理能力域通常包括数据治理组织数据制度建设和数据治理沟通三个能力项数据治理组织数据制度建设数据治理沟通数据架构组织的数据架构能力域通常包括数据模型数据分布数据集成与共享和元数据管理四个能力项数据模型数据分布数据集成与共享元数据管理数据应用数据应用能力域通常包括数据分析数据开放共享和数据服务三个能力项数据分析数据开放共享数据服务数据安全组织的数据安全能力域通常包括数据安全策略数据安全管理和数据安全审计三个能力项数据安全策略数据安全管理数据安全审计数据质量组织的数据质量能力域通常包括数据质量需求数据质量检查数据质量分析和数据质量提升四个能力项数据质量需求数据质量检查数据质量分析数据质量提升数据标准组织的数据标准能力域通常包括业务术语参考数据和主数据数据元和指标数据四个能力项业务术语参考数据和主数据数据元指标数据数据生存周期组织的数据生存周期能力域通常包括数据需求数据设计和开发数据运维和数据退役四个能力项数据需求数据设计和开发数据运维数据退役理论框架与成熟度数据管理能力成熟度模型将组织的管理成熟度划分为个等级分别是初始级受管理级稳健级量化管理级和优化级初始级数据需求的管理主要是在项目级体现没有统一的管理流程主要是被动式管理受管理级组织意识到数据是资产根据管理策略的要求制定了管理流程指定了相关人员进行初步管理稳健级数据已被当做实现组织绩效目标的重要资产在组织层面制定了系列的标准化管理流程促进数据管理的规范化量化管理级数据被认为是获取竞争优势的重要资源数据管理的效率能量化分析和监控优化级数据被认为是组织生存和发展的基础相关管理流程能实时优化能在行业内进行最佳实践分享运维管理能力模型能力建设在价值实现方面组织需要在不同的服务场景中识别服务需求通过服务提供满足用户需求实现服务价值服务需求识别服务需求并遵循能力管理的要求对服务场景进行完整的策划服务提供配置符合能力要素要求且和服务场景相适宜的人员过程技术和资源并遵循能力管理的要求实施服务提供服务价值将运行维护服务能力体系输出的服务能力应用到服务场景中通过服务成果成本控制风险控制实现服务价值人员能力在任何组织当中人力资源都是组织的核心竞争力之一因此绝大部分组织对人员相关的建设和管理都非常重视无论是人员的容量技能工作绩效等方方面面都是组织关注的重点组织人员能力建设聚焦在从知识技能和经验维度选择合适的人从人员管理和岗位职责维度明确做适合的事目的是指导运维团队根据岗位职责和管理要求选人做事结合运维工作的特点运维人员一般分为管理类技术类和操作类三种人员岗位管理类主要负责运维的组织管理技术类主要负责运维技术建设以及运维活动中的技术决策等操作类主要负责运维活动的执行等资源能力资源主要由人员过程和技术要素中被固化下来的能力转化而成人员过程和技术要素在知识服务管理工具支撑等方面的能力被固化下来同时又对人员过程和技术要素提供有力的支撑和保障进而形成资源能力中的知识库服务台备件库以及运行维护工具资源能力确保运维能保障做事技术能力组织需要通过自有核心技术的研发和非自有核心技术的学习持续提升运维过程中发现问题和解决问题的能力在提升运维效率方面是重点考虑的要素技术要素确保运维能高效做事过程组织通过过程的制定把人员技术和资源要素以过程为主线串接在一起用于指导运维人员按约定的方式和方法确保运维能正确做事智能运维能力要素智能运维的能力要素主要包括人员运维团队需要熟悉运维领域的业务活动与流程掌握自动化大数据人工智能云计算算法等技术具备一定的智能运维研发能力技术技术通常包括统一的标准和规范开放的基础公共资源与服务数据与流程及服务的互联互通等过程智能运维定义的过程需要具备清晰界定人机界面能够充分发挥智能化优势实现过程优化并考虑权限控制风险规避数据运维组织需要加强数据治理保证数据质量规范数据接口运维应用需要围绕数据进行采集加工消费提升运维智能化水平算法可以聚焦在异常检测根因分析故障预测知识图谱健康诊断决策分析等方面具备有穷性确切性有效性等特点资源组织在数据管理能力域数据服务中对于资源管理至少应根据不同场景要求配置开放共享服务管理所需要的算力带宽存储等知识知识通常包括运维技术方案及方法与步骤运维的经验沉淀运维对象的多维度描述运维数据的智能挖掘结果等能力平台智能运维能力平台通常具备数据管理分析决策自动控制等能力其中数据管理能力用于采集处理存储展示各种运维数据分析决策能力以感知到的数据作为输入做出实时的运维决策驱动自动化工具实施操作自动控制根据运维决策实施具体的运维操作能力应用以运维场景为中心通过场景分析能力构建服务交付迭代调优四个关键环节可以使运维场景具备智能特征根据复杂程度运维场景分为单一场景复合场景和全局场景场景分析是指从业务或本身接收对新服务或改进服务的需求场景需求分析从业务需求用户需求以及系统需求不同层次阶段进行不同方式内容以及侧重点的需求调研能力构建是指基于运维场景分析的结果和目标要求应用赋能平台中适合运维场景数据特点的加工处理能力系统性设计数据的处理流程构建符合特定运维场景需求的智能运维解决方案服务交付是指制订详细的交付计划准备必要的资源评估可能存在的风险并明确规避方案完善交付实施过程通过服务交付检查确保运维场景的智能特征符合策划要求迭代调优是指通过持续的迭代对智能运维场景的优化确保投入符合智能运维具体场景的规划目标渐进式达成智能运维需具备若干智能特征智能特征包括能感知指具备灵敏准确地识别人活动和对象的状态的特点会描述指具备直观友好地展现和表达运维场景中各类信息的特点自学习指具备积累数据完善模型总结规律等主动获取知识的特点会诊断指具备对人活动和对象进行分析定位判断的特点可决策指具备综合分析给出后续处置依据或解决方案的特点自执行指具备对已知运维场景做出自动化处置的特点自适应指具备自动适应环境变化动态优化处理的特点信息安全管理三要素三要素是保密性完整性和可用性三个词的缩写信息安全管理体系网络安全等级保护安全保护等级划分等级保护对象的安全保护等级分为以下五级第一级等级保护对象受到破坏后会对相关公民法人和其他组织的合法权益造成损害但不危害国家安全社会秩序和公共利益第二级等级保护对象受到破坏后会对相关公民法人和其他组织的合法权益产生严重损害或特别严重损害或者对社会秩序和公共利益造成危害但不危害国家安全第三级等级保护对象受到破坏后会对社会秩序和公共利益造成严重危害或者对国家安全造成危害第四级等级保护对象受到破坏后会对社会秩序和公共利益造成特别严重危害或者对国家安全造成严重危害第五级等级保护对象受到破坏后会对国家安全造成特别严重危害安全保护能力等级划分信息安全技术网络安全等级保护基本要求规定了不同级别的等级保护对象应具备的基本安全保护能力第一级安全保护能力应能够防护免受来自个人的拥有很少资源的威胁源发起的恶意攻击一般的自然灾难以及其他相当危害程度的威胁所造成的关键资源损害在自身遭到损害后能够恢复部分功能第二级安全保护能力应能够防护免受来自外部小型组织的拥有少量资源的威胁源发起的恶意攻击一般的自然灾难以及其他相当危害程度的威胁所造成的重要资源损害能够发现重要的安全漏洞和处置安全事件在自身遭到损害后能够在一段时间内恢复部分功能第三级安全保护能力应能够在统一安全策略下防护免受来自外部有组织的团体拥有较为丰富资源的威胁源发起的恶意攻击较为严重的自然灾难以及其他相当程度的威胁所造成的主要资源损害能够及时发现监测攻击行为和处置安全事件在自身遭到损害后能够较快恢复绝大部分功能第四级安全保护能力应能够在统一安全策略下防护免受来自国家级别的敌对组织的拥有丰富资源的威胁源发起的恶意攻击严重的自然灾难以及其他相当危害程度的威胁所造成的资源损害能够及时发现监测发现攻击行为和安全事件在自身遭到损害后能够迅速恢复所有功能第五级安全保护能力略欢迎关注我的个人博客知乎',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-11-29 16:00:29',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="老生杂谈的IT人" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://djy.oldit.cn/image/author.webp"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51369125?spm=1010.2135.3001.5343" title="CSDN"><img class="back-menu-item-icon" src="https://djy.oldit.cn/image/csdn_logo.webp" alt="CSDN"/><span class="back-menu-item-text">CSDN</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://toolsbox.oldit.cn/" title="工具站"><img class="back-menu-item-icon" src="https://djy.oldit.cn/image/%E7%9B%AF%E7%9D%80.webp" alt="工具站"/><span class="back-menu-item-text">工具站</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">切换线路</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.oldit.cn/" title="备用线路"><img class="back-menu-item-icon" src="https://djy.oldit.cn/image/%E5%A4%9A%E7%BA%BF%E8%B7%AF.webp" alt="备用线路"/><span class="back-menu-item-text">备用线路</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">老生杂谈的IT人</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-box-archive"></use></svg><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shapes"></use></svg><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags"></use></svg><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-link"></use></svg><span> 友链</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-artstation"></use></svg><span> 鱼塘</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-envelope"></use></svg><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=6858639461&amp;server=netease"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-music"></use></svg><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-images"></use></svg><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-dice-d20"></use></svg><span> 我的装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shoe-prints"></use></svg><span> 随便逛逛</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-lightbulb"></use></svg><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-paper-plane"></use></svg><span> 关于本人</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/triennium/"><span> 三年之约</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 年度总结</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/2023-AS/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-niandugongzuojihua"></use></svg><span> 2023年度总结</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://djy.oldit.cn/image/wechat.webp" target="_blank"><img class="post-qr-code-img" alt="wechat" src="https://djy.oldit.cn/image/wechat.webp"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://djy.oldit.cn/image/alipay.webp" target="_blank"><img class="post-qr-code-img" alt="alipay" src="https://djy.oldit.cn/image/alipay.webp"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Centos/" style="font-size: 1.05rem; font-weight: 500; color: var(--anzhiyu-lighttext)">Centos<sup>16</sup></a><a href="/tags/Debian/" style="font-size: 1.05rem;">Debian<sup>1</sup></a><a href="/tags/ECS/" style="font-size: 1.05rem;">ECS<sup>1</sup></a><a href="/tags/Prometheus/" style="font-size: 1.05rem;">Prometheus<sup>2</sup></a><a href="/tags/Security/" style="font-size: 1.05rem;">Security<sup>2</sup></a><a href="/tags/jumpserver/" style="font-size: 1.05rem;">jumpserver<sup>1</sup></a><a href="/tags/kubernetes/" style="font-size: 1.05rem;">kubernetes<sup>1</sup></a><a href="/tags/%E4%BD%9C%E4%B8%BA%E6%97%A5%E8%AE%B0%E5%8A%A0%E5%AF%86/" style="font-size: 1.05rem;">作为日记加密<sup>1</sup></a><a href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" style="font-size: 1.05rem;">信息系统项目管理师<sup>6</sup></a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 1.05rem;">服务器<sup>1</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" style="font-size: 1.05rem;">计算机网络原理<sup>1</sup></a><a href="/tags/%E8%BD%AF%E8%80%83/" style="font-size: 1.05rem;">软考<sup>6</sup></a><a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/" style="font-size: 1.05rem;">阿里云<sup>1</sup></a><a href="/tags/%E9%AB%98%E9%A1%B9/" style="font-size: 1.05rem;">高项<sup>6</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">10</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">七月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">7</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/03/"><span class="card-archive-list-date">三月 2016</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" itemprop="url">信息系统项目管理师</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>信息系统项目管理师</span></a><a class="article-meta__tags" href="/tags/%E8%BD%AF%E8%80%83/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>软考</span></a><a class="article-meta__tags" href="/tags/%E9%AB%98%E9%A1%B9/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>高项</span></a></span></div></div><h1 class="post-title" itemprop="name headline">四、信息系统管理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-11-29T08:00:00.000Z" title="发表于 2023-11-29 16:00:00">2023-11-29</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2023-11-29T08:00:29.123Z" title="更新于 2023-11-29 16:00:29">2023-11-29</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">6.8k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>19分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="四、信息系统管理"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为惠州"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>惠州</span><span class="post-meta-separator"></span><span class="post-meta-commentcount"><i class="anzhiyufont anzhiyu-icon-comments post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2023/11/29/%E5%9B%9B%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/#post-comment" tabindex="-1"><span id="twikoo-count"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></a></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://djy.oldit.cn/article/ruankao_logo.webp"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://hmiking.top/2023/11/29/%E5%9B%9B%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"><header><a class="post-meta-categories" href="/categories/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" itemprop="url">信息系统项目管理师</a><a href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" tabindex="-1" itemprop="url">信息系统项目管理师</a><a href="/tags/%E8%BD%AF%E8%80%83/" tabindex="-1" itemprop="url">软考</a><a href="/tags/%E9%AB%98%E9%A1%B9/" tabindex="-1" itemprop="url">高项</a><h1 id="CrawlerTitle" itemprop="name headline">四、信息系统管理</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">H Miking</span><time itemprop="dateCreated datePublished" datetime="2023-11-29T08:00:00.000Z" title="发表于 2023-11-29 16:00:00">2023-11-29</time><time itemprop="dateCreated datePublished" datetime="2023-11-29T08:00:29.123Z" title="更新于 2023-11-29 16:00:29">2023-11-29</time></header><blockquote>
+<p>内容来源：信息系统项目管理师教程 (第4版）<br>文章内容主要为第4版教程的核心重点内容。</p>
+</blockquote>
+<h3 id="4-1-管理方法"><a href="#4-1-管理方法" class="headerlink" title="4.1 管理方法"></a>4.1 管理方法</h3><h4 id="4-1-1-管理基础"><a href="#4-1-1-管理基础" class="headerlink" title="4.1.1 管理基础"></a>4.1.1 管理基础</h4><ol>
+<li><p>层次结构</p>
+</li>
+<li><p>系统管理</p>
+</li>
+</ol>
+<p>信息系统管理覆盖四大领域：</p>
+<ul>
+<li>规划和组织：针对信息系统的整体组织、战略和支持活动。</li>
+<li>设计和实施：针对信息系统解决方案的定义、采购和实施，以及他们与业务流程的整合。</li>
+<li>运维和服务：针对信息系统服务的运行交付和支持，包括安全。</li>
+<li>优化和持续改进：针对信息系统的性能监控及其于内部性能目标、内部控制目标和外部 要求的一致性管理。</li>
+</ul>
+<h4 id="4-1-2-规划和组织"><a href="#4-1-2-规划和组织" class="headerlink" title="4.1.2 规划和组织"></a>4.1.2 规划和组织</h4><ol>
+<li>规划模型</li>
+</ol>
+<p>信息系统战略三角突出了业务战略、信息系统和组织机 制之间的必要一致性，如图4-2所示。它用于描述信息系统与业务系统必要的协同关系，以及 理解信息系统与组织机制间的相互影响。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231125155950-crsa50a.webp" alt="image">​</p>
+<p>成功的组织有一个压倒一切的业务战略，可以推动组织机制和信息系统的有机融合。</p>
+<ol start="2">
+<li>组织模型</li>
+</ol>
+<p>1） 业务战略</p>
+<ul>
+<li>当组织的目标是成为市场上成本最低的生产者时，总成本领先战略就会产生。采用该战略 的组织通过最大限度地降低成本，从而获得高于平均水平的绩效。所提供的产品或服务必须在 质量上与业内其他人提供的产品或服务相当，以便客户对象感知其相对高性价比。通常，一个 行业中只存在一个成本引领者。</li>
+<li>采用差异性战略时，组织通过差异化，以一种在市场上显得独特的方式，定义其产品或服 务。组织确定哪些定性维度对其客户对象最重要，然后找到在其中一个或多个维度增加产品和 服务价值的方法。为了使此策略起作用，差异化因素向客户对象收取的价格必须相对于竞争对 手收取的价格，是公平的。</li>
+<li>采用专注化战略时，专注化允许组织将其范围限制在更狭窄的细分市场，并为该组客户对 象量身定制其产品。该策略有两种变体：①专注成本，在其细分市场内寻求成本优势；②专注 差异化，寻求细分市场内的产品或服务的差异化。这种策略使组织能够实现区域竞争优势，即 使它没有在整个经济与社会中实现竞争优势，也可以通过专注于某些细分市场的方式获得局部 的竞争优势。</li>
+</ul>
+<p>2） 组织机制战略</p>
+<h4 id="4-1-3-设计和实施"><a href="#4-1-3-设计和实施" class="headerlink" title="4.1.3 设计和实施"></a>4.1.3 设计和实施</h4><ol>
+<li>设计方法</li>
+</ol>
+<p>1） 从战略到系统架构</p>
+<p>组织必须从业务战略开始，使用该战略制定更具体的目标。然后从每个目标派生出详细的 业务需求。组织需要与架构设计人员合作，将这些业务需求转换为构成信息系统架构的系统要 求、标准和流程的更详细视图。这个更详细的视图，即信息系统架构要求，包括考虑数据和流 程需求以及安全目标等事项。组织还可以向架构设计人员清楚地了解信息系统必须完成的工作 以及确保其顺利开发、实施和使用所需的治理安排。治理安排指定组织中哪个人保留对信息系 统的控制权和责任。</p>
+<p>2） 从系统架构到系统设计 </p>
+<p>将信息系统架构转换为系统设计时，需要继承信息系统架构并添加更多细节，包括实际的 硬件、数据、网络和软件。进而扩展到数据的位置和访问过程、防火墙的位置、链路规范、互 联设计等。信息系统架构被转换为功能规格。功能规格可以分为硬件规格、软件规格、存储规 格、接口规格、网络规格等。然后决定如何实现这些规范，并在信息系统基础架构中使用什么 硬件、软件、存储、接口、网络等。</p>
+<ol start="2">
+<li>架构模式</li>
+</ol>
+<p>信息系统体系架构有三种常见模式(见表4-3):①集中式架构。集中式架构下所 有内容采用集中建设、支持和管理的模式，其主体系统通常部署于数据中心，以消除管理物理 分离的基础设施带来的困难。②分布式架构。硬件、软件、网络和数据的部署方式是在多台小 型计算机、服务器和设备之间分配处理能力和应用功能，这些设施严重依赖于网络将它们连接 在一起。③面向服务的系统架构(Service-Oriented Architecture,SOA)。SOA架构中使用的软 件通常被引向软件即服务(Software-as-a-Service,SaaS)的相关架构，同时，这些应用程序在 通过互联网交付时也被称为Web服务。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231125160147-afro54h.webp" alt="image">​</p>
+<h4 id="4-1-4-运维和服务"><a href="#4-1-4-运维和服务" class="headerlink" title="4.1.4 运维和服务"></a>4.1.4 运维和服务</h4><ol>
+<li>运行管理和控制</li>
+<li>IT服务管理</li>
+</ol>
+<ul>
+<li><p>服务台。</p>
+<p>服务台(Service Desk)是组织体现IT服务的重要环节，也是服务干系人体 验的重要感知窗口。</p>
+</li>
+<li><p>事件管理</p>
+<p>事件是IT服务管理遭遇计划外中断或服务质量出现下降，以及尚未影响服 务的配置项故障。事件可能是服务中断、服务速度变慢、软件缺陷以及其他任何组件发生故障。</p>
+</li>
+<li><p>问题管理。</p>
+<p>当发生了几个看起来具有相同或相似根本原因的事件时，就会启动问题管 理活动。</p>
+</li>
+<li><p>变更管理。</p>
+<p>变更是使一个或更多信息系统配置项的状态发生改变的行动。</p>
+</li>
+<li><p>配置管理。</p>
+<p>配置管理是通过技术或者行政的手段对信息系统的信息进行管理的一系列活动，这些信息不仅包括信息系统具体配置项信息，还包括这些配置项之间的相互关系。</p>
+</li>
+<li><p>发布管理</p>
+<p>发布管理负责计划和实施信息系统的变更，并且记录该变更的各方面信息。</p>
+</li>
+<li><p>服务级别管理。</p>
+<p>服务级别管理就是对IT服务的级别进行定义、记录和管理，并在可 接受的成本之下与干系人达成一致的管理过程，通过服务水平协议(Service Level Agreement, SLA)、服务绩效监控和报告的不断循环，持续维护和改进服务质量，以及触发采取行动消除 较差服务，从而满足干系人的服务需求。</p>
+</li>
+<li><p>财务管理。</p>
+</li>
+<li><p>容量管理。</p>
+<p>容量管理用于确认信息系统中有足够的容量满足服务需求。如果信息系统 的性能在可接受的范围内，则其具有足够的容量。</p>
+</li>
+<li><p>服务连续性管理。</p>
+<p>服务连续性管理是一组与组织持续提供服务的能力相关的活动</p>
+</li>
+<li><p>可用性管理。</p>
+<p>可用性管理是有关设计、实施、监控、评价和报告IT服务的可用性以 确保持续地满足服务干系人的可用性需求的服务管理流程。可用性是指一个组件或一种服务在 设定的某个时刻或某段时间内发挥其应有功能的能力，即在约定的服务时段内，IT服务实际能 够使用的服务的时间比例。</p>
+</li>
+</ul>
+<ol start="3">
+<li>运行与监控</li>
+</ol>
+<p>1） 运行监控 </p>
+<p>IT团队应对信息系统、应用程序和基础设施进行监控，以确保它们继续按要求运行。</p>
+<p>2） 安全监控</p>
+<p>组织需要执行不同类型的安全监控，并把安全监控作为其整体策略的一部分，以预防和响 应安全事件。</p>
+<ol start="4">
+<li>终端侧管理</li>
+</ol>
+<p>IT团队职能的一个关键环节是它向组织人员提供的服务，以改善他们对IT访问和使用的 情况。组织通常使用IT管理工具来促进对用户终端计算机的高效和一致的管理。一般来说，最 终用户计算机是“锁定”的，这限制了最终用户可能在其设备上执行的配置更改的数量和类型， 包括操作系统配置、补丁安装、软件程序安装、使用外部数据存储设备等，最终用户可能会将 此类限制视为不便。但是，这些限制不仅有助于确保最终用户的设备和整个组织的IT环境具有 更高的安全性，而且还促进了更高的一致性，从而降低了支持成本。</p>
+<ol start="5">
+<li>程序库管理</li>
+</ol>
+<p>程序库是组织用来存储和管理应用程序源代码和目标代码的工具。在大多数组织中，应用 程序源代码非常敏感。它可能被视为知识产权，并且可能包含算法、加密密钥和其他敏感信息， 这些信息应由尽可能少的人员访问。应用程序源代码应被视为信息，并通过组织的安全策略和 数据分类策略进行管理。程序库的控制使组织能够对其应用程序的完整性、质量和安全性进行 高度控制。程序库通常作为具有用户界面和多种功能的信息系统存在，其中主要功能包括：访 问控制、程序签出、程序签入、版本控制和代码分析等。</p>
+<ol start="6">
+<li>安全管理</li>
+<li>介质控制</li>
+</ol>
+<p>组织需要采取一系列活动，以确保数字介质得到适当管理，包括对其保护以及销毁不再需 要的数据。这些过程通常与数据保留和数据清除过程相关联，以便通过物理和逻辑的安全控制 充分保护所需的数据，同时有效丢弃和擦除不再需要的数据。处置不再需要的介质相关的程序， 包括擦除该介质上的数据或使该介质上的数据无法以其他方式恢复的所有相关步骤。组织应考 虑包含在介质管理、销毁策略和程序范围内的介质主要包括：备份介质、虚拟磁带库、光学介 质、硬盘驱动器、固态驱动器、闪存、硬拷贝等。介质清理的策略和程序需要包含在服务提供 商的相关要求中，以及记录保存活动以跟踪介质随时间推移的销毁情况。</p>
+<ol start="8">
+<li>数据管理</li>
+</ol>
+<h4 id="4-1-5-优化和持续改进"><a href="#4-1-5-优化和持续改进" class="headerlink" title="4.1.5 优化和持续改进"></a>4.1.5 优化和持续改进</h4><ul>
+<li>优化和持续改进是信息系统管理活动中的一个环节，良好的优化和持续改进管理活动能够 有效保障信息系统的性能和可用性等，延长整体系统的有效使用周期。传统上，优化和持续改 进常用的方法为戴明环，即PDCA循环。PDCA循环是将持续改进分为四个阶段，即Plan(计 划)、Do(执行)、Check(检查)和Act(处理)。</li>
+<li>优化和持续改进基于有效的变更管理，使用六西格玛倡导的五阶段方法DMAIC&#x2F;DMADV, 是对戴明环四阶段周期的延伸，包括：定义(Define)、度量(Measure)、分析(Analysis)、改 进&#x2F;设计(Improve&#x2F;Design)、控制&#x2F;验证(Control&#x2F;Verify)。当第四阶段的“改进”替换为“设 计”,“控制”替换为“验证”时，五阶段法就从DMAIC转变为DMADV。</li>
+</ul>
+<ol>
+<li>定义阶段</li>
+</ol>
+<p>定义阶段的目标包括待优化信息系统定义、核心流程定义和团队组建。</p>
+<ol start="2">
+<li>质量阶段</li>
+</ol>
+<p>度量阶段目标包括流程定义、指标定义、流程基线和度量系统分析。</p>
+<ol start="3">
+<li>分析阶段</li>
+</ol>
+<p>分析阶段的三个目标包括价值流分析、信息系统异常的源头分析和确定优化改进的驱动因素。</p>
+<ol start="4">
+<li>改进&#x2F;设计阶段</li>
+</ol>
+<ul>
+<li><p>改进&#x2F;设计阶段的目标包括：</p>
+<p>①向发起人提出一个或多个解决方案；量化每种方法的收益； 就解决方案达成共识并实施。</p>
+<p>②定义新的操作&#x2F;设计条件。</p>
+<p>③为新工艺&#x2F;设计提供定义和缓解故障模式。</p>
+</li>
+</ul>
+<ol start="5">
+<li>控制&#x2F;验证阶段</li>
+</ol>
+<p>控制&#x2F;验证阶段的目标包括标准化新程序&#x2F;新系统功能的操作控制要素、持续验证优化的信 息系统的可交付成果、记录经验教训。</p>
+<h3 id="4-2-管理要点"><a href="#4-2-管理要点" class="headerlink" title="4.2 管理要点"></a>4.2 管理要点</h3><h4 id="4-2-1-数据管理"><a href="#4-2-1-数据管理" class="headerlink" title="4.2.1 数据管理"></a>4.2.1 数据管理</h4><ul>
+<li>数据管理是指通过规划、控制与提供数据和信息资产的职能，包括开发、 执行和监督有关数据的计划、策略、方案、项目、流程、方法和程序，以获取、控制、保护、 交付和提高数据和信息资产价值</li>
+<li>DCMM定义了数据战略、数据治理、数据架构、数据应用、数据安全、数据质量、数据标 准和数据生存周期8个核心能力域。</li>
+</ul>
+<ol>
+<li>数据战略</li>
+</ol>
+<ul>
+<li>组织的数据战略能力域通常包括数据战略规划、数据战略实施和数据战略评估三个能力项。</li>
+</ul>
+<p>(1)数据战略规划</p>
+<p>(2)数据战略实施</p>
+<p>(3)数据战略评估</p>
+<ol start="2">
+<li>数据治理</li>
+</ol>
+<ul>
+<li>组织的数据治理能力域通常包括数据治理组织、数据制度建设和数据治理沟通三个能力项。</li>
+</ul>
+<p>(1)数据治理组织</p>
+<p>(2)数据制度建设</p>
+<p>(3)数据治理沟通</p>
+<ol start="3">
+<li>数据架构</li>
+</ol>
+<ul>
+<li>组织的数据架构能力域通常包括数据模型、数据分布、数据集成与共享和元数据管理四个能力项。</li>
+</ul>
+<p>(1)数据模型</p>
+<p>(2)数据分布</p>
+<p>(3)数据集成与共享</p>
+<p>(4)元数据管理</p>
+<ol start="4">
+<li>数据应用</li>
+</ol>
+<ul>
+<li>数据应用能力域通常包括数据分析、数据开放共享和数据服务三个能力项。</li>
+</ul>
+<p>(1)数据分析</p>
+<p>(2)数据开放共享</p>
+<p>(3)数据服务</p>
+<ol start="5">
+<li>数据安全</li>
+</ol>
+<ul>
+<li>组织的数据安全能力域通常包括数据安全策略、数据安全管理和数据安全审计三个能力项。</li>
+</ul>
+<p>(1)数据安全策略</p>
+<p>(2)数据安全管理</p>
+<p>(3)数据安全审计</p>
+<ol start="6">
+<li>数据质量</li>
+</ol>
+<ul>
+<li>组织的数据质量能力域通常包括数据质量需求、数据质量检查、数据质量分析和数据质量 提升四个能力项。</li>
+</ul>
+<p>(1)数据质量需求</p>
+<p>(2)数据质量检查</p>
+<p>(3)数据质量分析</p>
+<p>(4)数据质量提升</p>
+<ol start="7">
+<li>数据标准</li>
+</ol>
+<ul>
+<li>组织的数据标准能力域通常包括业务术语、参考数据和主数据、数据元和指标数据四个能力项。</li>
+</ul>
+<p>(1)业务术语</p>
+<p>(2)参考数据和主数据</p>
+<p>(3)数据元</p>
+<p>(4)指标数据</p>
+<ol start="8">
+<li>数据生存周期</li>
+</ol>
+<ul>
+<li>组织的数据生存周期能力域通常包括数据需求、数据设计和开发、数据运维和数据退役四 个能力项。</li>
+</ul>
+<p>(1)数据需求</p>
+<p>(2)数据设计和开发</p>
+<p>(3)数据运维</p>
+<p>(4)数据退役</p>
+<ol start="9">
+<li>理论框架与成熟度</li>
+</ol>
+<p>(1) 数据管理能力成熟度模型。DCMM将组织的管理成熟度划分为5个等级，分别是：初 始级、受管理级、稳健级、量化管理级和优化级。</p>
+<ul>
+<li>初始级：数据需求的管理主要是在项目级体现，没有统一的管理流程，主要是被动式 管理。</li>
+<li>受管理级：组织意识到数据是资产，根据管理策略的要求制定了管理流程，指定了相关 人员进行初步管理。</li>
+<li>稳健级：数据已被当做实现组织绩效目标的重要资产，在组织层面制定了系列的标准化 管理流程，促进数据管理的规范化。</li>
+<li>量化管理级：数据被认为是获取竞争优势的重要资源，数据管理的效率能量化分析和 监控。</li>
+<li>优化级：数据被认为是组织生存和发展的基础，相关管理流程能实时优化，能在行业内 进行最佳实践分享。</li>
+</ul>
+<h4 id="4-2-2-运维管理"><a href="#4-2-2-运维管理" class="headerlink" title="4.2.2 运维管理"></a>4.2.2 运维管理</h4><ol>
+<li>能力模型</li>
+</ol>
+<p>1） 能力建设</p>
+<p>在价值实现方面，组织需要在不同的服务场景中识别服务需求，通过服务提供，满足用户 需求，实现服务价值：</p>
+<ul>
+<li>服务需求：识别服务需求并遵循能力管理的要求对服务场景进行完整的策划。</li>
+<li>服务提供：配置符合能力要素要求且和服务场景相适宜的人员、过程、技术和资源，并 遵循能力管理的要求实施服务提供。</li>
+<li>服务价值：将运行维护服务能力体系输出的服务能力应用到服务场景中，通过服务成 果、成本控制、风险控制实现服务价值。</li>
+</ul>
+<p>2） 人员能力</p>
+<ul>
+<li><p>在任何组织当中，人力资源都是组织的核心竞争力之一。因此绝大部分组织对人员相关的 建设和管理都非常重视，无论是人员的容量、技能、工作绩效等方方面面，都是组织关注的重 点。组织人员能力建设聚焦在从知识、技能和经验维度选择合适的人，从人员管理和岗位职责 维度明确做适合的事，目的是指导IT运维团队根据岗位职责和管理要求“选人做事”。</p>
+</li>
+<li><p>结合IT运维工作的特点，运维人员一般分为管理类、技术类和操作类三种人员岗位，管理 类主要负责运维的组织管理，技术类主要负责运维技术建设以及运维活动中的技术决策等，操 作类主要负责运维活动的执行等。</p>
+</li>
+</ul>
+<p>3） 资源能力</p>
+<p>资源主要由人员、过程和技术要素中被固化下来的能力转化而成，人员、过程和技术要素 在知识、服务管理、工具支撑等方面的能力被固化下来，同时又对人员、过程和技术要素提供 有力的支撑和保障，进而形成资源能力中的知识库、服务台、备件库以及运行维护工具，资源 能力确保IT运维能“保障做事”。</p>
+<p>4） 技术能力</p>
+<p>组织需要通过自有核心技术的研发和非自有核心技术的学习，持续提升IT运维过程中发现 问题和解决问题的能力，在提升IT运维效率方面是重点考虑的要素，技术要素确保IT运维能 “高效做事”。</p>
+<p>5） 过程</p>
+<p>组织通过过程的制定，把人员、技术和资源要素以过程为主线串接在一起，用于指导IT运 维人员按约定的方式和方法，确保IT运维能“正确做事”。</p>
+<ol start="2">
+<li>智能运维</li>
+</ol>
+<p>(1) 能力要素。智能运维的能力要素主要包括： </p>
+<ul>
+<li>人员：运维团队需要熟悉IT运维领域的业务活动与流程，掌握自动化、大数据、人工智 能、云计算、算法等技术，具备一定的智能运维研发能力。</li>
+<li>技术：技术通常包括统一的标准和规范、开放的基础公共资源与服务、数据与流程及服 务的互联互通等。</li>
+<li>过程：智能运维定义的过程需要具备清晰界定人机界面，能够充分发挥智能化优势，实 现过程优化，并考虑权限控制、风险规避。</li>
+<li>数据：运维组织需要加强数据治理，保证数据质量，规范数据接口。运维应用需要围绕 数据进行采集、加工、消费，提升运维智能化水平。</li>
+<li>算法：可以聚焦在异常检测、根因分析、故障预测、知识图谱、健康诊断、决策分析等 方面，具备有穷性、确切性、有效性等特点。</li>
+<li>资源：组织在数据管理能力域数据服务中，对于资源管理，至少应根据不同场景要求， 配置开放共享服务管理所需要的算力、带宽、存储等。</li>
+<li>知识：知识通常包括运维技术方案及方法与步骤、运维的经验沉淀、运维对象的多维度 描述、运维数据的智能挖掘结果等。</li>
+</ul>
+<p>(2) 能力平台。</p>
+<p>智能运维能力平台通常具备数据管理、分析决策、自动控制等能力。其中， 数据管理能力用于采集、处理、存储、展示各种运维数据。分析决策能力以感知到的数据作为 输入，做出实时的运维决策，驱动自动化工具实施操作。自动控制根据运维决策，实施具体的 运维操作。</p>
+<p>(3) 能力应用。</p>
+<p>以运维场景为中心，通过场景分析、能力构建、服务交付、迭代调优四个 关键环节，可以使运维场景具备智能特征。根据复杂程度，运维场景分为单一场景、复合场景 和全局场景。</p>
+<ul>
+<li>场景分析：是指从业务或IT本身接收对新服务或改进服务的需求，场景需求分析从业务 需求、用户需求以及系统需求，不同层次阶段进行不同方式、内容以及侧重点的需求 调研。</li>
+<li>能力构建：是指基于运维场景分析的结果和目标要求，应用赋能平台中适合运维场景数 据特点的加工处理能力、系统性设计数据的处理流程，构建符合特定运维场景需求的智 能运维解决方案。</li>
+<li>服务交付：是指制订详细的交付计划，准备必要的资源，评估可能存在的风险并明确 规避方案，完善交付实施过程，通过服务交付检查确保运维场景的智能特征符合策划 要求。</li>
+<li>迭代调优：是指通过持续的迭代对智能运维场景的优化，确保投入符合智能运维具体场 景的规划目标渐进式达成。</li>
+</ul>
+<p>(4) 智能运维需具备若干智能特征，智能特征包括：</p>
+<ul>
+<li>能感知：指具备灵敏、准确地识别人、活动和对象的状态的特点。</li>
+<li>会描述：指具备直观友好地展现和表达运维场景中各类信息的特点。</li>
+<li>自学习：指具备积累数据、完善模型、总结规律等主动获取知识的特点。</li>
+<li>会诊断：指具备对人、活动和对象进行分析、定位、判断的特点。</li>
+<li>可决策：指具备综合分析，给出后续处置依据或解决方案的特点。</li>
+<li>自执行：指具备对已知运维场景做出自动化处置的特点。</li>
+<li>自适应：指具备自动适应环境变化，动态优化处理的特点。</li>
+</ul>
+<h4 id="4-2-3-信息安全管理"><a href="#4-2-3-信息安全管理" class="headerlink" title="4.2.3 信息安全管理"></a>4.2.3 信息安全管理</h4><ol>
+<li>CIA三要素</li>
+</ol>
+<p>CIA三要素是保密性(Confidentiality)、完整性(Integrity)和可用性(Availability)三个 词的缩写。</p>
+<ol start="2">
+<li>信息安全管理体系</li>
+<li>网络安全等级保护</li>
+</ol>
+<p>1） 安全保护等级划分</p>
+<p>等级保护对象的安全保护等级分为以下五级：第一级，等级 保护对象受到破坏后，会对相关公民、法人和其他组织的合法权益造成损害，但不危害国家安 全、社会秩序和公共利益；第二级，等级保护对象受到破坏后，会对相关公民、法人和其他组 织的合法权益产生严重损害或特别严重损害，或者对社会秩序和公共利益造成危害，但不危害 国家安全；第三级，等级保护对象受到破坏后，会对社会秩序和公共利益造成严重危害，或者 对国家安全造成危害；第四级，等级保护对象受到破坏后，会对社会秩序和公共利益造成特别 严重危害，或者对国家安全造成严重危害；第五级，等级保护对象受到破坏后，会对国家安全 造成特别严重危害。</p>
+<p>2） 安全保护能力等级划分</p>
+<ul>
+<li>GB&#x2F;T22239《信息安全技术网络安全等级保护基本要求》规定了不同级别的等级保护对象 应具备的基本安全保护能力。</li>
+<li>第一级安全保护能力：应能够防护免受来自个人的、拥有很少资源的威胁源发起的恶意攻 击、一般的自然灾难，以及其他相当危害程度的威胁所造成的关键资源损害，在自身遭到损害 后，能够恢复部分功能。</li>
+<li>第二级安全保护能力：应能够防护免受来自外部小型组织的、拥有少量资源的威胁源发 起的恶意攻击、一般的自然灾难，以及其他相当危害程度的威胁所造成的重要资源损害，能 够发现重要的安全漏洞和处置安全事件，在自身遭到损害后，能够在一段时间内恢复部分 功能。</li>
+<li>第三级安全保护能力：应能够在统一安全策略下防护免受来自外部有组织的团体、拥有较 为丰富资源的威胁源发起的恶意攻击、较为严重的自然灾难，以及其他相当程度的威胁所造成 的主要资源损害，能够及时发现、监测攻击行为和处置安全事件，在自身遭到损害后，能够较 快恢复绝大部分功能。</li>
+<li>第四级安全保护能力：应能够在统一安全策略下防护免受来自国家级别的、敌对组织的、 拥有丰富资源的威胁源发起的恶意攻击、严重的自然灾难，以及其他相当危害程度的威胁所造 成的资源损害，能够及时发现、监测发现攻击行为和安全事件，在自身遭到损害后，能够迅速 恢复所有功能。</li>
+<li>第五级安全保护能力：略。</li>
+</ul>
+<h3 id="‍‍欢迎关注我的CSDN、个人博客、知乎"><a href="#‍‍欢迎关注我的CSDN、个人博客、知乎" class="headerlink" title="‍‍欢迎关注我的CSDN、个人博客、知乎"></a>‍<strong>‍欢迎关注我的<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51369125?type=blog">CSDN</a>、<a target="_blank" rel="noopener" href="https://www.oldit.cn/">个人博客</a>、<a target="_blank" rel="noopener" href="https://www.zhihu.com/people/hmiking">知乎</a></strong></h3></article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/author.webp" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/author.webp" title="头像" alt="头像"></a><div class="post-copyright__author_name">H Miking</div><div class="post-copyright__author_desc">技术与人性的交响曲</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://hmiking.top/2023/11/29/%E5%9B%9B%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://hmiking.top/2023/11/29/四、信息系统管理/')">四、信息系统管理</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://djy.oldit.cn/image/wechat.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/wechat.webp" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://djy.oldit.cn/image/alipay.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/alipay.webp" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div><div class="reward-link mode"><a class="reward-link-button" href="/wechat/"><i class="anzhiyufont anzhiyu-icon-plant-fill"></i>运营模式与责任</a></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://hmiking.top/2023/11/29/%E5%9B%9B%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=四、信息系统管理&amp;url=http://hmiking.top/2023/11/29/%E5%9B%9B%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/&amp;pic=https://djy.oldit.cn/article/ruankao_logo.webp" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://hmiking.top" target="_blank">老生杂谈的IT人</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>信息系统项目管理师<span class="tagsPageCount">6</span></a><a class="post-meta__box__tags" href="/tags/%E8%BD%AF%E8%80%83/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>软考<span class="tagsPageCount">6</span></a><a class="post-meta__box__tags" href="/tags/%E9%AB%98%E9%A1%B9/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>高项<span class="tagsPageCount">6</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://djy.oldit.cn/article/ruankao_logo.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/11/29/%E5%85%AD%E3%80%81%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%A6%82%E8%BF%B0/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">六、项目管理概述</div></div></a></div><div class="next-post pull-right"><a href="/2023/11/29/%E4%BA%94%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">五、信息系统工程</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/2023/11/20/%E4%B8%89%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E6%B2%BB%E7%90%86(%E4%B8%BB%E8%A6%81%E8%80%83%E9%80%89%E6%8B%A9%E9%A2%98)/" title="三、信息系统治理(主要考选择题)"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-20</div><div class="title">三、信息系统治理(主要考选择题)</div></div></a></div><div><a href="/2023/11/16/%E4%B8%80%E3%80%81%E4%BF%A1%E6%81%AF%E5%8C%96%E5%8F%91%E5%B1%95/" title="一、信息化发展"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-16</div><div class="title">一、信息化发展</div></div></a></div><div><a href="/2023/11/17/%E4%BA%8C%E3%80%81%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95/" title="二、信息技术发展"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-17</div><div class="title">二、信息技术发展</div></div></a></div><div><a href="/2023/11/29/%E4%BA%94%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/" title="五、信息系统工程"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-29</div><div class="title">五、信息系统工程</div></div></a></div><div><a href="/2023/11/29/%E5%85%AD%E3%80%81%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%A6%82%E8%BF%B0/" title="六、项目管理概述"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-29</div><div class="title">六、项目管理概述</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/author.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/emotion.webp" ait="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">云计算、运维、网安</b>相关的一些文章，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><h1 class="author-info__name">H Miking</h1><div class="author-info__desc">技术与人性的交响曲</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/H-MiKing" target="_blank" title="Github"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-github"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/346448962" target="_blank" title="BiliBili"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-bilibili"></use></svg></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>公告</span></div><div class="announcement_content">让我们一起走进这个充满挑战和机遇的IT世界，共同成长，共同前行！</div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://djy.oldit.cn/image/gzh.webp) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://djy.oldit.cn/image/gzh-ewm.webp) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E7%AE%A1%E7%90%86%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">4.1 管理方法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-1-%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80"><span class="toc-number">1.1.</span> <span class="toc-text">4.1.1 管理基础</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-2-%E8%A7%84%E5%88%92%E5%92%8C%E7%BB%84%E7%BB%87"><span class="toc-number">1.2.</span> <span class="toc-text">4.1.2 规划和组织</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-3-%E8%AE%BE%E8%AE%A1%E5%92%8C%E5%AE%9E%E6%96%BD"><span class="toc-number">1.3.</span> <span class="toc-text">4.1.3 设计和实施</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-4-%E8%BF%90%E7%BB%B4%E5%92%8C%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.4.</span> <span class="toc-text">4.1.4 运维和服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-5-%E4%BC%98%E5%8C%96%E5%92%8C%E6%8C%81%E7%BB%AD%E6%94%B9%E8%BF%9B"><span class="toc-number">1.5.</span> <span class="toc-text">4.1.5 优化和持续改进</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E7%AE%A1%E7%90%86%E8%A6%81%E7%82%B9"><span class="toc-number">2.</span> <span class="toc-text">4.2 管理要点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-1-%E6%95%B0%E6%8D%AE%E7%AE%A1%E7%90%86"><span class="toc-number">2.1.</span> <span class="toc-text">4.2.1 数据管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-2-%E8%BF%90%E7%BB%B4%E7%AE%A1%E7%90%86"><span class="toc-number">2.2.</span> <span class="toc-text">4.2.2 运维管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-3-%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86"><span class="toc-number">2.3.</span> <span class="toc-text">4.2.3 信息安全管理</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%80%8D%E2%80%8D%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8%E6%88%91%E7%9A%84CSDN%E3%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E3%80%81%E7%9F%A5%E4%B9%8E"><span class="toc-number">3.</span> <span class="toc-text">‍‍欢迎关注我的CSDN、个人博客、知乎</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/11/29/%E4%BA%94%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/" title="五、信息系统工程"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="五、信息系统工程"/></a><div class="content"><a class="title" href="/2023/11/29/%E4%BA%94%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/" title="五、信息系统工程">五、信息系统工程</a><time datetime="2023-11-29T08:00:00.000Z" title="发表于 2023-11-29 16:00:00">2023-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/29/%E5%9B%9B%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/" title="四、信息系统管理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="四、信息系统管理"/></a><div class="content"><a class="title" href="/2023/11/29/%E5%9B%9B%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/" title="四、信息系统管理">四、信息系统管理</a><time datetime="2023-11-29T08:00:00.000Z" title="发表于 2023-11-29 16:00:00">2023-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/29/%E5%85%AD%E3%80%81%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%A6%82%E8%BF%B0/" title="六、项目管理概述"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="六、项目管理概述"/></a><div class="content"><a class="title" href="/2023/11/29/%E5%85%AD%E3%80%81%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E6%A6%82%E8%BF%B0/" title="六、项目管理概述">六、项目管理概述</a><time datetime="2023-11-29T08:00:00.000Z" title="发表于 2023-11-29 16:00:00">2023-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/20/%E4%B8%89%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E6%B2%BB%E7%90%86(%E4%B8%BB%E8%A6%81%E8%80%83%E9%80%89%E6%8B%A9%E9%A2%98)/" title="三、信息系统治理(主要考选择题)"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="三、信息系统治理(主要考选择题)"/></a><div class="content"><a class="title" href="/2023/11/20/%E4%B8%89%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E6%B2%BB%E7%90%86(%E4%B8%BB%E8%A6%81%E8%80%83%E9%80%89%E6%8B%A9%E9%A2%98)/" title="三、信息系统治理(主要考选择题)">三、信息系统治理(主要考选择题)</a><time datetime="2023-11-20T09:00:00.000Z" title="发表于 2023-11-20 17:00:00">2023-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/17/%E4%BA%8C%E3%80%81%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95/" title="二、信息技术发展"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="二、信息技术发展"/></a><div class="content"><a class="title" href="/2023/11/17/%E4%BA%8C%E3%80%81%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95/" title="二、信息技术发展">二、信息技术发展</a><time datetime="2023-11-17T09:30:58.000Z" title="发表于 2023-11-17 17:30:58">2023-11-17</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:h-miking@qq.com" title="email"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-envelope"></use></svg></a><a class="deal_link" target="_blank" rel="noopener" href="https://weibo.com/u/6997349925" title="微博"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weibo"></use></svg></a><a class="deal_link" href="/atom.xml" title="RSS"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss"></use></svg></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/icons8-%E5%8F%AF%E8%BE%BE%E9%B8%AD-100.webp" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/H-MiKing" title="Github"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github"></use></svg></a><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/346448962" title="Bilibili"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili"></use></svg></a><a class="deal_link" href="/copyright" title="CC"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-copyright-line"></use></svg></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">主题</div><div class="footer-links"><a class="footer-item" title="文档" target="_blank" rel="noopener" href="https://docs.anheyu.com/global/">文档</a><a class="footer-item" title="源码" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">源码</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="留言板" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://blog.anheyu.com/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://www.dogecloud.com/" style="margin-inline:5px" data-title="本站使用多吉云为静态资源提供CDN加速" title="本站使用多吉云为静态资源提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/CDN-%E5%A4%9A%E5%90%89%E4%BA%91.svg" alt="本站使用多吉云为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 By H Miking </div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/" title="粤ICP备2023109857号">粤ICP备2023109857号</a><a class="footer-bar-link cc" href="/copyright" title="cc协议"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-by-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nc-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nd-line"></i></a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">30</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">6</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51369125?spm=1010.2135.3001.5343" title="CSDN"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/csdn_logo.webp" alt="CSDN"/><span class="back-menu-item-text">CSDN</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://toolsbox.oldit.cn/" title="工具站"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/%E7%9B%AF%E7%9D%80.webp" alt="工具站"/><span class="back-menu-item-text">工具站</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">切换线路</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.oldit.cn/" title="备用线路"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/%E5%A4%9A%E7%BA%BF%E8%B7%AF.webp" alt="备用线路"/><span class="back-menu-item-text">备用线路</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-box-archive"></use></svg><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shapes"></use></svg><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags"></use></svg><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-link"></use></svg><span> 友链</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-artstation"></use></svg><span> 鱼塘</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-envelope"></use></svg><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=6858639461&amp;server=netease"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-music"></use></svg><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-images"></use></svg><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-dice-d20"></use></svg><span> 我的装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shoe-prints"></use></svg><span> 随便逛逛</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-lightbulb"></use></svg><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-paper-plane"></use></svg><span> 关于本人</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/triennium/"><span> 三年之约</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 年度总结</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/2023-AS/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-niandugongzuojihua"></use></svg><span> 2023年度总结</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Centos/" style="font-size: 0.88rem; font-weight: 500; color: var(--anzhiyu-lighttext)">Centos<sup>16</sup></a><a href="/tags/Debian/" style="font-size: 0.88rem;">Debian<sup>1</sup></a><a href="/tags/ECS/" style="font-size: 0.88rem;">ECS<sup>1</sup></a><a href="/tags/Prometheus/" style="font-size: 0.88rem;">Prometheus<sup>2</sup></a><a href="/tags/Security/" style="font-size: 0.88rem;">Security<sup>2</sup></a><a href="/tags/jumpserver/" style="font-size: 0.88rem;">jumpserver<sup>1</sup></a><a href="/tags/kubernetes/" style="font-size: 0.88rem;">kubernetes<sup>1</sup></a><a href="/tags/%E4%BD%9C%E4%B8%BA%E6%97%A5%E8%AE%B0%E5%8A%A0%E5%AF%86/" style="font-size: 0.88rem;">作为日记加密<sup>1</sup></a><a href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" style="font-size: 0.88rem;">信息系统项目管理师<sup>6</sup></a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 0.88rem;">服务器<sup>1</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" style="font-size: 0.88rem;">计算机网络原理<sup>1</sup></a><a href="/tags/%E8%BD%AF%E8%80%83/" style="font-size: 0.88rem;">软考<sup>6</sup></a><a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/" style="font-size: 0.88rem;">阿里云<sup>1</sup></a><a href="/tags/%E9%AB%98%E9%A1%B9/" style="font-size: 0.88rem;">高项<sup>6</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="462484390" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://music.163.com/playlist?id=462484390&amp;userid=331297580&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.4/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script async src="/anzhiyu/random.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.hmiking.top/',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.18/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.hmiking.top/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.hmiking.top/',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.18/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "hmiking@163.com";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script async src="https://tools.oldit.cn/js/ali.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
