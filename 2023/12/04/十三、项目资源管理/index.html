@@ -1,0 +1,983 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>十三、项目资源管理 | 老生杂谈的IT人</title><meta name="keywords" content="信息系统项目管理师,软考,高项"><meta name="author" content="H Miking"><meta name="copyright" content="H Miking"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="十三、项目资源管理"><meta name="application-name" content="十三、项目资源管理"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="十三、项目资源管理"><meta property="og:url" content="http://hmiking.top/2023/12/04/十三、项目资源管理/index.html"><meta property="og:site_name" content="老生杂谈的IT人"><meta property="og:description" content="内容来源：信息系统项目管理师教程 (第4版）文章内容主要为第4版教程的核心重点内容。   项目资源是指对于项目来说，一切具有使用价值，可为项目接受和利用，且属于项目发展 过程所需要的客观存在的资源，包括实物资源和团队资源。项目资源管理是为了降低项目成本， 而对项目所需的人力、材料、机械、技术、资金"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://djy.oldit.cn/article/ruankao_logo.webp"><meta property="article:author" content="H Miking"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://djy.oldit.cn/article/ruankao_logo.webp"><meta name="description" content="内容来源：信息系统项目管理师教程 (第4版）文章内容主要为第4版教程的核心重点内容。   项目资源是指对于项目来说，一切具有使用价值，可为项目接受和利用，且属于项目发展 过程所需要的客观存在的资源，包括实物资源和团队资源。项目资源管理是为了降低项目成本， 而对项目所需的人力、材料、机械、技术、资金"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://hmiking.top/2023/12/04/%E5%8D%81%E4%B8%89%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/"><link rel="preconnect" href="//npm.elemecdn.com"/><link rel="preconnect" href="//npm.onmicrosoft.cn"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="codeva-PfqJTGz6F7"/><meta name="msvalidate.01" content="7D99E8E915E5B1950806B033FC18068D"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.20/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://tools.oldit.cn/css/swiper.min.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bebfc15c02974ee0541fd24784126e39";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"与数百名博主无限进步","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片）：\n描述：\n站点截图（可选）：\n"},
+  peoplecanvas: undefined,
+  postHeadAiDescription: undefined,
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: {"enable":true,"ck":"3GC30UXeC1LQL2Yz","LingQueMonitorID":"3GC388x4FUeaMqb3"},
+  greetingBox: {"enable":true,"default":"晚上好👋","list":[{"greeting":"晚安😴","startTime":0,"endTime":5},{"greeting":"早上好鸭👋, 祝你一天好心情！","startTime":6,"endTime":9},{"greeting":"上午好👋, 状态很好，鼓励一下～","startTime":10,"endTime":10},{"greeting":"11点多啦, 在坚持一下就吃饭啦～","startTime":11,"endTime":11},{"greeting":"午安👋, 宝贝","startTime":12,"endTime":14},{"greeting":"🌈充实的一天辛苦啦！","startTime":14,"endTime":18},{"greeting":"19点喽, 奖励一顿丰盛的大餐吧🍔。","startTime":19,"endTime":19},{"greeting":"晚上好👋, 在属于自己的时间好好放松😌~","startTime":20,"endTime":24}]},
+  twikooEnvId: 'https://twikoo.hmiking.top/',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: {"apiurl":"https://friends.oldit.cn/"},
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":["☁️ 探索云计算的菜鸟","🔧 还在努力提升系统运维的菜鸟","🔒 网络安全方面的学者"]},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    simplehomepage: false,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":true,"limitCount":50,"languages":{"author":"作者: H Miking","link":"链接: ","source":"来源: 老生杂谈的IT人","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '老生杂谈的IT人',
+  title: '十三、项目资源管理',
+  postAI: '',
+  pageFillDescription: '13.1 管理基础, 13.1.1 相关术语和定义, 13.1.2 管理新实践, 13.2 项目资源管理过程, 13.2.1 过程概述, 13.2.2 裁剪考虑因素, 13.2.3 敏捷与适应方法, 13.3 规划资源管理, 13.3.1 输入, 13.3.2 工具与技术, 13.3.3 输出, 13.4 估算活动资源, 13.4.1 输入, 13.4.2 工具与技术, 13.4.3 输出, 13.5 获取资源, 13.5.1 输入, 13.5.2 工具与技术, 13.5.3 输出, 13.6 建设团队, 13.6.1 输入, 13.6.2 工具与技术, 13.6.3 输出, 13.7 管理团队, 13.7.1 输入, 13.7.2 工具与技术, 13.7.3 输出, 13.8 控制资源, 13.8.1 输入, 13.8.2 工具与技术, 13.8.3 输出, ‍欢迎关注我的、、内容来源信息系统项目管理师教程第版文章内容主要为第版教程的核心重点内容项目资源是指对于项目来说一切具有使用价值可为项目接受和利用且属于项目发展过程所需要的客观存在的资源包括实物资源和团队资源项目资源管理是为了降低项目成本而对项目所需的人力材料机械技术资金等资源所进行的计划组织指挥协调和控制等的活动实物资源管理着眼于以有效和高效的方式分配和使用完成项目所需的实物资源包括设备材料设施和基础设施团队资源指的是人力资源团队资源管理相对于实物资源管理包含了技能和能力要求项目团队成员可能具备不同的技能可能是全职的或兼职的也可能随项目进展而增加或减少项目人力资源管理的目的是根据项目需要规划并组建项目团队对团队进行有效的指导和管理以保证他们可以完成项目任务实现项目目标管理基础相关术语和定义项目团队项目团队是执行项目工作以实现项目目标的一组人员由为了完成项目而承担不同角色与职责的人员组成项目团队成员可能具备不同的技能可能是全职的或兼职的也可能随项目进展而增加或减少项目管理团队项目管理团队是直接参与项目管理活动的项目团队成员负责项目管理和领导活动如各项目阶段的启动规划执行监督控制和收尾项目管理团队也称为核心团队或领导团队对于小型项目项目管理职责可由整个项目团队分担或者由项目经理独自承担项目经理领导和管理领导者的工作主要涉及个方面确定方向为团队设定目标描绘愿景制定战略统一思想协调人员团结尽可能多的力量来实现愿景和项目目标激励和鼓舞在向项目目标努力的过程中不可避免地要遇到艰难险阻领导者要激励和鼓舞大家克服困难奋勇前进通俗地说领导者设定目标管理者率众实现目标尊重和信任而非畏惧和顺从是有效领导力的关键要素项目经理具有领导者和管理者的双重身份对项目经理而言管理能力和领导能力二者均不可或缺对于大型复杂项目领导能力尤为重要权力项目经理的权力有种来源职位权力来源于管理者在组织中的职位和职权在高级管理层对项目经理正式授权的基础上项目经理让员工进行工作的权力惩罚权力使用降职扣薪惩罚批评威胁等负面手段的能力惩罚权力很有力但会对团队气氛造成破坏滥用惩罚权力会导致项目失败应谨慎使用奖励权力给予下属奖励的能力奖励包括加薪升职福利休假礼物口头表扬认可度特殊的任务以及其他的奖励员工满意行为的手段优秀的管理者擅长使用奖励权力激励员工高水平完成工作专家权力来源于个人的专业技能如果项目经理让员工感到他是某些领域的专业权威那么员工就会在这些领域内遵从项目经理的意见来自一线的中层管理者经常具有很大的专家权力参照权力由于成为别人学习和参照榜样所拥有的力量参照权力是由于他人对榜样者的认可和敬佩从而愿意模仿和服从榜样者以及希望自己成为榜样者那样的人而产生的力量这是一种个人魅力具有优秀品质的领导者的参照权力会很大这些优秀品质包括诚实正直自信自律坚毅刚强宽容和专注等领导者要想拥有参照权力就要加强这些品质的修炼职位权力惩罚权力奖励权力来自于组织的授权专家权力和参照权力来自于管理者自身项目经理应不断拓展自己的权力获取各方支持以确保项目成功尤其在矩阵环境中项目经理对团队成员通常没有或仅有很小的命令职权所以他们适时影响干系人的能力对保证项目成功非常关键项目经理更注重运用奖励权力专家权力和参照权力尽量避免使用惩罚权力冲突和竞争冲突并不一定是有害的一团和气的集体不一定是一个高效率的集体项目经理对于有害的冲突要设法加以解决或减少对有益的冲突要加以利用要鼓励团队成员良性竞争团队发展阶段优秀团队的建设不是一蹴而就的一般要依次经历以下个阶段形成阶段一个个的个体转变为团队成员逐渐相互认识并了解项目情况及他们在项目中的角色与职责开始形成共同目标团队成员倾向于相互独立不怎么开诚布公在本阶段团队往往对未来有美好的期待震荡阶段团队成员开始执行分配的任务一般会遇到超出预想的困难希望被现实打破个体之间开始争执互相指责并且怀疑项目经理的能力规范阶段经过一定时间磨合团队成员开始协同工作并调整各自的工作习惯和行为来支持团队团队成员开始相互信任项目经理能得到团队的认可发挥阶段随着相互之间的配合默契和对项目经理的信任加强团队就像一个组织有序的单位那样工作团队成员之间相互依靠平稳高效地解决问题这时团队成员的集体荣誉感会非常强常以第一称谓称呼团队如我们组我们部门等并会努力捍卫团队声誉解散阶段所有工作完成后项目结束团队解散上述这些阶段通常按顺序进行然而团队停滞在某个阶段或退回到较早阶段的情况也并非罕见如果团队成员曾经共事过项目团队建设也可跳过某些阶段某个阶段持续时间的长短取决于团队活力团队规模和项目管理团队的领导力项目经理应该对团队活力有较好的理解以便有效地带领团队经历所有阶段激励理论现代项目管理在激励方面的理论基础主要是马斯洛需求层次理论赫茨伯格的双因素理论麦格雷戈的理论和理论期望理论马斯洛需求层次理论生理需求对衣食住行等需求都是生理需求这类需求的级别最低人们在转向较高层次的需求之前总是尽力满足这类需求常见的激励措施员工宿舍工作餐工作服班车工资补贴奖金等安全需求包括对人身安全生活稳定不致失业以及免遭痛苦威胁或疾病等的需求和生理需求一样在安全需求没有得到满足之前人们一般不追求更高层次的需求常见的激励措施养老保险医疗保障长期劳动合同意外保险失业保险等社会交往的需求包括对友谊爱情以及隶属关系的需求当生理需求和安全需求得到满足后社交需求就会凸显进而产生激励作用这些需求如果得不到满足就会影响员工的精神导致高缺勤率低生产率对工作不满及情绪低落常见的激励措施定期员工活动聚会比赛俱乐部等受尊重的需求包括自尊心和荣誉感荣誉来自别人自尊来自自己常见的激励措施荣誉性的奖励形象地位提升颁发奖章作为导师培训别人等自我实现的需求实现自己的潜力发挥个人能力到最大程度使自己越来越成为自己所期望的人物达到自我实现境界的人必须干与其能力相称的工作这样才会使他们感到最大的快乐常见的激励措施是给他更多的空间让他负责让他成为智囊团参与决策参与组织的管理会议等赫茨伯格双因素理论双因素理论认为有种完全不同的因素影响着人们的工作行为保健因素与工作环境或条件有关的能防止人们产生不满意感的一类因素包括工作环境工资薪水组织政策个人生活管理监督人际关系等当保健因素不健全时人们就会对工作产生不满意感但即使保健因素很好时也仅仅可以消除工作中的不满意却无法增加人们对工作的满意感所以这些因素是无法起到激励作用的激励因素与员工的工作本身或工作内容有关的能促使人们产生工作满意感的一类因素是高层次的需要包括成就承认工作本身责任发展机会等当激励因素缺乏时人们就会缺乏进取心对工作无所谓但一旦具备了激励因素员工则会感觉到强大的激励力量从而产生对工作的满意感所以只有这类因素才能真正激励员工麦格雷戈理论和理论理论对人性有如下假设人天性好逸恶劳只要有可能就会逃避工作人生来就以自我为中心漠视组织的要求人缺乏进取心逃避责任甘愿听从指挥安于现状没有创造性人们通常容易受骗易受人煽动人们天生反对改革人的工作动机就是为了获得经济报酬理论注重满足员工的生理需求和安全需求激励仅在生理和安全层次起作用同时很注重惩罚认为惩罚是有效的管理工具崇尚理论的领导者认为在领导工作中必须对员工采取强制惩罚和解雇等手段强迫员工努力工作对员工应当严格监督控制和管理在领导行为上应当实行高度控制和集中管理理论对人性的假设与理论完全相反其主要观点如下人天生并不是好逸恶劳他们热爱工作从工作得到满足感和成就感外来的控制和处罚对人们实现组织的目标不是一个有效的办法下属能够自我确定目标自我指挥和自我控制在适当的条件下人们愿意主动承担责任大多数人具有一定的想象力和创造力在现代社会中人们的智慧和潜能只是部分地得到了发挥如果给予机会人们喜欢工作并渴望发挥其才能理论认为激励在需求的各个层次上都起作用常用的激励办法是将员工个人目标与组织目标融合扩大员工的工作范围尽可能把员工的工作安排得富有意义并具有挑战性使其工作之后感到自豪满足其自尊和自我实现的需要使员工达到自我激励崇尚理论的管理者对员工采取以人为中心的宽容的及放权的领导方式使下属目标和组织目标很好地结合起来为员工的智慧和能力的发挥创造有利的条件我们在应用的时候应该因人因项目团队发展的阶段而异例如在项目团队的开始阶段大家互相还不是很熟悉对项目不是很了解或者还有某种抵触等这时候需要项目经理运用理论去指导和管理当项目团队进入执行阶段成员对项目的目标已经了解都愿意努力完成项目这时候可以运用理论授权团队完成所负责的工作并提供支持和相应的环境期望理论期望理论是一种通过考察人们的努力行为与其所获得的最终奖酬之间的因果关系来说明激励过程并以选择合适的行为达到最终的奖酬目标的理论期望理论认为一个目标对人的激励程度受个因素影响目标效价指实现该目标对个人有多大价值的主观判断如果实现该目标对个人来说很有价值个人的积极性就高反之积极性就低期望值指个人对实现该目标可能性大小的主观估计激发力量目标效价期望值管理新实践情商项目经理应提升内在如自我管理和自我意识和外在如关系管理能力从而提高个人情商研究表明提高项目团队的情商或情绪能力可提高团队效率还可以降低团队成员离职率自组织团队随着敏捷或适应型方法在项目中的应用越来越普遍自组织团队无须集中管控运作越来越多对于拥有自组织团队的项目项目经理可能实际上不称为项目经理这一角色主要是为团队创造环境支持并信任团队可以完成工作成功的自组织团队通常由通用的专业人才而不是主题专家组成他们能够不断适应变化的环境并采纳建设性反馈项目资源管理过程过程概述项目资源管理过程包括规划资源管理定义如何估算获取管理和利用实物以及团队项目资源估算活动资源估算执行项目所需的团队资源材料设备和用品的类型和数量获取资源获取项目所需的团队成员设施设备材料用品和其他资源建设团队提高工作能力促进团队成员互动改善团队整体氛围提高绩效管理团队管跟踪团队成员工作表现提供反馈解决问题并管理团队变更以优化项目绩效控制资源确保按计划为项目分配实物资源以及根据资源使用计划监督资源实际使用情况并采取必要纠正措施裁剪考虑因素敏捷与适应方法对于易变性高的项目更适合采用能够最大限度地集中和协作的团队结构形式协作旨在提高生产率和促进创新问题的解决协作型团队可以促进不同工作活动的快速整合改善沟通增加知识分享同时可以灵活地分配工作规划资源管理规划资源管理是定义如何估算获取管理和利用团队以及实物资源的过程本过程的主要作用是根据项目类型和复杂程度确定适用于项目资源的管理方法和管理程度本过程仅开展一次或仅在项目的预定义点开展规划资源管理过程的数据流向如图所示输入项目章程项目管理计划可作为规划资源管理过程输入的项目管理计划组件主要包括质量管理计划有助于定义项目所需的资源水平以实现和维护已定义的质量水平并达到项目测量指标范围基准识别了可交付成果决定了需要管理的资源的类型和数量项目文件需求文件指出了项目所需的资源的类型和数量并可能影响管理资源的方式项目进度计划提供了所需资源的时间轴风险登记册包含可能影响资源规划的各种威胁和机会的信息干系人登记册有助于识别对项目所需资源有特别兴趣或影响的那些干系人以及会影响资源使用偏好的干系人事业环境因素组织过程资产工具与技术专家判断数据表现图表适用于规划资源管理过程的数据表现数据表现有多种格式来记录和阐明团队成员的角色与职责大多数格式属于层级型矩阵型或文本型无论使用什么方法来记录团队成员的角色目的都是要确保每个工作包都有明确的责任人确保全体团队成员都清楚地理解其角色和职责一般来说层级型可用于表示高层级角色而文本型则更适用于记录详细职责层级型可采用传统的组织结构图自上而下地显示各种职位及其相互关系工作分解结构用来显示如何把项目可交付成果分解为工作包有助于明确高层级的职责组织分解结构按照组织现有的部门单元或团队排列并在每个部门下列出项目活动或工作包例如运营部门只需找到其所在的位置就能看到自己的全部项目职责资源分解结构按资源类别和类型对团队和实物资源的层级列表用于规划管理和控制项目工作每向下一个层级代表对资源的更详细描述直到信息细到可以与工作分解结构相结合矩阵型展示项目资源在各个工作包中的任务分配矩阵型图表的一个例子是职责分配矩阵它显示了分配给每个工作包的项目资源用于说明工作包或活动与项目团队成员之间的关系在大型项目中可以制定多个层次的矩阵型图表能反映与每个人相关的所有活动以及与每项活动相关的所有人员它也可确保任何一项任务都只有一个人负责从而避免职权不清的一个例子是执行负责咨询和知情矩阵文本型如果需要详细描述团队成员的职责就可以采用文本型组织理论会议输出资源管理计划作为项目管理计划的一部分资源管理计划提供了关于如何分类分配管理和释放项目资源的指南资源管理计划的内容主要包括识别资源获取资源角色与职责角色是指在项目中某人承担的职务或分配给某人的职务职权是指使用项目资源做出决策签字批准验收可交付成果并影响他人开展项目工作的权力职责是指为完成项目活动项目团队成员必须履行的职责和工作能力是指为完成项目活动项目团队成员须具备的技能和才干项目组织图项目团队资源管理培训团队建设资源控制认可计划团队章程团队章程是为团队创建团队价值观共识和工作指南的文件团队章程包括团队价值观沟通指南决策标准和过程冲突处理过程会议指南和团队共识团队章程对项目团队成员的可接受行为确定了明确的期望尽早认可并遵守明确的规则有助于减少误解提高生产力借助诸如行为规范沟通决策会议礼仪等方面的讨论团队成员可以了解彼此重要的价值观由团队制定或参与制定的团队章程可发挥最佳效果所有项目团队成员都分担责任确保遵守团队章程中规定的规则可定期审查和更新团队章程确保团队成员始终了解团队基本规则并指导新成员融入团队项目文件更新风险登记册更新关于团队和实物资源可用性的风险以及其他已知资源的相关风险估算活动资源估算活动资源是估算执行项目所需的团队资源以及材料设备和用品的类型和数量的过程本过程的主要作用是明确完成项目所需的资源种类数量和特性本过程应根据需要在整个项目期间定期开展估算活动资源过程的数据流向如图所示输入项目管理计划可作为估算活动资源过程输入的项目管理计划组件主要包括范围基准识别了实现项目目标所需的项目和产品范围而范围决定了对团队和实物资源的需求资源管理计划定义了识别项目所需不同资源的方法还定义了量化各个活动所需的资源并整合这些信息的方法项目文件风险登记册描述了可能影响资源选择和可用性的各个风险活动属性为估算活动清单中每项活动所需的团队和实物资源提供了数据来源包括资源需求强制日期活动地点假设条件和制约因素活动清单识别了需要资源的活动成本估算资源成本从数量和技能水平方面会影响资源选择资源日历识别了每种具体资源可用时的工作日班次正常营业的上下班时间周末和公共假期在规划活动期间潜在的可用资源信息如团队资源设备和材料用于估算资源可用性资源日历还规定了在项目期间确定的团队和实物资源何时可用可用多久这些信息可以在活动或项目层面建立这考虑了诸如资源经验和或技能水平以及不同地理位置等属性事业环境因素组织过程资产工具与技术专家判断自上而下估算自下而上估算是首先对团队和实物资源在活动级别上进行估算然后汇总成工作包控制账户和总体项目层级上的估算类比估算类比估算将以往类似项目的资源相关信息作为估算未来项目的基础这是一种快速估算方法适用于项目经理只能识别的几个高层级的情况参数估算参数估算基于历史数据和项目参数使用某种算法或历史数据与其他变量之间的统计关系来计算活动所需的资源数量数据分析适用于估算活动资源过程的数据分析技术是备选方案分析备选方案分析是一种对已识别的可选方案进行评估的技术用来决定选择哪种方案或使用何种方法来执行项目工作很多活动有多个备选的实施方案例如使用能力或技能水平不同的资源不同规模或类型的机器不同的工具手工或自动以及关于资源自制租赁或购买的决策备选方案分析有助于提供在定义的制约因素范围内执行项目活动的最佳方案项目管理信息系统会议输出资源需求资源需求识别了各个工作包或工作包中每项活动所需的资源类型和数量可以汇总这些需求以估算每个工作包每个分支以及整个项目所需的资源资源需求描述的细节数量与具体程度因应用领域而异而资源需求文件也可包含为确定所用资源的类型可用性和所需数量所做的假设估算依据资源估算所需的支持信息的数量和种类因应用领域而异但不论其详细程度如何支持性文件都应该清晰完整地说明资源估算是如何得出的资源分解结构资源分解结构是资源依类别和类型的层级展现如图所示资源类别包括但不限于人力材料设备和用品资源类型则包括技能水平要求证书等级水平或适用于项目的其他类型在规划资源管理过程中资源分解结构用于指导项目的分类活动在这一过程中资源分解结构是一份完整的文件用于获取和监督资源项目文件更新活动属性活动属性依据资源需求更新获取资源获取资源是获取项目所需的团队成员设施设备材料用品和其他资源的过程本过程的主要作用概述和指导资源的选择将选择的资源分配给相应的活动本过程应根据需要在整个项目期间定期开展获取资源过程的数据流向如图所示项目所需资源可能来自项目执行组织的内部或外部内部资源由职能经理或资源经理负责获取分配外部资源则通过采购过程获得因为集体劳资协议分包商人员使用矩阵型项目环境内外部报告关系或其他原因项目管理团队有可能没有对资源选择的直接控制权输入项目管理计划资源管理计划为如何获取项目资源提供指南成本基准提供了项目活动的总体预算采购管理计划提供了关于将从项目外部获取的资源的信息包括如何将采购与其他项目工作整合起来以及涉及资源采购工作的干系人项目文件项目进度计划展示了各项活动及其开始和结束日期有助于确定需要提供和获取资源的时间资源需求识别了需要获取的资源干系人登记册可能会从中发现干系人对项目特定资源的需求或期望在获取资源过程中应加以考虑事业环境因素组织过程资产工具与技术决策适用于获取资源过程的决策技术是多标准决策分析选择标准常用于选择项目的实物资源或项目团队使用多标准决策分析工具制定出标准用于对潜在资源进行评级或打分例如在内部和外部团队资源之间进行选择根据标准的相对重要性对标准进行加权加权值可能因资源类型的不同而发生变化可使用的选择标准包括可用性确认资源能否在项目所需时段内为项目所用成本确认增加资源的成本是否在规定的预算内能力确认团队成员是否提供了项目所需的能力有些选择标准对团队资源来说是独特的包括经验确认团队成员具备项目成功所需的相关经验知识团队成员是否掌握关于客户执行过类似项目和项目环境细节的相关知识技能确认团队成员拥有使用项目工具的相关技能态度团队成员能否与他人协同工作以形成有凝聚力的团队国际因素团队成员的位置时区和沟通能力人际关系与团队技能适用于获取资源过程的人际关系与团队技能是谈判预分派预分派指事先确定项目的实物或团队资源在如下情况时可采用预分派在竞标过程中承诺分派特定人员进行项目工作项目取决于特定人员的专有技能在完成资源管理计划的前期工作之前制定项目章程过程或其他过程已经指定了某些团队成员的工作虚拟团队虚拟团队的使用为招募项目团队成员提供了新的可能性虚拟团队可定义为具有共同目标在完成角色任务的过程中很少或没有时间面对面工作的一群人现代沟通技术如电子邮件电话会议社交媒体网络会议和视频会议等使虚拟团队成为可行虚拟团队模式使人们有可能在组织内部地处不同地理位置的员工之间组建团队为项目团队增加特殊技能即使相应的专家不在同一地理区域将在家办公的员工纳入团队在工作班次工作小时或工作日不同的员工之间组建团队将行动不便者或残疾人纳入团队执行那些原本会因差旅费用过高而被搁置或取消的项目节省员工所需的办公室和所有实物设备的开支等在虚拟团队的环境中沟通规划变得日益重要可能需要花更多时间来设定明确的期望促进沟通制定冲突解决方法召集人员参与决策理解文化差异以及共享成功喜悦输出物质资源分配单物质资源分配单记录了项目将使用的材料设备用品地点和其他实物资源项目团队派工单项目团队派工单记录了团队成员及其在项目中的角色和职责可包括项目团队名录还需要把人员姓名插入项目管理计划的其他部分如项目组织图和进度计划资源日历资源日历识别了每种具体资源可用时的工作日班次正常营业的上下班时间周末和公共假期变更请求项目管理计划更新项目文件更新项目进度计划所需资源的可用性可能会导致项目进度的变更资源分解结构在本过程中获取的资源应记录到资源分解结构中资源需求可更新资源需求文件以反映获取的项目资源风险登记册将本过程中识别的新风险记录在风险登记册中并通过风险管理过程进行管理干系人登记册任何增加的新干系人以及在本过程中获得的有关现有相关方的新信息更新在干系人登记册中事业环境因素更新组织过程资产更新建设团队建设团队是提高工作能力促进团队成员互动改善团队整体氛围以提高项目绩效的过程本过程的主要作用是改进团队协作增强人际关系技能激励员工减少摩擦以及提升整体项目绩效本过程需要在整个项目期间开展建设团队过程的数据流向如图所示建设项目团队的目标包括提高团队成员的知识和技能以提高他们完成项目可交付成果的能力并降低成本缩短工期和提高质量提高团队成员之间的信任和认同感以提高士气减少冲突和增进团队协作创建富有生气凝聚力和协作性的团队文化一是可帮助提高个人和团队生产率振奋团队精神促进团队合作二是促进团队成员之间的交叉培训和辅导以分享知识和经验提高团队参与决策的能力使他们承担起对解决方案的责任从而提高团队的生产效率获得更有效和高效的成果等输入项目管理计划建设团队过程使用到的项目管理计划组件是资源管理计划项目文件团队章程包含团队工作指南团队价值观和工作指南为描述团队的合作方式提供了架构项目进度计划定义了如何以及何时为项目团队提供培训以培养不同阶段所需的能力并根据项目执行期间的任何差异如有识别需要的团队建设策略项目团队派工单识别了团队成员的角色与职责资源日历定义了项目团队成员何时能参与团队建设活动有助于说明团队在整个项目期间的可用性事业环境因素组织过程资产工具与技术集中办公集中办公是指把许多或全部最活跃的项目团队成员安排在同一个地点工作以增强团队工作能力集中办公既可以是临时的如仅在项目特别重要的时期也可以贯穿整个项目实施集中办公策略时可借助团队会议室张贴进度计划的场所以及其他能增进沟通和集体感的设施虚拟团队虚拟团队的使用能带来很多好处例如使用更多技术熟练的资源降低成本减少出差及搬迁费用以及拉近团队成员与供应商和客户或其他重要干系人的距离虚拟团队可以利用技术来营造在线团队环境以供团队存储文件使用在线对话来讨论问题以及保存团队日历沟通技术可采用的沟通技术包括共享门户共享信息库如网站协作软件或内部网对虚拟项目团队很有帮助视频会议一种可有效地与虚拟团队进行沟通的重要技术音频会议有助于与虚拟团队建立融洽的相互信任的关系电子邮件聊天软件使用电子邮件和聊天软件定期沟通也是一种有效的方式人机关系与团队技能适用于建设团队过程的人际关系与团队技能主要包括冲突管理项目经理应及时地以建设性方式解决冲突从而创建高绩效团队影响力本过程的影响力技能是指收集相关的关键信息在维护相互信任的关系时用来解决重要问题并达成一致意见激励为采取行动提供了理由提高团队参与决策的能力并鼓励独立工作谈判团队成员之间的谈判旨在就项目需求达成共识谈判有助于在团队成员之间建立融洽的相互信任的关系团队建设通过举办各种活动强化团队的社交关系打造积极合作的工作环境团队建设活动既可以是状态审查会上的分钟议程也可以是为改善人际关系而设计的在非工作场所专门举办的专业提升活动团队建设活动旨在帮助各团队成员更加有效地协同工作如果团队成员的工作地点相隔甚远无法进行面对面接触就特别需要有效的团队建设策略非正式的沟通和活动有助于建立信任和良好的工作关系团队建设在项目前期必不可少但它更是个持续的过程项目环境的变化不可避免要有效应对这些变化就需要持续不断地开展团队建设项目经理应该持续地监督团队机能和绩效确定是否需要采取措施来预防或纠正各种团队问题认可与奖励在建设项目团队过程中需要对成员的优良行为给予认可与奖励培训培训包括旨在提高项目团队成员能力的全部活动可以是正式的或非正式的方式包括课堂培训在线培训计算机辅助培训在岗培训由其他项目团队成员提供辅导及训练个人和团队评估个人和团队评估工具能让项目经理和项目团队洞察成员的优势和劣势这些工具可帮助项目经理评估团队成员的偏好和愿望团队成员如何处理和整理信息如何制定决策以及团队成员如何与他人打交道有各种可用的工具如态度调查专项评估结构化访谈能力测试及焦点小组这些工具有利于增进团队成员间的理解信任承诺和沟通在整个项目期间不断提高团队成效会议输出团队绩效评价随着项目团队建设工作如培训团队建设和集中办公等的开展项目管理团队应该对项目团队的有效性进行正式或非正式的评价有效的团队建设策略和活动可以提高团队绩效从而提高实现项目目标的可能性评价团队有效性的指标可包括个人技能的改进使成员更有效地完成工作任务团队能力的改进从而使团队成员更好地开展工作团队成员离职率的降低团队凝聚力的加强从而使团队成员公开分享信息和经验并互相帮助来提高项目绩效变更请求项目管理计划更新项目文件更新项目进度计划项目团队建设活动可能会导致项目进度的变更项目团队派工单如果团队建设导致已商定的派工单出现变更应对项目团队派工单做出相应的更新资源日历更新资源日历以反映项目资源的可用性团队章程更新团队章程以反映因团队建设对团队工作指南做出的变更事业环境因素更新组织过程资产更新管理团队管理团队是跟踪团队成员工作表现提供反馈解决问题并管理团队变更以优化项目绩效的过程本过程的主要作用是影响团队行为管理冲突以及解决问题本过程需要在整个项目期间开展管理团队过程的数据流向如图所示输入项目管理计划可用于管理团队的项目管理计划组件是资源管理计划项目文件团队章程为团队应如何决策举行会议和解决冲突提供指南问题日志在管理项目团队过程中总会出现各种问题此时可用问题日志记录由谁负责在目标日期内解决特定问题并监督解决情况项目团队派工单识别了团队成员的角色与职责工作绩效报告工作绩效报告是为制定决策采取行动或引起关注所形成的实物或电子工作绩效信息团队绩效评价事业环境因素组织过程资产工具与技术人际关系与团队技能适用于管理团队过程的人际关系与团队技能包括冲突管理制定决策情商影响和领导力冲突管理在项目环境中冲突不可避免冲突的来源包括资源稀缺进度优先级排序和个人工作风格差异等采用团队基本规则团队规范及成熟的项目管理实践如沟通规划和角色定义可以减少冲突的数量有种常用的冲突解决方法每种技巧都有各自的作用和用途撤退回避从实际或潜在冲突中退出将问题推迟到准备充分的时候或者将问题推给其他人员解决缓和包容强调一致而非差异为维持和谐与关系而退让一步考虑其他方的需要妥协调解为了暂时或部分解决冲突寻找能让各方都在一定程度上满意的方案但这种方法有时会导致双输局面强迫命令以牺牲其他方为代价推行某一方的观点只提供赢输方案通常是利用权力来强行解决紧急问题这种方法通常会导致赢输局面合作解决问题综合考虑不同的观点和意见采用合作的态度和开放式对话引导各方达成共识和承诺这种方法可以带来双赢局面制定决策情商是指识别评估和管理个人情绪他人情绪及团体情绪的能力项目管理团队能通过情商来了解评估及控制项目团队成员的情绪预测团队成员的行为确认团队成员的关注点及跟踪团队成员的问题来达到减轻压力加强合作的目的影响在矩阵环境中项目经理对团队成员通常没有或仅有很小的命令职权所以他们适时影响干系人的能力对保证项目成功非常关键影响力主要体现在如下方面说服他人清晰表达观点和立场积极且有效的倾听了解并综合考虑各种观点收集相关信息在维护相互信任的关系下解决问题并达成一致意见等领导力项目管理信息系统输出变更请求项目管理计划更新资源管理计划根据实际的项目团队管理经验更新进度基准可能需要更改项目进度以反映团队的执行方式成本基准可能需要更改项目成本基准以反映团队的执行方式项目文件更新项目团队派工单如果需要对团队做出变更在项目团队派工单中记录这些变更事业环境因素更新控制资源控制资源是确保按计划为项目分配实物资源以及根据资源使用计划监督资源实际使用情况并采取必要纠正措施的过程本过程的主要作用确保所分配的资源适时适地可用于项目资源在不再需要时被释放本过程需要在整个项目期间开展控制资源过程的数据流向如图所示控制资源过程关注监督资源支出及时识别和处理资源缺乏剩余情况确保根据计划和项目需求使用并释放资源出现资源相关问题时通知相应干系人影响可以导致资源使用变更的因素在变更实际发生时对其进行管理等输入项目管理计划可用于控制资源的项目管理计划组件是资源管理计划项目文件项目进度计划展示了项目在何时何地需要哪些资源问题日志用于识别有关缺乏资源原材料供应延迟和低等级原材料等问题资源需求识别了项目所需的材料设备用品和其他资源资源分解结构为项目过程中需要替换或重新获取资源的情况提供参考物质资源分配单描述了资源的预期使用情况以及资源的详细信息例如类型数量地点以及属于组织内部资源还是外购资源风险登记册识别了可能会影响设备材料或用品的单个风险工作绩效数据协议组织过程资产工具与技术数据分析适用于控制资源过程的数据分析技术主要包括备选方案分析有助于选择最佳解决方案以纠正资源使用偏差可将加班和增加团队资源等备选方案与延期交付或阶段性交付比较以权衡利弊成本效益分析有助于项目成本出现差异时确定最佳的纠正措施绩效审查测量比较和分析计划的资源使用和实际资源使用的不同分析成本和进度工作绩效信息有助于指出可能影响资源使用的问题趋势分析在项目进展过程中项目团队可能会使用趋势分析基于当前绩效信息来确定未来项目阶段所需的资源趋势分析检查项目绩效随时间的变化情况可用于确定绩效是在改善还是在恶化问题解决问题解决可能会用到一系列工具有助于项目经理解决控制资源过程中出现的问题人际关系与团队技能人际关系与团队技能有时被称为软技能属于个人能力本过程使用的人际关系与团队技能包括谈判项目经理需要就增加实物资源变更实物资源或资源相关成本进行谈判影响力有助于项目经理及时解决问题并获得所需资源项目管理信息系统输出工作绩效信息工作绩效信息包括项目工作进展信息这一信息将资源需求和资源分配与项目活动期间的资源使用相比较从而发现需要处理的资源可用性方面的差异变更请求项目管理计划更新资源管理计划根据实际的项目资源管理经验更新进度基准可能需要更新项目进度以反映管理项目资源的方式成本基准可能需要更新项目成本基准以反映管理项目资源的方式项目文件更新物质资源分配单是动态的会因可用性项目组织环境或其他因素而发生变更资源分解结构可能需要更新资源分解结构以反映使用项目资源的方式风险登记册将资源可用性及利用或其他实物资源的风险更新在险登记册中欢迎关注我的个人博客知乎',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-04 16:29:25',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="老生杂谈的IT人" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://djy.oldit.cn/image/author.webp"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51369125?spm=1010.2135.3001.5343" title="CSDN"><img class="back-menu-item-icon" src="https://djy.oldit.cn/image/csdn_logo.webp" alt="CSDN"/><span class="back-menu-item-text">CSDN</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://toolsbox.oldit.cn/" title="工具站"><img class="back-menu-item-icon" src="https://djy.oldit.cn/image/%E7%9B%AF%E7%9D%80.webp" alt="工具站"/><span class="back-menu-item-text">工具站</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">切换线路</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.oldit.cn/" title="备用线路"><img class="back-menu-item-icon" src="https://djy.oldit.cn/image/%E5%A4%9A%E7%BA%BF%E8%B7%AF.webp" alt="备用线路"/><span class="back-menu-item-text">备用线路</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">老生杂谈的IT人</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-box-archive"></use></svg><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shapes"></use></svg><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags"></use></svg><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-link"></use></svg><span> 友链</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-artstation"></use></svg><span> 鱼塘</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-envelope"></use></svg><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=6858639461&amp;server=netease"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-music"></use></svg><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-images"></use></svg><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-dice-d20"></use></svg><span> 我的装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shoe-prints"></use></svg><span> 随便逛逛</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-lightbulb"></use></svg><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-paper-plane"></use></svg><span> 关于本人</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/triennium/"><span> 三年之约</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 年度总结</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/2023-AS/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-niandugongzuojihua"></use></svg><span> 2023年度总结</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button only-home" id="travellings_button" title="随机前往一个开往项目网站"><a class="site-page" onclick="anzhiyu.totraveling()" title="随机前往一个开往项目网站" href="javascript:void(0);" rel="external nofollow" data-pjax-state="external"><i class="anzhiyufont anzhiyu-icon-train"></i></a></div><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://djy.oldit.cn/image/wechat.webp" target="_blank"><img class="post-qr-code-img" alt="wechat" src="https://djy.oldit.cn/image/wechat.webp"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://djy.oldit.cn/image/alipay.webp" target="_blank"><img class="post-qr-code-img" alt="alipay" src="https://djy.oldit.cn/image/alipay.webp"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Centos/" style="font-size: 1.05rem; font-weight: 500; color: var(--anzhiyu-lighttext)">Centos<sup>16</sup></a><a href="/tags/Debian/" style="font-size: 1.05rem;">Debian<sup>1</sup></a><a href="/tags/ECS/" style="font-size: 1.05rem;">ECS<sup>1</sup></a><a href="/tags/Prometheus/" style="font-size: 1.05rem;">Prometheus<sup>2</sup></a><a href="/tags/Security/" style="font-size: 1.05rem;">Security<sup>2</sup></a><a href="/tags/jumpserver/" style="font-size: 1.05rem;">jumpserver<sup>1</sup></a><a href="/tags/kubernetes/" style="font-size: 1.05rem;">kubernetes<sup>1</sup></a><a href="/tags/%E4%BD%9C%E4%B8%BA%E6%97%A5%E8%AE%B0%E5%8A%A0%E5%AF%86/" style="font-size: 1.05rem;">作为日记加密<sup>1</sup></a><a href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" style="font-size: 1.05rem;">信息系统项目管理师<sup>13</sup></a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 1.05rem;">服务器<sup>1</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" style="font-size: 1.05rem;">计算机网络原理<sup>1</sup></a><a href="/tags/%E8%BD%AF%E8%80%83/" style="font-size: 1.05rem;">软考<sup>13</sup></a><a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/" style="font-size: 1.05rem;">阿里云<sup>1</sup></a><a href="/tags/%E9%AB%98%E9%A1%B9/" style="font-size: 1.05rem;">高项<sup>13</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/12/"><span class="card-archive-list-date">十二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/11/"><span class="card-archive-list-date">十一月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">14</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">二月 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">七月 2022</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">7</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/03/"><span class="card-archive-list-date">三月 2016</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item on" id="consoleCommentBarrage" onclick="anzhiyu.switchCommentBarrage()" title="热评开关"><a class="commentBarrage"><i class="anzhiyufont anzhiyu-icon-message"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="快捷键开关"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" itemprop="url">信息系统项目管理师</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>信息系统项目管理师</span></a><a class="article-meta__tags" href="/tags/%E8%BD%AF%E8%80%83/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>软考</span></a><a class="article-meta__tags" href="/tags/%E9%AB%98%E9%A1%B9/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>高项</span></a></span></div></div><h1 class="post-title" itemprop="name headline">十三、项目资源管理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2023-12-04T08:25:00.000Z" title="发表于 2023-12-04 16:25:00">2023-12-04</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2023-12-04T08:29:25.940Z" title="更新于 2023-12-04 16:29:25">2023-12-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">12.8k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>37分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="十三、项目资源管理"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为惠州"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>惠州</span><span class="post-meta-separator"></span><span class="post-meta-commentcount"><i class="anzhiyufont anzhiyu-icon-comments post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2023/12/04/%E5%8D%81%E4%B8%89%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/#post-comment" tabindex="-1"><span id="twikoo-count"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></a></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://djy.oldit.cn/article/ruankao_logo.webp"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://hmiking.top/2023/12/04/%E5%8D%81%E4%B8%89%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/"><header><a class="post-meta-categories" href="/categories/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" itemprop="url">信息系统项目管理师</a><a href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" tabindex="-1" itemprop="url">信息系统项目管理师</a><a href="/tags/%E8%BD%AF%E8%80%83/" tabindex="-1" itemprop="url">软考</a><a href="/tags/%E9%AB%98%E9%A1%B9/" tabindex="-1" itemprop="url">高项</a><h1 id="CrawlerTitle" itemprop="name headline">十三、项目资源管理</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">H Miking</span><time itemprop="dateCreated datePublished" datetime="2023-12-04T08:25:00.000Z" title="发表于 2023-12-04 16:25:00">2023-12-04</time><time itemprop="dateCreated datePublished" datetime="2023-12-04T08:29:25.940Z" title="更新于 2023-12-04 16:29:25">2023-12-04</time></header><blockquote>
+<p>内容来源：信息系统项目管理师教程 (第4版）<br>文章内容主要为第4版教程的核心重点内容。</p>
+</blockquote>
+<ul>
+<li>项目资源是指对于项目来说，一切具有使用价值，可为项目接受和利用，且属于项目发展 过程所需要的客观存在的资源，包括实物资源和团队资源。项目资源管理是为了降低项目成本， 而对项目所需的人力、材料、机械、技术、资金等资源所进行的计划、组织、指挥、协调和控 制等的活动。</li>
+<li>实物资源管理着眼于以有效和高效的方式，分配和使用完成项目所需的实物资源，包括设 备、材料、设施和基础设施；团队资源指的是人力资源，团队资源管理相对于实物资源管理， 包含了技能和能力要求。项目团队成员可能具备不同的技能，可能是全职的或兼职的，也可能 随项目进展而增加或减少，项目人力资源管理的目的是根据项目需要规划并组建项目团队，对 团队进行有效的指导和管理，以保证他们可以完成项目任务，实现项目目标。</li>
+</ul>
+<h3 id="13-1-管理基础"><a href="#13-1-管理基础" class="headerlink" title="13.1 管理基础"></a>13.1 管理基础</h3><h4 id="13-1-1-相关术语和定义"><a href="#13-1-1-相关术语和定义" class="headerlink" title="13.1.1 相关术语和定义"></a>13.1.1 相关术语和定义</h4><ol>
+<li>项目团队</li>
+</ol>
+<p>项目团队是执行项目工作，以实现项目目标的一组人员，由为了完成项目而承担不同角色 与职责的人员组成。项目团队成员可能具备不同的技能，可能是全职的或兼职的，也可能随项 目进展而增加或减少。</p>
+<ol start="2">
+<li>项目管理团队</li>
+</ol>
+<p>项目管理团队(Project Management Team)是直接参与项目管理活动的项目团队成员，负 责项目管理和领导活动，如各项目阶段的启动、规划、执行、监督、控制和收尾。</p>
+<p>项目管理团队也称为核心团队或领导团队。对于小型项目，项目管理职责可由整个项目团 队分担，或者由项目经理独自承担。</p>
+<ol start="3">
+<li><p>项目经理</p>
+</li>
+<li><p>领导和管理</p>
+</li>
+</ol>
+<ul>
+<li>领导者(Leader)的工作主要涉及3个方面。①确定方向：为团队设定目标，描绘愿景， 制定战略；②统一思想：协调人员，团结尽可能多的力量来实现愿景和项目目标；③激励和鼓 舞：在向项目目标努力的过程中不可避免地要遇到艰难险阻，领导者要激励和鼓舞大家克服困 难奋勇前进。</li>
+<li>通俗地说，领导者设定目标，管理者率众实现目标。</li>
+<li>尊重和信任，而非 畏惧和顺从，是有效领导力的关键要素。</li>
+<li>项目经理具有领导者和管理者的双重身份。对项目经理而言，管理能力和领导能力二者均 不可或缺。对于大型复杂项目，领导能力尤为重要。</li>
+</ul>
+<ol start="5">
+<li>权力</li>
+</ol>
+<p>项目经理的权力有5种来源。</p>
+<p>（1）职位权力(Legitimate Power)。来源于管理者在组织中的职位和职权。在高级管理层 对项目经理正式授权的基础上，项目经理让员工进行工作的权力。</p>
+<p> （2）惩罚权力(Coercive Power)。使用降职、扣薪、惩罚、批评、威胁等负面手段的能力。 惩罚权力很有力，但会对团队气氛造成破坏。滥用惩罚权力会导致项目失败，应谨慎使用。</p>
+<p> （3）奖励权力(Reward Power)。给予下属奖励的能力。奖励包括加薪、升职、福利、休 假、礼物、口头表扬、认可度、特殊的任务以及其他的奖励员工满意行为的手段。优秀的管理 者擅长使用奖励权力激励员工高水平完成工作。</p>
+<p>（4）专家权力(Expert Power)。来源于个人的专业技能。如果项目经理让员工感到他是某 些领域的专业权威，那么员工就会在这些领域内遵从项目经理的意见。来自一线的中层管理者 经常具有很大的专家权力。</p>
+<p>（5）参照权力(Referent Power)。由于成为别人学习和参照榜样所拥有的力量。参照权力 是由于他人对榜样者的认可和敬佩从而愿意模仿和服从榜样者以及希望自己成为榜样者那样的 人而产生的力量，这是一种个人魅力。具有优秀品质的领导者的参照权力会很大。这些优秀品 质包括诚实、正直、自信、自律、坚毅、刚强、宽容和专注等。领导者要想拥有参照权力，就 要加强这些品质的修炼。</p>
+<ul>
+<li>职位权力、惩罚权力、奖励权力来自于组织的授权，专家权力和参照权力来自于管理者自 身。项目经理应不断拓展自己的权力，获取各方支持，以确保项目成功。尤其在矩阵环境中， 项目经理对团队成员通常没有或仅有很小的命令职权，所以他们适时影响干系人的能力，对保 证项目成功非常关键。</li>
+<li>项目经理更注重 运用奖励权力、专家权力和参照权力，尽量避免使用惩罚权力。</li>
+</ul>
+<ol start="6">
+<li>冲突和竞争</li>
+</ol>
+<p>冲突并不一定是有害的，“一团和气”的集体不一定是一个高效率的集体。</p>
+<p>项目 经理对于有害的冲突要设法加以解决或减少；对有益的冲突要加以利用，要鼓励团队成员良 性竞争。</p>
+<ol start="7">
+<li>团队发展阶段</li>
+</ol>
+<p>优秀团队的建设不是一蹴而就的，一般要依次经历以下5个阶段。</p>
+<p>（1）形成阶段(Forming)。一个个的个体转变为团队成员，逐渐相互认识并了解项目情况 及他们在项目中的角色与职责，开始形成共同目标。团队成员倾向于相互独立，不怎么开诚布 公。在本阶段，团队往往对未来有美好的期待。</p>
+<p>（2）震荡阶段(Storming)。团队成员开始执行分配的任务，一般会遇到超出预想的困难， 希望被现实打破。个体之间开始争执，互相指责，并且怀疑项目经理的能力。</p>
+<p>（3）规范阶段(Norming)。经过一定时间磨合，团队成员开始协同工作，并调整各自的工 作习惯和行为来支持团队，团队成员开始相互信任，项目经理能得到团队的认可。</p>
+<p> （4）发挥阶段(Performing)。随着相互之间的配合默契和对项目经理的信任加强，团队就 像一个组织有序的单位那样工作。团队成员之间相互依靠，平稳高效地解决问题。这时团队成 员的集体荣誉感会非常强，常以第一称谓称呼团队，如“我们组”“我们部门”等，并会努力捍 卫团队声誉。</p>
+<p> （5）解散阶段(Adjourning)。所有工作完成后，项目结束，团队解散。 上述这些阶段通常按顺序进行，然而，团队停滞在某个阶段或退回到较早阶段的情况也并 非罕见。如果团队成员曾经共事过，项目团队建设也可跳过某些阶段。</p>
+<p>某个阶段持续时间的长短，取决于团队活力、团队规模和项目管理团队的领导力。项目经 理应该对团队活力有较好的理解，以便有效地带领团队经历所有阶段。</p>
+<ol start="8">
+<li>激励理论</li>
+</ol>
+<p>现代项目管理在激励方面的理论基础主要是：马斯洛需求层次理论、赫茨伯格的双因素理 论、麦格雷戈的X理论和Y理论、期望理论。</p>
+<p>（1）马斯洛需求层次理论。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231204101804-3onzdso.webp" alt="image">​</p>
+<ul>
+<li>生理需求(Physiological needs):对衣食住行等需求都是生理需求，这类需求的级别最 低，人们在转向较高层次的需求之前，总是尽力满足这类需求。常见的激励措施：员工 宿舍、工作餐、工作服、班车、工资、补贴、奖金等。</li>
+<li>安全需求(Safety needs):包括对人身安全、生活稳定、不致失业以及免遭痛苦、威胁 或疾病等的需求。和生理需求一样，在安全需求没有得到满足之前，人们一般不追求更 高层次的需求。常见的激励措施：养老保险、医疗保障、长期劳动合同、意外保险、失 业保险等。</li>
+<li>社会交往的需求(Love and belonging needs):包括对友谊、爱情以及隶属关系的需 求。当生理需求和安全需求得到满足后，社交需求就会凸显，进而产生激励作用。这些 需求如果得不到满足，就会影响员工的精神，导致高缺勤率、低生产率、对工作不满及 情绪低落。常见的激励措施：定期员工活动、聚会、比赛、俱乐部等。</li>
+<li>受尊重的需求(Esteem needs):包括自尊心和荣誉感。荣誉来自别人，自尊来自自己。 常见的激励措施：荣誉性的奖励，形象、地位提升，颁发奖章，作为导师培训别人等。</li>
+<li>自我实现的需求(Self-actualization):实现自己的潜力，发挥个人能力到最大程度，使 自己越来越成为自己所期望的人物。达到自我实现境界的人，必须干与其能力相称的工 作，这样才会使他们感到最大的快乐。常见的激励措施是：给他更多的空间让他负责、 让他成为智囊团、参与决策、参与组织的管理会议等。</li>
+</ul>
+<p>（2）赫茨伯格双因素理论。双因素理论认为有2种完全不同的因素影响着人们的工作行 为。①保健因素(Hygiene Factor):与工作环境或条件有关的，能防止人们产生不满意感的一类 因素，包括工作环境、工资薪水、组织政策、个人生活、管理监督、人际关系等。当保健因素 不健全时，人们就会对工作产生不满意感。但即使保健因素很好时，也仅仅可以消除工作中的 不满意，却无法增加人们对工作的满意感，所以这些因素是无法起到激励作用的。②激励因素 (Motivator):与员工的工作本身或工作内容有关的，能促使人们产生工作满意感的一类因素， 是高层次的需要，包括成就、承认、工作本身、责任、发展机会等。当激励因素缺乏时，人们 就会缺乏进取心，对工作无所谓，但一旦具备了激励因素，员工则会感觉到强大的激励力量从 而产生对工作的满意感，所以只有这类因素才能真正激励员工。</p>
+<p>（3）麦格雷戈X理论和Y理论。X理论对人性有如下假设：①人天性好逸恶劳，只要有可 能就会逃避工作；②人生来就以自我为中心，漠视组织的要求；③人缺乏进取心，逃避责任， 甘愿听从指挥，安于现状，没有创造性；④人们通常容易受骗，易受人煽动；⑤人们天生反对 改革；⑥人的工作动机就是为了获得经济报酬。</p>
+<pre><code>X理论注重满足员工的生理需求和安全需求，激励仅在生理和安全层次起作用，同时很注 重惩罚，认为惩罚是有效的管理工具。
+
+崇尚X理论的领导者认为，在领导工作中必须对员工采取强制、惩罚和解雇等手段，强迫员 工努力工作，对员工应当严格监督、控制和管理；在领导行为上应当实行高度控制和集中管理。
+
+Y理论对人性的假设与X理论完全相反，其主要观点如下：①人天生并不是好逸恶劳，他 们热爱工作，从工作得到满足感和成就感；②外来的控制和处罚对人们实现组织的目标不是一 个有效的办法，下属能够自我确定目标、自我指挥和自我控制；③在适当的条件下，人们愿意 主动承担责任；④大多数人具有一定的想象力和创造力；⑤在现代社会中，人们的智慧和潜能 只是部分地得到了发挥，如果给予机会，人们喜欢工作，并渴望发挥其才能。
+
+Y理论认为激励在需求的各个层次上都起作用，常用的激励办法是：将员工个人目标与组 织目标融合，扩大员工的工作范围，尽可能把员工的工作安排得富有意义并具有挑战性，使其 工作之后感到自豪，满足其自尊和自我实现的需要，使员工达到自我激励。
+
+崇尚Y理论的管理者对员工采取以人为中心的、宽容的及放权的领导方式，使下属目标和 组织目标很好地结合起来，为员工的智慧和能力的发挥创造有利的条件。
+
+我们在应用的时候应该因人、因项目团队发展的阶段而异。例如，在项目团队的开始阶 段，大家互相还不是很熟悉，对项目不是很了解或者还有某种抵触等，这时候需要项目经理 运用X理论去指导和管理；当项目团队进入执行阶段，成员对项目的目标已经了解，都愿意 努力完成项目，这时候可以运用Y理论授权团队完成所负责的工作，并提供支持和相应的 环境。
+</code></pre>
+<p>（4）期望理论。期望理论是一种通过考察人们的努力行为与其所获得的最终奖酬之间的因 果关系，来说明激励过程，并以选择合适的行为达到最终的奖酬目标的理论。</p>
+<pre><code>期望理论认为，一个目标对人的激励程度受2个因素影响。①目标效价：指实现该目标对个人有多大价值的主观判断。如果实现该目标对个人来说很有价值，个人的积极性就高；反之， 积极性就低。②期望值：指个人对实现该目标可能性大小的主观估计。
+
+                激发力量=目标效价×期望值
+</code></pre>
+<h4 id="13-1-2-管理新实践"><a href="#13-1-2-管理新实践" class="headerlink" title="13.1.2 管理新实践"></a>13.1.2 管理新实践</h4><p>（2）情商(EI)。项目经理应提升内在(如自我管理和自我意识)和外在(如关系管理)能 力，从而提高个人情商。研究表明，提高项目团队的情商或情绪能力可提高团队效率，还可以 降低团队成员离职率。</p>
+<p>（3）自组织团队。随着敏捷或适应型方法在IT项目中的应用越来越普遍，自组织团队(无 须集中管控运作)越来越多。对于拥有自组织团队的项目，“项目经理”(可能实际上不称为“项目 经理”)这一角色主要是为团队创造环境，支持并信任团队可以完成工作。成功的自组织团队通常 由通用的专业人才而不是主题专家组成，他们能够不断适应变化的环境并采纳建设性反馈。</p>
+<h3 id="13-2-项目资源管理过程"><a href="#13-2-项目资源管理过程" class="headerlink" title="13.2 项目资源管理过程"></a>13.2 项目资源管理过程</h3><h4 id="13-2-1-过程概述"><a href="#13-2-1-过程概述" class="headerlink" title="13.2.1 过程概述"></a>13.2.1 过程概述</h4><p>项目资源管理过程包括：</p>
+<ul>
+<li>规划资源管理：定义如何估算、获取、管理和利用实物以及团队项目资源。</li>
+<li>估算活动资源：估算执行项目所需的团队资源，材料、设备和用品的类型和数量。</li>
+<li>获取资源：获取项目所需的团队成员、设施、设备、材料、用品和其他资源。</li>
+<li>建设团队：提高工作能力，促进团队成员互动，改善团队整体氛围，提高绩效。</li>
+<li>管理团队：管跟踪团队成员工作表现，提供反馈，解决问题并管理团队变更，以优化项 目绩效。</li>
+<li>控制资源：确保按计划为项目分配实物资源，以及根据资源使用计划监督资源实际使用 情况，并采取必要纠正措施。</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231204141147-uzrix53.webp" alt="image">​</p>
+<h4 id="13-2-2-裁剪考虑因素"><a href="#13-2-2-裁剪考虑因素" class="headerlink" title="13.2.2 裁剪考虑因素"></a>13.2.2 裁剪考虑因素</h4><h4 id="13-2-3-敏捷与适应方法"><a href="#13-2-3-敏捷与适应方法" class="headerlink" title="13.2.3 敏捷与适应方法"></a>13.2.3 敏捷与适应方法</h4><p>对于易变性高的项目，更适合采用能够最大限度地集中和协作的团队结构形式。协作旨在 提高生产率和促进创新问题的解决，协作型团队可以促进不同工作活动的快速整合、改善沟通、 增加知识分享，同时可以灵活地分配工作。</p>
+<h3 id="13-3-规划资源管理"><a href="#13-3-规划资源管理" class="headerlink" title="13.3 规划资源管理"></a>13.3 规划资源管理</h3><p>规划资源管理是定义如何估算、获取、管理和利用团队以及实物资源的过程。本过程的主 要作用是，根据项目类型和复杂程度确定适用于项目资源的管理方法和管理程度。本过程仅开 展一次或仅在项目的预定义点开展。规划资源管理过程的数据流向如图13-2所示。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231204141252-vqjgkmj.webp" alt="image">​</p>
+<h4 id="13-3-1-输入"><a href="#13-3-1-输入" class="headerlink" title="13.3.1 输入"></a>13.3.1 输入</h4><ol>
+<li>项目章程</li>
+<li>项目管理计划</li>
+</ol>
+<p>可作为规划资源管理过程输入的项目管理计划组件主要包括：</p>
+<ul>
+<li>质量管理计划：有助于定义项目所需的资源水平，以实现和维护已定义的质量水平并达 到项目测量指标。</li>
+<li>范围基准：识别了可交付成果，决定了需要管理的资源的类型和数量。</li>
+</ul>
+<ol start="3">
+<li>项目文件</li>
+</ol>
+<ul>
+<li>需求文件：指出了项目所需的资源的类型和数量，并可能影响管理资源的方式。</li>
+<li>项目进度计划：提供了所需资源的时间轴。</li>
+<li>风险登记册：包含可能影响资源规划的各种威胁和机会的信息</li>
+<li>干系人登记册：有助于识别对项目所需资源有特别兴趣或影响的那些干系人，以及会影 响资源使用偏好的干系人。</li>
+</ul>
+<ol start="4">
+<li>事业环境因素</li>
+<li>组织过程资产</li>
+</ol>
+<h4 id="13-3-2-工具与技术"><a href="#13-3-2-工具与技术" class="headerlink" title="13.3.2 工具与技术"></a>13.3.2 工具与技术</h4><ol>
+<li>专家判断</li>
+<li>数据表现</li>
+</ol>
+<p>图表适用于规划资源管理过程的数据表现。数据表现有多种格式来记录和阐明团队成员的 角色与职责，大多数格式属于层级型、矩阵型或文本型。无论使用什么方法来记录团队成员的角色，目的都是要 确保每个工作包都有明确的责任人，确保全体团队成员都清楚地理解其角色和职责。一般来说， 层级型可用于表示高层级角色，而文本型则更适用于记录详细职责。</p>
+<p>（1）层级型：可采用传统的组织结构图，自上而下地显示各种职位及其相互关系。</p>
+<ul>
+<li>工作分解结构(WBS):用来显示如何把项目可交付成果分解为工作包，有助于明确高层级的职责。</li>
+<li>组织分解结构(OBS):按照组织现有的部门、单元或团队排列，并在每个部门下列出 项目活动或工作包。例如，运营部门只需找到其所在的OBS位置，就能看到自己的全 部项目职责。</li>
+<li>资源分解结构：按资源类别和类型，对团队和实物资源的层级列表，用于规划、管理和 控制项目工作，每向下一个层级代表对资源的更详细描述，直到信息细到可以与工作分 解结构(WBS)相结合。</li>
+</ul>
+<p>（2）矩阵型：展示项目资源在各个工作包中的任务分配。矩阵型图表的一个例子是职责分 配矩阵(RAM),它显示了分配给每个工作包的项目资源，用于说明工作包或活动与项目团队 成员之间的关系。在大型项目中，可以制定多个层次的RAM，矩阵型图表能反映与每个人相关的所有活动，以及与每项活动相关的 所有人员，它也可确保任何一项任务都只有一个人负责，从而避免职权不清。RAM的一个例子 是RACI(执行、负责、咨询和知情)矩阵，</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231204141755-grp2jp0.webp" alt="image">​</p>
+<p>文本型：如果需要详细描述团队成员的职责，就可以采用文本型。</p>
+<ol start="3">
+<li>组织理论</li>
+<li>会议</li>
+</ol>
+<h4 id="13-3-3-输出"><a href="#13-3-3-输出" class="headerlink" title="13.3.3 输出"></a>13.3.3 输出</h4><ol>
+<li>资源管理计划</li>
+</ol>
+<p>作为项目管理计划的一部分，资源管理计划提供了关于如何分类、分配、管理和释放项目 资源的指南。</p>
+<p>资源管理计划的内容主要包括：</p>
+<ul>
+<li>识别资源</li>
+<li>获取资源</li>
+<li>角色与职责：①角色是指在项目中某人承担的职务或分配给某人的职务；②职权是指使用项目资源、做出决策、签字批准、验收 可交付成果并影响他人开展项目工作的权力。③职责是指为完成项目活 动，项目团队成员必须履行的职责和工作。④能力是指为完成项目活动，项目团队成员 须具备的技能和才干。</li>
+<li>项目组织图</li>
+<li>项目团队资源管理</li>
+<li>培训</li>
+<li>团队建设</li>
+<li>资源控制</li>
+<li>认可计划</li>
+</ul>
+<ol start="2">
+<li>团队章程</li>
+</ol>
+<p>团队章程是为团队创建团队价值观、共识和工作指南的文件。团队章程包括：团队价值观、 沟通指南、决策标准和过程、冲突处理过程、会议指南和团队共识。</p>
+<p>团队章程对项目团队成员的可接受行为确定了明确的期望，尽早认可并遵守明确的规则， 有助于减少误解，提高生产力；借助诸如行为规范、沟通、决策、会议礼仪等方面的讨论，团 队成员可以了解彼此重要的价值观。由团队制定或参与制定的团队章程可发挥最佳效果，所有 项目团队成员都分担责任，确保遵守团队章程中规定的规则：可定期审查和更新团队章程，确 保团队成员始终了解团队基本规则，并指导新成员融入团队。</p>
+<ol start="3">
+<li>项目文件（更新）</li>
+</ol>
+<ul>
+<li>风险登记册：更新关于团队和实物资源可用性的风险，以及其他已知资源的相关风险。</li>
+</ul>
+<h3 id="13-4-估算活动资源"><a href="#13-4-估算活动资源" class="headerlink" title="13.4 估算活动资源"></a>13.4 估算活动资源</h3><p>估算活动资源是估算执行项目所需的团队资源，以及材料、设备和用品的类型和数量的过 程。本过程的主要作用是明确完成项目所需的资源种类、数量和特性。本过程应根据需要在整 个项目期间定期开展。估算活动资源过程的数据流向如图13-4所示。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231204151146-14btzsb.webp" alt="image">​</p>
+<h4 id="13-4-1-输入"><a href="#13-4-1-输入" class="headerlink" title="13.4.1 输入"></a>13.4.1 输入</h4><ol>
+<li>项目管理计划</li>
+</ol>
+<p>可作为估算活动资源过程输入的项目管理计划组件主要包括：</p>
+<ul>
+<li>范围基准：识别了实现项目目标所需的项目和产品范围，而范围决定了对团队和实物资 源的需求</li>
+<li>资源管理计划：定义了识别项目所需不同资源的方法，还定义了量化各个活动所需的资 源并整合这些信息的方法。</li>
+</ul>
+<ol start="2">
+<li>项目文件</li>
+</ol>
+<ul>
+<li>风险登记册：描述了可能影响资源选择和可用性的各个风险。</li>
+<li>活动属性：为估算活动清单中每项活动所需的团队和实物资源提供了数据来源，包括资 源需求、强制日期、活动地点、假设条件和制约因素。</li>
+<li>活动清单：识别了需要资源的活动。</li>
+<li>成本估算：资源成本从数量和技能水平方面会影响资源选择。</li>
+<li>资源日历：识别了每种具体资源可用时的工作日、班次、正常营业的上下班时间、周末 和公共假期。在规划活动期间，潜在的可用资源信息(如团队资源、设备和材料)用于 估算资源可用性。资源日历还规定了在项目期间确定的团队和实物资源何时可用、可用 多久。这些信息可以在活动或项目层面建立，这考虑了诸如资源经验和(或)技能水平 以及不同地理位置等属性。</li>
+</ul>
+<ol start="3">
+<li>事业环境因素</li>
+<li>组织过程资产</li>
+</ol>
+<h4 id="13-4-2-工具与技术"><a href="#13-4-2-工具与技术" class="headerlink" title="13.4.2 工具与技术"></a>13.4.2 工具与技术</h4><ol>
+<li>专家判断</li>
+<li>自上而下估算</li>
+</ol>
+<p>自下而上估算是首先对团队和实物资源在活动级别上进行估算，然后汇总成工作包、控制 账户和总体项目层级上的估算。</p>
+<ol start="3">
+<li>类比估算</li>
+</ol>
+<p>类比估算将以往类似项目的资源相关信息作为估算未来项目的基础。这是一种快速估算方 法，适用于项目经理只能识别WBS的几个高层级的情况。</p>
+<ol start="4">
+<li>参数估算</li>
+</ol>
+<p>参数估算基于历史数据和项目参数，使用某种算法或历史数据与其他变量之间的统计关系，来计算活动所需的资源数量。</p>
+<ol start="5">
+<li>数据分析</li>
+</ol>
+<p>适用于估算活动资源过程的数据分析技术是备选方案分析。备选方案分析是一种对已识别 的可选方案进行评估的技术，用来决定选择哪种方案或使用何种方法来执行项目工作。很多活 动有多个备选的实施方案，例如使用能力或技能水平不同的资源、不同规模或类型的机器、不 同的工具(手工或自动),以及关于资源自制、租赁或购买的决策。备选方案分析有助于提供在 定义的制约因素范围内执行项目活动的最佳方案。</p>
+<ol start="6">
+<li><p>项目管理信息系统</p>
+</li>
+<li><p>会议</p>
+</li>
+</ol>
+<h4 id="13-4-3-输出"><a href="#13-4-3-输出" class="headerlink" title="13.4.3 输出"></a>13.4.3 输出</h4><ol>
+<li>资源需求</li>
+</ol>
+<p>资源需求识别了各个工作包或工作包中每项活动所需的资源类型和数量，可以汇总这些需 求，以估算每个工作包、每个WBS分支以及整个项目所需的资源。资源需求描述的细节数量与 具体程度因应用领域而异，而资源需求文件也可包含为确定所用资源的类型、可用性和所需数 量所做的假设。</p>
+<ol start="2">
+<li>估算依据</li>
+</ol>
+<p>资源估算所需的支持信息的数量和种类，因应用领域而异。但不论其详细程度如何，支持 性文件都应该清晰完整地说明资源估算是如何得出的。</p>
+<ol start="3">
+<li>资源分解结构</li>
+</ol>
+<p>资源分解结构是资源依类别和类型的层级展现，如图13-5所示。资源类别包括(但不限 于)人力、材料、设备和用品，资源类型则包括技能水平、要求证书、等级水平或适用于项目 的其他类型。在规划资源管理过程中，资源分解结构用于指导项目的分类活动。在这一过程中，资源分解结构是一份完整的文件，用于获取和监督资源。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231204153307-w49r8y9.webp" alt="image">​</p>
+<ol start="4">
+<li>项目文件（更新）</li>
+</ol>
+<ul>
+<li>活动属性：活动属性依据资源需求更新。</li>
+</ul>
+<h3 id="13-5-获取资源"><a href="#13-5-获取资源" class="headerlink" title="13.5 获取资源"></a>13.5 获取资源</h3><p>获取资源是获取项目所需的团队成员、设施、设备、材料、用品和其他资源的过程。本过 程的主要作用：①概述和指导资源的选择；②将选择的资源分配给相应的活动。本过程应根据 需要在整个项目期间定期开展。获取资源过程的数据流向如图13-6所示。</p>
+<p>项目所需资源可能来自项目执行组织的内部或外部。内部资源由职能经理或资源经理负责 获取(分配),外部资源则通过采购过程获得。</p>
+<p>因为集体劳资协议、分包商人员使用、矩阵型项目环境、内外部报告关系或其他原因，项 目管理团队有可能没有对资源选择的直接控制权。</p>
+<h4 id="13-5-1-输入"><a href="#13-5-1-输入" class="headerlink" title="13.5.1 输入"></a>13.5.1 输入</h4><ol>
+<li>项目管理计划</li>
+</ol>
+<ul>
+<li>资源管理计划：为如何获取项目资源提供指南。</li>
+<li>成本基准：提供了项目活动的总体预算。</li>
+<li>采购管理计划：提供了关于将从项目外部获取的资源的信息，包括如何将采购与其他项 目工作整合起来以及涉及资源采购工作的干系人。</li>
+</ul>
+<ol start="2">
+<li>项目文件</li>
+</ol>
+<ul>
+<li>项目进度计划：展示了各项活动及其开始和结束日期，有助于确定需要提供和获取资源 的时间。</li>
+<li>资源需求：识别了需要获取的资源。</li>
+<li>干系人登记册：可能会从中发现干系人对项目特定资源的需求或期望，在获取资源过程 中应加以考虑。</li>
+</ul>
+<ol start="3">
+<li>事业环境因素</li>
+<li>组织过程资产</li>
+</ol>
+<h4 id="13-5-2-工具与技术"><a href="#13-5-2-工具与技术" class="headerlink" title="13.5.2 工具与技术"></a>13.5.2 工具与技术</h4><ol>
+<li>决策</li>
+</ol>
+<p>适用于获取资源过程的决策技术是多标准决策分析。选择标准常用于选择项目的实物资源 或项目团队。使用多标准决策分析工具制定出标准，用于对潜在资源进行评级或打分(例如， 在内部和外部团队资源之间进行选择)。根据标准的相对重要性对标准进行加权，加权值可能因 资源类型的不同而发生变化。可使用的选择标准包括：</p>
+<ul>
+<li>可用性：确认资源能否在项目所需时段内为项目所用。</li>
+<li>成本：确认增加资源的成本是否在规定的预算内</li>
+<li>能力：确认团队成员是否提供了项目所需的能力。 有些选择标准对团队资源来说是独特的，包括：</li>
+<li>经验：确认团队成员具备项目成功所需的相关经验。</li>
+<li>知识：团队成员是否掌握关于客户、执行过类似项目和项目环境细节的相关知识。</li>
+<li>技能：确认团队成员拥有使用项目工具的相关技能。</li>
+<li>态度：团队成员能否与他人协同工作，以形成有凝聚力的团队。</li>
+<li>国际因素：团队成员的位置、时区和沟通能力。</li>
+</ul>
+<ol start="2">
+<li>人际关系与团队技能</li>
+</ol>
+<p>适用于获取资源过程的人际关系与团队技能是谈判。</p>
+<ol start="3">
+<li>预分派</li>
+</ol>
+<p>预分派指事先确定项目的实物或团队资源，在如下情况时可采用预分派：①在竞标过程中 承诺分派特定人员进行项目工作；②项目取决于特定人员的专有技能；③在完成资源管理计划 的前期工作之前，制定项目章程过程或其他过程已经指定了某些团队成员的工作。</p>
+<ol start="4">
+<li>虚拟团队</li>
+</ol>
+<p>虚拟团队的使用为招募项目团队成员提供了新的可能性。虚拟团队可定义为具有共同目标， 在完成角色任务的过程中很少或没有时间面对面工作的一群人。现代沟通技术(如电子邮件 电话会议、社交媒体、网络会议和视频会议等)使虚拟团队成为可行。虚拟团队模式使人们有 可能：①在组织内部地处不同地理位置的员工之间组建团队；②为项目团队增加特殊技能，即 使相应的专家不在同一地理区域；③将在家办公的员工纳入团队；④在工作班次、工作小时或 工作日不同的员工之间组建团队；⑤将行动不便者或残疾人纳入团队；⑥执行那些原本会因差 旅费用过高而被搁置或取消的项目；⑦节省员工所需的办公室和所有实物设备的开支等。</p>
+<p>在虚拟团队的环境中，沟通规划变得日益重要。可能需要花更多时间来设定明确的期望。 促进沟通、制定冲突解决方法、召集人员参与决策、理解文化差异，以及共享成功喜悦。</p>
+<h4 id="13-5-3-输出"><a href="#13-5-3-输出" class="headerlink" title="13.5.3 输出"></a>13.5.3 输出</h4><ol>
+<li>物质资源分配单</li>
+</ol>
+<p>物质资源分配单记录了项目将使用的材料、设备、用品、地点和其他实物资源。</p>
+<ol start="2">
+<li>项目团队派工单</li>
+</ol>
+<p>项目团队派工单记录了团队成员及其在项目中的角色和职责，可包括项目团队名录，还需 要把人员姓名插入项目管理计划的其他部分，如项目组织图和进度计划。</p>
+<ol start="3">
+<li>资源日历</li>
+</ol>
+<p>资源日历识别了每种具体资源可用时的工作日、班次、正常营业的上下班时间、周末和公 共假期。</p>
+<ol start="4">
+<li><p>变更请求</p>
+</li>
+<li><p>项目管理计划（更新）</p>
+</li>
+<li><p>项目文件（更新）</p>
+</li>
+</ol>
+<ul>
+<li>项目进度计划：所需资源的可用性可能会导致项目进度的变更。</li>
+<li>资源分解结构：在本过程中获取的资源应记录到资源分解结构中。</li>
+<li>资源需求：可更新资源需求文件，以反映获取的项目资源。</li>
+<li>风险登记册：将本过程中识别的新风险记录在风险登记册中，并通过风险管理过程进行 管理。</li>
+<li>干系人登记册：任何增加的新干系人，以及在本过程中获得的有关现有相关方的新信息 更新在干系人登记册中。</li>
+</ul>
+<ol start="7">
+<li>事业环境因素（更新）</li>
+<li>组织过程资产（更新）</li>
+</ol>
+<h3 id="13-6-建设团队"><a href="#13-6-建设团队" class="headerlink" title="13.6 建设团队"></a>13.6 建设团队</h3><p>建设团队是提高工作能力，促进团队成员互动，改善团队整体氛围，以提高项目绩效的过 程。本过程的主要作用是，改进团队协作、增强人际关系技能、激励员工、减少摩擦以及提升 整体项目绩效。本过程需要在整个项目期间开展。建设团队过程的数据流向如图13-7所示。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231204153812-wkjquml.webp" alt="image">​</p>
+<p>建设项目团队的目标包括：①提高团队成员的知识和技能： 以提高他们完成项目可交付成果的能力，并降低成本、缩短工期和提高质量；②提高团队成员 之间的信任和认同感：以提高士气、减少冲突和增进团队协作；③创建富有生气、凝聚力和协 作性的团队文化：一是可帮助提高个人和团队生产率，振奋团队精神，促进团队合作；二是促 进团队成员之间的交叉培训和辅导，以分享知识和经验；④提高团队参与决策的能力：使他们 承担起对解决方案的责任，从而提高团队的生产效率，获得更有效和高效的成果等。</p>
+<h4 id="13-6-1-输入"><a href="#13-6-1-输入" class="headerlink" title="13.6.1 输入"></a>13.6.1 输入</h4><ol>
+<li>项目管理计划</li>
+</ol>
+<p>建设团队过程使用到的项目管理计划组件是资源管理计划。</p>
+<ol start="2">
+<li>项目文件</li>
+</ol>
+<ul>
+<li>团队章程：包含团队工作指南。团队价值观和工作指南为描述团队的合作方式提供了 架构。</li>
+<li>项目进度计划：定义了如何以及何时为项目团队提供培训，以培养不同阶段所需的能 力，并根据项目执行期间的任何差异(如有)识别需要的团队建设策略。</li>
+<li>项目团队派工单：识别了团队成员的角色与职责。</li>
+<li>资源日历：定义了项目团队成员何时能参与团队建设活动，有助于说明团队在整个项目期间的可用性</li>
+</ul>
+<ol start="3">
+<li>事业环境因素</li>
+<li>组织过程资产</li>
+</ol>
+<h4 id="13-6-2-工具与技术"><a href="#13-6-2-工具与技术" class="headerlink" title="13.6.2 工具与技术"></a>13.6.2 工具与技术</h4><ol>
+<li>集中办公</li>
+</ol>
+<p>集中办公是指把许多或全部最活跃的项目团队成员安排在同一个地点工作，以增强团队工作 能力。集中办公既可以是临时的(如仅在项目特别重要的时期),也可以贯穿整个项目。实施集 中办公策略时，可借助团队会议室、张贴进度计划的场所，以及其他能增进沟通和集体感的设施。</p>
+<ol start="2">
+<li>虚拟团队</li>
+</ol>
+<p>虚拟团队的使用能带来很多好处，例如，使用更多技术熟练的资源、降低成本、减少出差 及搬迁费用，以及拉近团队成员与供应商和客户或其他重要干系人的距离。虚拟团队可以利用 技术来营造在线团队环境，以供团队存储文件、使用在线对话来讨论问题，以及保存团队日历。</p>
+<ol start="3">
+<li>沟通技术</li>
+</ol>
+<p>可采用的沟通技术包括：</p>
+<ul>
+<li>共享门户：共享信息库(如网站、协作软件或内部网)对虚拟项目团队很有帮助。</li>
+<li>视频会议：一种可有效地与虚拟团队进行沟通的重要技术。</li>
+<li>音频会议：有助于与虚拟团队建立融洽的相互信任的关系。</li>
+<li>电子邮件&#x2F;聊天软件：使用电子邮件和聊天软件定期沟通也是一种有效的方式。</li>
+</ul>
+<ol start="4">
+<li>人机关系与团队技能</li>
+</ol>
+<p>适用于建设团队过程的人际关系与团队技能主要包括：</p>
+<ul>
+<li>冲突管理：项目经理应及时地以建设性方式解决冲突，从而创建高绩效团队。</li>
+<li>影响力：本过程的影响力技能是指收集相关的关键信息，在维护相互信任的关系时，用 来解决重要问题并达成一致意见。</li>
+<li>激励：为采取行动提供了理由。提高团队参与决策的能力并鼓励独立工作。</li>
+<li>谈判：团队成员之间的谈判旨在就项目需求达成共识。谈判有助于在团队成员之间建立 融洽的相互信任的关系。</li>
+<li>团队建设：通过举办各种活动，强化团队的社交关系，打造积极合作的工作环境。团队 建设活动既可以是状态审查会上的5分钟议程，也可以是为改善人际关系而设计的、在 非工作场所专门举办的专业提升活动。团队建设活动旨在帮助各团队成员更加有效地协 同工作。如果团队成员的工作地点相隔甚远，无法进行面对面接触，就特别需要有效的 团队建设策略。非正式的沟通和活动有助于建立信任和良好的工作关系。团队建设在项目前期必不可少，但它更是个持续的过程。项目环境的变化不可避免，要有效应对这些 变化，就需要持续不断地开展团队建设。项目经理应该持续地监督团队机能和绩效，确 定是否需要采取措施来预防或纠正各种团队问题。</li>
+</ul>
+<ol start="5">
+<li>认可与奖励</li>
+</ol>
+<p>在建设项目团队过程中，需要对成员的优良行为给予认可与奖励</p>
+<ol start="6">
+<li>培训</li>
+</ol>
+<p>培训包括旨在提高项目团队成员能力的全部活动，可以是正式的或非正式的，方式包括课 堂培训、在线培训、计算机辅助培训、在岗培训(由其他项目团队成员提供)、辅导及训练。</p>
+<ol start="7">
+<li>个人和团队评估</li>
+</ol>
+<p>个人和团队评估工具能让项目经理和项目团队洞察成员的优势和劣势。这些工具可帮助项 目经理评估团队成员的偏好和愿望、团队成员如何处理和整理信息、如何制定决策，以及团队 成员如何与他人打交道。有各种可用的工具，如态度调查、专项评估、结构化访谈、能力测试 及焦点小组。这些工具有利于增进团队成员间的理解、信任、承诺和沟通，在整个项目期间不 断提高团队成效。</p>
+<ol start="8">
+<li>会议</li>
+</ol>
+<h4 id="13-6-3-输出"><a href="#13-6-3-输出" class="headerlink" title="13.6.3 输出"></a>13.6.3 输出</h4><ol>
+<li>团队绩效评价</li>
+</ol>
+<p>随着项目团队建设工作(如培训、团队建设和集中办公等)的开展，项目管理团队应该对项目团队的有效性进行正式或非正式的评价。有效的团队建设策略和活动可以提高团队绩效， 从而提高实现项目目标的可能性。</p>
+<p>评价团队有效性的指标可包括：①个人技能的改进，使成员更有效地完成工作任务；②团 队能力的改进，从而使团队成员更好地开展工作；③团队成员离职率的降低；④团队凝聚力的 加强，从而使团队成员公开分享信息和经验，并互相帮助来提高项目绩效。</p>
+<ol start="2">
+<li>变更请求</li>
+<li>项目管理计划（更新）</li>
+<li>项目文件（更新）</li>
+</ol>
+<ul>
+<li>项目进度计划：项目团队建设活动可能会导致项目进度的变更。</li>
+<li>项目团队派工单：如果团队建设导致已商定的派工单出现变更，应对项目团队派工单做 出相应的更新。</li>
+<li>资源日历：更新资源日历，以反映项目资源的可用性。</li>
+<li>团队章程：更新团队章程，以反映因团队建设对团队工作指南做出的变更。</li>
+</ul>
+<ol start="5">
+<li>事业环境因素（更新）</li>
+<li>组织过程资产（更新）</li>
+</ol>
+<h3 id="13-7-管理团队"><a href="#13-7-管理团队" class="headerlink" title="13.7 管理团队"></a>13.7 管理团队</h3><p>管理团队是跟踪团队成员工作表现、提供反馈、解决问题并管理团队变更以优化项目绩效 的过程。本过程的主要作用是，影响团队行为、管理冲突以及解决问题。本过程需要在整个项目期间开展。管理团队过程的数据流向如图13-8所示。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231204155204-n9f3ga9.webp" alt="image">​</p>
+<h4 id="13-7-1-输入"><a href="#13-7-1-输入" class="headerlink" title="13.7.1 输入"></a>13.7.1 输入</h4><ol>
+<li>项目管理计划</li>
+</ol>
+<p>可用于管理团队的项目管理计划组件是资源管理计划。</p>
+<ol start="2">
+<li>项目文件</li>
+</ol>
+<ul>
+<li>团队章程：为团队应如何决策、举行会议和解决冲突提供指南。</li>
+<li>问题日志：在管理项目团队过程中，总会出现各种问题，此时可用问题日志记录由谁负 责在目标日期内解决特定问题，并监督解决情况。</li>
+<li>项目团队派工单：识别了团队成员的角色与职责。</li>
+</ul>
+<ol start="3">
+<li>工作绩效报告</li>
+</ol>
+<p>工作绩效报告是为制定决策、采取行动或引起关注所形成的实物或电子工作绩效信息</p>
+<ol start="4">
+<li>团队绩效评价</li>
+<li>事业环境因素</li>
+<li>组织过程资产</li>
+</ol>
+<h4 id="13-7-2-工具与技术"><a href="#13-7-2-工具与技术" class="headerlink" title="13.7.2 工具与技术"></a>13.7.2 工具与技术</h4><ol>
+<li>人际关系与团队技能</li>
+</ol>
+<p>适用于管理团队过程的人际关系与团队技能包括：冲突管理、制定决策、情商、影响和领 导力。</p>
+<p>（1）冲突管理。在项目环境中，冲突不可避免。冲突的来源包括资源稀缺、进度优先级排 序和个人工作风格差异等。采用团队基本规则、团队规范及成熟的项目管理实践(如沟通规划 和角色定义),可以减少冲突的数量。</p>
+<p>有5种常用的冲突解决方法，每种技巧都有各自的作用和用途。</p>
+<ul>
+<li>撤退&#x2F;回避：从实际或潜在冲突中退出，将问题推迟到准备充分的时候，或者将问题推 给其他人员解决。</li>
+<li>缓和&#x2F;包容：强调一致而非差异；为维持和谐与关系而退让一步，考虑其他方的需要。</li>
+<li>妥协&#x2F;调解：为了暂时或部分解决冲突，寻找能让各方都在一定程度上满意的方案，但这种方法有时会导致“双输”局面。</li>
+<li>强迫&#x2F;命令：以牺牲其他方为代价，推行某一方的观点；只提供赢-输方案。通常是利用 权力来强行解决紧急问题，这种方法通常会导致“赢-输”局面。</li>
+<li>合作&#x2F;解决问题：综合考虑不同的观点和意见，采用合作的态度和开放式对话引导各方 达成共识和承诺，这种方法可以带来双赢局面。</li>
+</ul>
+<p>（2）制定决策</p>
+<p>（3）情商。是指识别、评估和管理个人情绪、他人情绪及团体情绪的能力。项目管理团队 能通过情商来了解、评估及控制项目团队成员的情绪，预测团队成员的行为，确认团队成员的 关注点及跟踪团队成员的问题，来达到减轻压力、加强合作的目的。</p>
+<p>（4）影响。在矩阵环境中，项目经理对团队成员通常没有或仅有很小的命令职权，所以他 们适时影响干系人的能力，对保证项目成功非常关键。影响力主要体现在如下方面：说服他人； 清晰表达观点和立场；积极且有效的倾听；了解并综合考虑各种观点；收集相关信息，在维护 相互信任的关系下，解决问题并达成一致意见等。</p>
+<p>（5）领导力</p>
+<ol start="2">
+<li>项目管理信息系统</li>
+</ol>
+<h4 id="13-7-3-输出"><a href="#13-7-3-输出" class="headerlink" title="13.7.3 输出"></a>13.7.3 输出</h4><ol>
+<li>变更请求</li>
+<li>项目管理计划（更新）</li>
+</ol>
+<ul>
+<li>资源管理计划：根据实际的项目团队管理经验更新。</li>
+<li>进度基准：可能需要更改项目进度，以反映团队的执行方式。</li>
+<li>成本基准：可能需要更改项目成本基准，以反映团队的执行方式。</li>
+</ul>
+<ol start="3">
+<li>项目文件（更新）</li>
+</ol>
+<ul>
+<li>项目团队派工单：如果需要对团队做出变更，在项目团队派工单中记录这些变更。</li>
+</ul>
+<ol start="4">
+<li>事业环境因素（更新）</li>
+</ol>
+<h3 id="13-8-控制资源"><a href="#13-8-控制资源" class="headerlink" title="13.8 控制资源"></a>13.8 控制资源</h3><p>控制资源是确保按计划为项目分配实物资源，以及根据资源使用计划监督资源实际使用情 况，并采取必要纠正措施的过程。本过程的主要作用：①确保所分配的资源适时、适地可用于 项目；②资源在不再需要时被释放。本过程需要在整个项目期间开展。控制资源过程的数据流 向如图13-9所示。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/image-20231204155639-02o58s2.webp" alt="image">​</p>
+<p>控制资源过程关注：①监督资源支出；②及时识别和处理资源缺乏&#x2F;剩余情况； ③确保根据计划和项目需求使用并释放资源；④出现资源相关问题时通知相应干系人；⑤影响 可以导致资源使用变更的因素；⑥在变更实际发生时对其进行管理等。</p>
+<h4 id="13-8-1-输入"><a href="#13-8-1-输入" class="headerlink" title="13.8.1 输入"></a>13.8.1 输入</h4><ol>
+<li>项目管理计划</li>
+</ol>
+<p>可用于控制资源的项目管理计划组件是资源管理计划。</p>
+<ol start="2">
+<li>项目文件</li>
+</ol>
+<ul>
+<li>项目进度计划：展示了项目在何时何地需要哪些资源。</li>
+<li>问题日志：用于识别有关缺乏资源、原材料供应延迟和低等级原材料等问题。</li>
+<li>资源需求：识别了项目所需的材料、设备、用品和其他资源。</li>
+<li>资源分解结构：为项目过程中需要替换或重新获取资源的情况提供参考。</li>
+<li>物质资源分配单：描述了资源的预期使用情况以及资源的详细信息，例如类型、数量、 地点以及属于组织内部资源还是外购资源。</li>
+<li>风险登记册：识别了可能会影响设备、材料或用品的单个风险。</li>
+</ul>
+<ol start="3">
+<li>工作绩效数据</li>
+<li>协议</li>
+<li>组织过程资产</li>
+</ol>
+<h4 id="13-8-2-工具与技术"><a href="#13-8-2-工具与技术" class="headerlink" title="13.8.2 工具与技术"></a>13.8.2 工具与技术</h4><ol>
+<li>数据分析</li>
+</ol>
+<p>适用于控制资源过程的数据分析技术主要包括：</p>
+<ul>
+<li>备选方案分析：有助于选择最佳解决方案以纠正资源使用偏差，可将加班和增加团队资 源等备选方案与延期交付或阶段性交付比较，以权衡利弊。</li>
+<li>成本效益分析：有助于项目成本出现差异时确定最佳的纠正措施。</li>
+<li>绩效审查：测量、比较和分析计划的资源使用和实际资源使用的不同。分析成本和进度 工作绩效信息有助于指出可能影响资源使用的问题。</li>
+<li>趋势分析：在项目进展过程中，项目团队可能会使用趋势分析，基于当前绩效信息来确 定未来项目阶段所需的资源。趋势分析检查项目绩效随时间的变化情况，可用于确定绩 效是在改善还是在恶化。</li>
+</ul>
+<ol start="2">
+<li>问题解决</li>
+</ol>
+<p>问题解决可能会用到一系列工具，有助于项目经理解决控制资源过程中出现的问题。</p>
+<ol start="3">
+<li>人际关系与团队技能</li>
+</ol>
+<p>人际关系与团队技能有时被称为“软技能”,属于个人能力。本过程使用的人际关系与团队 技能包括：</p>
+<ul>
+<li>谈判：项目经理需要就增加实物资源、变更实物资源或资源相关成本进行谈判。</li>
+<li>影响力：有助于项目经理及时解决问题并获得所需资源。</li>
+</ul>
+<ol start="4">
+<li>项目管理信息系统</li>
+</ol>
+<h4 id="13-8-3-输出"><a href="#13-8-3-输出" class="headerlink" title="13.8.3 输出"></a>13.8.3 输出</h4><ol>
+<li>工作绩效信息</li>
+</ol>
+<p>工作绩效信息包括项目工作进展信息，这一信息将资源需求和资源分配与项目活动期间的 资源使用相比较，从而发现需要处理的资源可用性方面的差异。</p>
+<ol start="2">
+<li>变更请求</li>
+<li>项目管理计划（更新）</li>
+</ol>
+<ul>
+<li>资源管理计划：根据实际的项目资源管理经验更新。</li>
+<li>进度基准：可能需要更新项目进度，以反映管理项目资源的方式。</li>
+<li>成本基准：可能需要更新项目成本基准，以反映管理项目资源的方式。</li>
+</ul>
+<ol start="4">
+<li>项目文件（更新）</li>
+</ol>
+<ul>
+<li>物质资源分配单：是动态的，会因可用性、项目、组织、环境或其他因素而发生变更。</li>
+<li>资源分解结构：可能需要更新资源分解结构，以反映使用项目资源的方式。</li>
+<li>风险登记册：将资源可用性及利用或其他实物资源的风险更新在险登记册中。</li>
+</ul>
+<h3 id="‍欢迎关注我的CSDN、个人博客、知乎"><a href="#‍欢迎关注我的CSDN、个人博客、知乎" class="headerlink" title="‍欢迎关注我的CSDN、个人博客、知乎"></a><strong>‍欢迎关注我的<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51369125?type=blog">CSDN</a>、<a target="_blank" rel="noopener" href="https://www.oldit.cn/">个人博客</a>、<a target="_blank" rel="noopener" href="https://www.zhihu.com/people/hmiking">知乎</a></strong></h3></article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/author.webp" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/author.webp" title="头像" alt="头像"></a><div class="post-copyright__author_name">H Miking</div><div class="post-copyright__author_desc">技术与人性的交响曲</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://hmiking.top/2023/12/04/%E5%8D%81%E4%B8%89%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://hmiking.top/2023/12/04/十三、项目资源管理/')">十三、项目资源管理</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://djy.oldit.cn/image/wechat.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/wechat.webp" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://djy.oldit.cn/image/alipay.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/alipay.webp" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div><div class="reward-link mode"><a class="reward-link-button" href="/wechat/"><i class="anzhiyufont anzhiyu-icon-plant-fill"></i>运营模式与责任</a></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://hmiking.top/2023/12/04/%E5%8D%81%E4%B8%89%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=十三、项目资源管理&amp;url=http://hmiking.top/2023/12/04/%E5%8D%81%E4%B8%89%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/&amp;pic=https://djy.oldit.cn/article/ruankao_logo.webp" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="rm.copyPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://hmiking.top" target="_blank">老生杂谈的IT人</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>信息系统项目管理师<span class="tagsPageCount">13</span></a><a class="post-meta__box__tags" href="/tags/%E8%BD%AF%E8%80%83/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>软考<span class="tagsPageCount">13</span></a><a class="post-meta__box__tags" href="/tags/%E9%AB%98%E9%A1%B9/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>高项<span class="tagsPageCount">13</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="https://djy.oldit.cn/article/ruankao_logo.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2023/12/01/%E5%8D%81%E4%B8%80%E3%80%81%E9%A1%B9%E7%9B%AE%E6%88%90%E6%9C%AC%E7%AE%A1%E7%90%86/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">十一、项目成本管理</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/2023/11/30/%E4%B8%83%E3%80%81%E9%A1%B9%E7%9B%AE%E7%AB%8B%E9%A1%B9%E7%AE%A1%E7%90%86/" title="七、项目立项管理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-30</div><div class="title">七、项目立项管理</div></div></a></div><div><a href="/2023/11/20/%E4%B8%89%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E6%B2%BB%E7%90%86(%E4%B8%BB%E8%A6%81%E8%80%83%E9%80%89%E6%8B%A9%E9%A2%98)/" title="三、信息系统治理(主要考选择题)"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-20</div><div class="title">三、信息系统治理(主要考选择题)</div></div></a></div><div><a href="/2023/11/16/%E4%B8%80%E3%80%81%E4%BF%A1%E6%81%AF%E5%8C%96%E5%8F%91%E5%B1%95/" title="一、信息化发展"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-16</div><div class="title">一、信息化发展</div></div></a></div><div><a href="/2023/11/30/%E4%B9%9D%E3%80%81%E9%A1%B9%E7%9B%AE%E8%8C%83%E5%9B%B4%E7%AE%A1%E7%90%86/" title="九、项目范围管理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-30</div><div class="title">九、项目范围管理</div></div></a></div><div><a href="/2023/11/17/%E4%BA%8C%E3%80%81%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95/" title="二、信息技术发展"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-17</div><div class="title">二、信息技术发展</div></div></a></div><div><a href="/2023/11/29/%E4%BA%94%E3%80%81%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E5%B7%A5%E7%A8%8B/" title="五、信息系统工程"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2023-11-29</div><div class="title">五、信息系统工程</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> 评论</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)">匿名评论</a><a href="/privacy" style="margin-left: 4px">隐私政策</a></div><div class="comment-tips" id="comment-tips"><span>✅ 你无需删除空行，直接评论以获取最佳展示效果</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/author.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/emotion.webp" ait="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">云计算、运维、网安</b>相关的一些文章，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><h1 class="author-info__name">H Miking</h1><div class="author-info__desc">技术与人性的交响曲</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/H-MiKing" target="_blank" title="Github"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-github"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/346448962" target="_blank" title="BiliBili"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-bilibili"></use></svg></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>公告</span></div><div class="announcement_content">让我们一起走进这个充满挑战和机遇的IT世界，共同成长，共同前行！</div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://djy.oldit.cn/image/gzh.webp) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://djy.oldit.cn/image/gzh-ewm.webp) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#13-1-%E7%AE%A1%E7%90%86%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">13.1 管理基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#13-1-1-%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD%E5%92%8C%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.</span> <span class="toc-text">13.1.1 相关术语和定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-1-2-%E7%AE%A1%E7%90%86%E6%96%B0%E5%AE%9E%E8%B7%B5"><span class="toc-number">1.2.</span> <span class="toc-text">13.1.2 管理新实践</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-2-%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E8%BF%87%E7%A8%8B"><span class="toc-number">2.</span> <span class="toc-text">13.2 项目资源管理过程</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#13-2-1-%E8%BF%87%E7%A8%8B%E6%A6%82%E8%BF%B0"><span class="toc-number">2.1.</span> <span class="toc-text">13.2.1 过程概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-2-2-%E8%A3%81%E5%89%AA%E8%80%83%E8%99%91%E5%9B%A0%E7%B4%A0"><span class="toc-number">2.2.</span> <span class="toc-text">13.2.2 裁剪考虑因素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-2-3-%E6%95%8F%E6%8D%B7%E4%B8%8E%E9%80%82%E5%BA%94%E6%96%B9%E6%B3%95"><span class="toc-number">2.3.</span> <span class="toc-text">13.2.3 敏捷与适应方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-3-%E8%A7%84%E5%88%92%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">13.3 规划资源管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#13-3-1-%E8%BE%93%E5%85%A5"><span class="toc-number">3.1.</span> <span class="toc-text">13.3.1 输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-3-2-%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%8A%80%E6%9C%AF"><span class="toc-number">3.2.</span> <span class="toc-text">13.3.2 工具与技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-3-3-%E8%BE%93%E5%87%BA"><span class="toc-number">3.3.</span> <span class="toc-text">13.3.3 输出</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-4-%E4%BC%B0%E7%AE%97%E6%B4%BB%E5%8A%A8%E8%B5%84%E6%BA%90"><span class="toc-number">4.</span> <span class="toc-text">13.4 估算活动资源</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#13-4-1-%E8%BE%93%E5%85%A5"><span class="toc-number">4.1.</span> <span class="toc-text">13.4.1 输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-4-2-%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%8A%80%E6%9C%AF"><span class="toc-number">4.2.</span> <span class="toc-text">13.4.2 工具与技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-4-3-%E8%BE%93%E5%87%BA"><span class="toc-number">4.3.</span> <span class="toc-text">13.4.3 输出</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-5-%E8%8E%B7%E5%8F%96%E8%B5%84%E6%BA%90"><span class="toc-number">5.</span> <span class="toc-text">13.5 获取资源</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#13-5-1-%E8%BE%93%E5%85%A5"><span class="toc-number">5.1.</span> <span class="toc-text">13.5.1 输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-5-2-%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%8A%80%E6%9C%AF"><span class="toc-number">5.2.</span> <span class="toc-text">13.5.2 工具与技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-5-3-%E8%BE%93%E5%87%BA"><span class="toc-number">5.3.</span> <span class="toc-text">13.5.3 输出</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-6-%E5%BB%BA%E8%AE%BE%E5%9B%A2%E9%98%9F"><span class="toc-number">6.</span> <span class="toc-text">13.6 建设团队</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#13-6-1-%E8%BE%93%E5%85%A5"><span class="toc-number">6.1.</span> <span class="toc-text">13.6.1 输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-6-2-%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%8A%80%E6%9C%AF"><span class="toc-number">6.2.</span> <span class="toc-text">13.6.2 工具与技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-6-3-%E8%BE%93%E5%87%BA"><span class="toc-number">6.3.</span> <span class="toc-text">13.6.3 输出</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-7-%E7%AE%A1%E7%90%86%E5%9B%A2%E9%98%9F"><span class="toc-number">7.</span> <span class="toc-text">13.7 管理团队</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#13-7-1-%E8%BE%93%E5%85%A5"><span class="toc-number">7.1.</span> <span class="toc-text">13.7.1 输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-7-2-%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%8A%80%E6%9C%AF"><span class="toc-number">7.2.</span> <span class="toc-text">13.7.2 工具与技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-7-3-%E8%BE%93%E5%87%BA"><span class="toc-number">7.3.</span> <span class="toc-text">13.7.3 输出</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-8-%E6%8E%A7%E5%88%B6%E8%B5%84%E6%BA%90"><span class="toc-number">8.</span> <span class="toc-text">13.8 控制资源</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#13-8-1-%E8%BE%93%E5%85%A5"><span class="toc-number">8.1.</span> <span class="toc-text">13.8.1 输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-8-2-%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%8A%80%E6%9C%AF"><span class="toc-number">8.2.</span> <span class="toc-text">13.8.2 工具与技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-8-3-%E8%BE%93%E5%87%BA"><span class="toc-number">8.3.</span> <span class="toc-text">13.8.3 输出</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%80%8D%E6%AC%A2%E8%BF%8E%E5%85%B3%E6%B3%A8%E6%88%91%E7%9A%84CSDN%E3%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E3%80%81%E7%9F%A5%E4%B9%8E"><span class="toc-number">9.</span> <span class="toc-text">‍欢迎关注我的CSDN、个人博客、知乎</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/12/04/%E5%8D%81%E4%B8%89%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/" title="十三、项目资源管理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="十三、项目资源管理"/></a><div class="content"><a class="title" href="/2023/12/04/%E5%8D%81%E4%B8%89%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/" title="十三、项目资源管理">十三、项目资源管理</a><time datetime="2023-12-04T08:25:00.000Z" title="发表于 2023-12-04 16:25:00">2023-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/01/%E5%8D%81%E4%B8%80%E3%80%81%E9%A1%B9%E7%9B%AE%E6%88%90%E6%9C%AC%E7%AE%A1%E7%90%86/" title="十一、项目成本管理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="十一、项目成本管理"/></a><div class="content"><a class="title" href="/2023/12/01/%E5%8D%81%E4%B8%80%E3%80%81%E9%A1%B9%E7%9B%AE%E6%88%90%E6%9C%AC%E7%AE%A1%E7%90%86/" title="十一、项目成本管理">十一、项目成本管理</a><time datetime="2023-12-01T03:50:00.000Z" title="发表于 2023-12-01 11:50:00">2023-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/12/01/%E5%8D%81%E4%BA%8C%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86/" title="十二、项目质量管理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="十二、项目质量管理"/></a><div class="content"><a class="title" href="/2023/12/01/%E5%8D%81%E4%BA%8C%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%A8%E9%87%8F%E7%AE%A1%E7%90%86/" title="十二、项目质量管理">十二、项目质量管理</a><time datetime="2023-12-01T03:50:00.000Z" title="发表于 2023-12-01 11:50:00">2023-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/30/%E4%B8%83%E3%80%81%E9%A1%B9%E7%9B%AE%E7%AB%8B%E9%A1%B9%E7%AE%A1%E7%90%86/" title="七、项目立项管理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="七、项目立项管理"/></a><div class="content"><a class="title" href="/2023/11/30/%E4%B8%83%E3%80%81%E9%A1%B9%E7%9B%AE%E7%AB%8B%E9%A1%B9%E7%AE%A1%E7%90%86/" title="七、项目立项管理">七、项目立项管理</a><time datetime="2023-11-30T08:00:00.000Z" title="发表于 2023-11-30 16:00:00">2023-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/11/30/%E4%B9%9D%E3%80%81%E9%A1%B9%E7%9B%AE%E8%8C%83%E5%9B%B4%E7%AE%A1%E7%90%86/" title="九、项目范围管理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/article/ruankao_logo.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="九、项目范围管理"/></a><div class="content"><a class="title" href="/2023/11/30/%E4%B9%9D%E3%80%81%E9%A1%B9%E7%9B%AE%E8%8C%83%E5%9B%B4%E7%AE%A1%E7%90%86/" title="九、项目范围管理">九、项目范围管理</a><time datetime="2023-11-30T08:00:00.000Z" title="发表于 2023-11-30 16:00:00">2023-11-30</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:h-miking@qq.com" title="email"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-envelope"></use></svg></a><a class="deal_link" target="_blank" rel="noopener" href="https://weibo.com/u/6997349925" title="微博"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weibo"></use></svg></a><a class="deal_link" href="/atom.xml" title="RSS"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss"></use></svg></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/icons8-%E5%8F%AF%E8%BE%BE%E9%B8%AD-100.webp" size="50px"/><a class="deal_link" target="_blank" rel="noopener" href="https://github.com/H-MiKing" title="Github"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github"></use></svg></a><a class="deal_link" target="_blank" rel="noopener" href="https://space.bilibili.com/346448962" title="Bilibili"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili"></use></svg></a><a class="deal_link" href="/copyright" title="CC"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-copyright-line"></use></svg></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="51la统计" target="_blank" rel="noopener" href="https://v6.51.la/">51la统计</a><a class="footer-item" title="开往" target="_blank" rel="noopener" href="https://github.com/travellings-link/travellings">开往</a></div></div><div class="footer-group"><div class="footer-title">主题</div><div class="footer-links"><a class="footer-item" title="文档" target="_blank" rel="noopener" href="https://docs.anheyu.com/global/">文档</a><a class="footer-item" title="源码" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu">源码</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="留言板" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://blog.anheyu.com/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://www.dogecloud.com/" style="margin-inline:5px" data-title="本站使用多吉云为静态资源提供CDN加速" title="本站使用多吉云为静态资源提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/CDN-%E5%A4%9A%E5%90%89%E4%BA%91.svg" alt="本站使用多吉云为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/svg/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2023 By H Miking </div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a><a class="footer-bar-link" target="_blank" rel="noopener" href="https://beian.miit.gov.cn/" title="粤ICP备2023109857号">粤ICP备2023109857号</a><a class="footer-bar-link cc" href="/copyright" title="cc协议"><i class="anzhiyufont anzhiyu-icon-copyright-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-by-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nc-line"></i><i class="anzhiyufont anzhiyu-icon-creative-commons-nd-line"></i></a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">6</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51369125?spm=1010.2135.3001.5343" title="CSDN"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/csdn_logo.webp" alt="CSDN"/><span class="back-menu-item-text">CSDN</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://toolsbox.oldit.cn/" title="工具站"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/%E7%9B%AF%E7%9D%80.webp" alt="工具站"/><span class="back-menu-item-text">工具站</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">切换线路</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.oldit.cn/" title="备用线路"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://djy.oldit.cn/image/%E5%A4%9A%E7%BA%BF%E8%B7%AF.webp" alt="备用线路"/><span class="back-menu-item-text">备用线路</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-box-archive"></use></svg><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shapes"></use></svg><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-tags"></use></svg><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-link"></use></svg><span> 友链</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-artstation"></use></svg><span> 鱼塘</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-envelope"></use></svg><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=6858639461&amp;server=netease"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-music"></use></svg><span> 音乐馆</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-images"></use></svg><span> 相册集</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-dice-d20"></use></svg><span> 我的装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-shoe-prints"></use></svg><span> 随便逛逛</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-lightbulb"></use></svg><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/about/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-paper-plane"></use></svg><span> 关于本人</span></a></li></ul></div><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/triennium/"><span> 三年之约</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 年度总结</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/2023-AS/"><svg class="icon faa-tada" aria-hidden="true"><use xlink:href="#icon-niandugongzuojihua"></use></svg><span> 2023年度总结</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Centos/" style="font-size: 0.88rem; font-weight: 500; color: var(--anzhiyu-lighttext)">Centos<sup>16</sup></a><a href="/tags/Debian/" style="font-size: 0.88rem;">Debian<sup>1</sup></a><a href="/tags/ECS/" style="font-size: 0.88rem;">ECS<sup>1</sup></a><a href="/tags/Prometheus/" style="font-size: 0.88rem;">Prometheus<sup>2</sup></a><a href="/tags/Security/" style="font-size: 0.88rem;">Security<sup>2</sup></a><a href="/tags/jumpserver/" style="font-size: 0.88rem;">jumpserver<sup>1</sup></a><a href="/tags/kubernetes/" style="font-size: 0.88rem;">kubernetes<sup>1</sup></a><a href="/tags/%E4%BD%9C%E4%B8%BA%E6%97%A5%E8%AE%B0%E5%8A%A0%E5%AF%86/" style="font-size: 0.88rem;">作为日记加密<sup>1</sup></a><a href="/tags/%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%B8%88/" style="font-size: 0.88rem;">信息系统项目管理师<sup>13</sup></a><a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 0.88rem;">服务器<sup>1</sup></a><a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" style="font-size: 0.88rem;">计算机网络原理<sup>1</sup></a><a href="/tags/%E8%BD%AF%E8%80%83/" style="font-size: 0.88rem;">软考<sup>13</sup></a><a href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/" style="font-size: 0.88rem;">阿里云<sup>1</sup></a><a href="/tags/%E9%AB%98%E9%A1%B9/" style="font-size: 0.88rem;">高项<sup>13</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">博客快捷键</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">关闭快捷键功能</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">打开/关闭中控台</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">播放/暂停音乐</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">深色/浅色显示模式</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">站内搜索</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">随机访问</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">返回首页</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">友链鱼塘</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">友链页面</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">关于本站</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">原版/本站右键菜单</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="anzhiyufont anzhiyu-icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="462484390" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://music.163.com/playlist?id=462484390&amp;userid=331297580&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/medium-zoom@1.0.8/dist/medium-zoom.min.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.4/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script async src="/anzhiyu/random.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.hmiking.top/',
+      region: '',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.18/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.hmiking.top/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twikoo.hmiking.top/',
+        region: '',
+        pageSize: 6,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "无法获取评论，请确认相关配置是否正确"
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.18/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += '没有评论'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom.innerHTML= result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async data-pjax src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.1/bubble/bubble.js"></script><script>var visitorMail = "hmiking@163.com";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script async src="https://tools.oldit.cn/js/ali.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
